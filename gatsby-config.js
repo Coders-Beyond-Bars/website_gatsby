@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Coders Beyond Bars',
+    author: 'Richard Kim'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

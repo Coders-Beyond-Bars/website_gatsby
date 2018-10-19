@@ -82,7 +82,7 @@ class NavBar extends Component {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="/get_involved/">Get Involved</NavLink>
+              <NavLink href="/connect/">Get Involved</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/contact/">Contact Us</NavLink>

@@ -15,7 +15,7 @@ const Footer = () => {
       <div>
         <Container>
           <Row>
-            <Col lg={6} className="contact-info">
+            <Col lg={9} className="contact-info">
               <h4>Coders Beyond Bars</h4>
               <p>
                 Massachusetts Institute of Technology <br/>
@@ -28,16 +28,6 @@ const Footer = () => {
                   info@codersbeyondbars.org
                 </a>
               </p>
-            </Col>
-            <Col lg={3} className="footer-menu">
-              <h5>Links</h5>
-              <Nav vertical>
-                <NavLink href="/">Home</NavLink>
-                <NavLink href="/about/mission/">Who We Are</NavLink>
-                <NavLink href="/activities/">What We Do</NavLink>
-                <NavLink href="/get_involved/">Get Involved</NavLink>
-                <NavLink href="/contact/">Contact Us</NavLink>
-              </Nav>
             </Col>
             <Col lg={3} className="social-media">
               <h5>Follow Us</h5>
