@@ -2,7 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Navbar from '../components/Navbar';
-import '../styles/all.sass';
+import Footer from '../components/Footer';
+import '../styles/index.sass';
 
 
 const TemplateWrapper = ({ children }) => (
@@ -10,6 +11,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title="Coders Beyond Bars" />
     <Navbar />
     <div>{children}</div>
+    <Footer />
   </div>
 );
 

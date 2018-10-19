@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap"
+
+@import url(http://fonts.googleapis.com/css?family=Oswald)
+@import url(http://fonts.googleapis.com/css?family=Roboto+Mono)
+
+@import "components/fonts"
+@import "components/variables"
+
+
+body
+  color: $primary-font-color
+  font-family: 'Roboto Mono', monospace
+
+h1, h2, h3, h4, h5
+  font-family: 'OCRAStd', Helvetica, sans-serif
+
+@media (min-width: $desktop)
+  .container
+    max-width: 1000px
+
+#main
+  min-height: 80vh
+  padding-top: 4vh
+
+.section-title
+  margin-bottom: 2rem
+
+
+@import "components/navbar"
+@import "components/footer"

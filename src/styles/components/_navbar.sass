@@ -1,0 +1,82 @@
+.navbar
+  background-color: $primary-yellow
+  color: $primary-dark-gray
+  font-family: 'OCRAStd', Helvetica, sans-serif
+  box-shadow: 0 0 10px 0 $primary-dark-gray
+
+  &-light &-brand
+    display: flex
+    align-items: center
+
+    .logo-text
+      display: none
+      margin: 5px 10px 0
+      font-size: 1.2rem
+      color: $primary-dark-gray
+      &:hover
+        color: $white
+
+      @media (min-width: $phone)
+        display: inline
+
+    .logo-img
+      width: 100px
+      max-height: none
+
+  &-light &-nav .nav-item
+    @media (min-width: $desktop)
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+
+    .nav-link
+      margin-top: 5px
+      font-size: 0.8rem
+      color: $primary-dark-gray
+      &:hover, &:active
+        color: $white
+
+  .dropdown .dropdown-menu
+    min-width: 230px
+    border-radius: 0
+    .dropdown-item:hover
+      background-color: $primary-dark-gray
+
+
+
+
+
+
+
+
+
+
+
+
+//   &-item
+//     font-weight: bold
+//     color: $primary-dark-gray
+//     font-size: 0.8rem
+//
+//   a.navbar-item:hover
+//     background-color: transparent
+//     text-decoration: underline
+//     color: $white
+//
+//   &-brand &-item
+//       width: 200px
+//
+//   &-brand
+//     display: flex
+//     justify-content: center
+//
+//     a.navbar-item:hover
+//       text-decoration: none
+//       color: $primary-dark-gray
+//
+//
+//     .logo-text
+//       font-size: 1rem
+//       font-weight: bold
+//       padding: 5px 5px 0 5px
+//       line-height: 1
