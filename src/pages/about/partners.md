@@ -1,6 +1,7 @@
 ---
 templateKey: about-page
 path: /about/partners/
+slug: partners
 title: Our Partners
 ---
 #### The Educational Justice Institute

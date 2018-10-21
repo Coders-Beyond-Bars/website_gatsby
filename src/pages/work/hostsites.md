@@ -1,6 +1,7 @@
 ---
 templateKey: work-page
 path: /activities/hostsites/
+slug: hostsites
 title: Host Sites
 ---
 ##### Boston Pre-release Center

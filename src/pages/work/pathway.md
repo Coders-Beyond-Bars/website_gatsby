@@ -1,6 +1,7 @@
 ---
 templateKey: work-page
 path: /activities/pathway/
+slug: pathway
 title: The Pathway
 ---
 ##### 1. High-tech Education

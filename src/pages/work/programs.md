@@ -1,18 +1,19 @@
 ---
 templateKey: work-page
 path: /activities/programs/
+slug: programs
 title: Programs
 ---
 ##### Web Development using HTML, CSS, and JavaScript
 
 ![Web](/img/web.png)
 
-Since the advancement of the Internet, web applications, computer programs that run in a web browser such as online auctions, forums, shopping malls have become a dominant mode of production for engineers. 
+Since the advancement of the Internet, web applications, computer programs that run in a web browser such as online auctions, forums, shopping malls have become a dominant mode of production for engineers.
 
 In this 28 weeks program, our students will study introductory web development using HTML, CSS, JavaScript, and other related technologies.     
 
 * HTML
-* CSS 
+* CSS
 * Javascript
 * Sass
 * React

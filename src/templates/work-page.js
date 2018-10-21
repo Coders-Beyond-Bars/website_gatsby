@@ -7,12 +7,12 @@ import LeftWorkMenu from '../components/LeftWorkMenu';
 import Content, { HTMLContent } from '../components/Content';
 
 
-export const WorkPageTemplate = ({ title, content, contentComponent }) => {
+export const WorkPageTemplate = ({ title, slug, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="markdown">
-      <PageContent className="content" content={content} />
+      <PageContent className={`content content-${slug}`} content={content} />
     </section>
   );
 };
@@ -39,6 +39,7 @@ const WorkPage = ({ data }) => {
             <WorkPageTemplate
               contentComponent={HTMLContent}
               title={post.frontmatter.title}
+              slug={post.frontmatter.slug}
               content={post.html}
             />
           </Col>
@@ -62,6 +63,7 @@ export const workPageQuery = graphql`
       frontmatter {
         title
         path
+        slug
       }
     }
   }

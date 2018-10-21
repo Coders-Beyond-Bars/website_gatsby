@@ -7,12 +7,12 @@ import LeftAboutMenu from '../components/LeftAboutMenu';
 import Content, { HTMLContent } from '../components/Content';
 
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, slug, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="markdown">
-      <PageContent className="content" content={content} />
+      <PageContent className={`content content-${slug}`} content={content} />
     </section>
   );
 };
@@ -38,6 +38,7 @@ const AboutPage = ({ data }) => {
             <AboutPageTemplate
               contentComponent={HTMLContent}
               title={post.frontmatter.title}
+              slug={post.frontmatter.slug}
               content={post.html}
             />
           </Col>
@@ -61,6 +62,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         path
+        slug
       }
     }
   }
