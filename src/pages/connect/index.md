@@ -5,10 +5,10 @@ title: Get Involved
 ---
 ### Volunteer with Us
 
-![Mentorship](/img/mentor.jpg)
+![Mentorship](/img/volunteer.png)
 
 Are you a computer programmer or a data scientist?
 
 ### Sponsor Us
 
-![Sponsorship](/img/sponsor.jpg)
+![Sponsorship](/img/sponsorship.png)
