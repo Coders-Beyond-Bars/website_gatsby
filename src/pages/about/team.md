@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
+path: /about/team/
 title: The CBB Team
 ---
 ![Richard Kim](/img/richard.jpg)

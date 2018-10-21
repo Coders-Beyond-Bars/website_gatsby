@@ -1,5 +1,6 @@
 ---
 templateKey: connect-page
+path: /connect/
 title: Get Involved
 ---
 ### Volunteer with Us

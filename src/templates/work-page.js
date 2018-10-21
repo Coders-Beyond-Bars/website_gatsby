@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Container, Row, Col } from 'reactstrap';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import LeftWorkMenu from '../components/LeftWorkMenu';
 import Content, { HTMLContent } from '../components/Content';
 
 
@@ -9,19 +11,8 @@ export const WorkPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="markdown">
+      <PageContent className="content" content={content} />
     </section>
   );
 };
@@ -32,16 +23,27 @@ WorkPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 };
 
+
 const WorkPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <WorkPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <Container>
+        <Row>
+          <Col lg={2} xl={2}>
+            <LeftWorkMenu />
+          </Col>
+          <Col lg={8} xl={8}>
+            <h2 className="page-title">{post.frontmatter.title}</h2>
+            <WorkPageTemplate
+              contentComponent={HTMLContent}
+              title={post.frontmatter.title}
+              content={post.html}
+            />
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 };

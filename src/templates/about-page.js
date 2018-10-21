@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import LeftAboutMenu from '../components/LeftAboutMenu';
 import Content, { HTMLContent } from '../components/Content';
 
 
@@ -10,7 +11,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <section className="markdown">
       <PageContent className="content" content={content} />
     </section>
   );
@@ -30,7 +31,7 @@ const AboutPage = ({ data }) => {
       <Container>
         <Row>
           <Col lg={2}>
-
+            <LeftAboutMenu />
           </Col>
           <Col lg={10}>
             <h2 className="page-title">{post.frontmatter.title}</h2>
