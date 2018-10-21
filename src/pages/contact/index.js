@@ -19,6 +19,10 @@ class Contact extends Component {
           <Row>
             <Col lg={{size: 8, offset: 2}}>
               <h2 className="page-title">Contact Us</h2>
+              <p>
+                Whether you are looking to volunteer with us as a mentor, to
+                learn more about our organization, or to just share us your
+                thoughts, we want to hear from you!</p>
               <Row>
                 <Col lg={{size: 8, offset: 2}} >
                   <Form>
