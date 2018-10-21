@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
             <h1>About Us</h1>
           </Container>
         </section>
-        <section id="home-about-us" className="home-section">
+        <section id="home-about-us" className="home-section section-dark">
           <Container>
             <h1>Our Programs</h1>
           </Container>
@@ -24,6 +24,11 @@ export default class IndexPage extends React.Component {
         <section id="home-team" className="home-section">
           <Container>
             <h1>Host Sites</h1>
+          </Container>
+        </section>
+        <section id="home-partners" className="home-section section-dark">
+          <Container>
+            <h1>Team</h1>
           </Container>
         </section>
         <section id="home-partners" className="home-section">

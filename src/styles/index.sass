@@ -20,11 +20,13 @@ a
     color: $primary-yellow
 
 #main
-  padding-top: 4vh
   min-height: 80vh
+  & > .container
+    padding-top: 4vh
 
 @import "components/navbar"
 @import "components/footer"
+@import "components/header"
 @import "components/markdown"
 
 .page-title
@@ -32,6 +34,9 @@ a
 
 .home-section
   min-height: 300px
+
+.section-dark
+  background-color: $primary-light-gray
 
 .left-menu
   display: none
