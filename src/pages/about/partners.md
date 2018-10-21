@@ -1,6 +1,13 @@
 ---
 templateKey: about-page
-path: /about/partners/
 title: Our Partners
 ---
-Our Mission is ...
+#### The Educational Justice Institute
+
+![The Educational Justice Institute at MIT](/img/teji.png)
+
+
+
+#### The Petey Greene Program
+
+![](/img/peteygreene.jpg)
