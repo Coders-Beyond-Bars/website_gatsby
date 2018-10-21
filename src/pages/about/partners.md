@@ -10,4 +10,4 @@ title: Our Partners
 
 #### The Petey Greene Program
 
-![](/img/peteygreene.jpg)
+![The Petey Greene](/img/peteygreene.jpg)
