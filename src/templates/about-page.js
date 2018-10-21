@@ -33,7 +33,7 @@ const AboutPage = ({ data }) => {
 
           </Col>
           <Col lg={10}>
-            <h2>{post.frontmatter.title}</h2>
+            <h2 className="page-title">{post.frontmatter.title}</h2>
             <AboutPageTemplate
               contentComponent={HTMLContent}
               title={post.frontmatter.title}

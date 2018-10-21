@@ -18,7 +18,7 @@ class Contact extends Component {
         <Container>
           <Row>
             <Col lg={{size: 8, offset: 2}}>
-              <h2 className="section-title">Contact Us</h2>
+              <h2 className="page-title">Contact Us</h2>
               <Row>
                 <Col lg={{size: 8, offset: 2}} >
                   <Form>
