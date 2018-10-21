@@ -2,6 +2,8 @@
 templateKey: about-page
 title: The CBB Team
 ---
+![Richard Kim](/img/richard.jpg)
+
 ##### Richard Kim
 
 _Co-Founder & Director of Education_
@@ -12,12 +14,11 @@ Coming back to graduate school, Richard redirected his career focus to applied m
 
 While at MIT, he volunteered to teach mathematics to incarcerated students at a correctional facility through the Petey Greene program.  From this experience as a volunteer tutor to incarcerate individuals, Richard was inspired to teach computer programming to incarcerated individuals.  Finding no appropriate channels or organization to make this a reality, Richard decided to launch Coders Beyond Bars in collaboration with Anjali Moorthy, a fellow Petey Greene program volunteer.
 
-
-
+![Anjali Moorthy](/img/anjali.jpg)
 
 ##### Anjali Moorthy
 
-_Co-Founder & Executive Director_
+_Co-Founder & Executive Director_
 
 Educator by profession and polymath by nature, Anjali earned her master's from the Harvard Graduate School of Education with a focus on Creative/Constructionist Learning, Social Entrepreneurship, and Instructional Design.  Before attending grad school, Anjali was a Corps Member at Teach for India, where she worked as an educator and mentor to 200 at-risk adolescents, and then as a founder teacher in a charter secondary school. In those roles, she worked on experiential learning, student leadership, social-emotional learning, teacher training, and community engagement.
 
