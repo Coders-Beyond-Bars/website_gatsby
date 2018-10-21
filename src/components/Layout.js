@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Coders Beyond Bars" />
     <Navbar />
-    <div>{children}</div>
+    <main id="main">{children}</main>
     <Footer />
   </div>
 );

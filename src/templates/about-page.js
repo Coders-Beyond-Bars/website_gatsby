@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Container, Row, Col } from 'reactstrap';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
@@ -10,18 +11,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageContent className="content" content={content} />
     </section>
   );
 };
@@ -33,15 +23,25 @@ AboutPageTemplate.propTypes = {
 };
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <Container>
+        <Row>
+          <Col lg={2}>
+
+          </Col>
+          <Col lg={10}>
+            <h2>{post.frontmatter.title}</h2>
+            <AboutPageTemplate
+              contentComponent={HTMLContent}
+              title={post.frontmatter.title}
+              content={post.html}
+            />
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 };
