@@ -9,9 +9,63 @@ import {
   Col
 } from 'reactstrap';
 import Layout from '../../components/Layout';
+import axios from 'axios';
+import qs from 'qs';
+
 
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      name: '',
+      subject: '',
+      message: '',
+      hidden: true
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSumbit = this.handleSumbit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
+  handleSumbit(e) {
+    e.preventDefault();
+
+    axios({
+      url: '/',
+      method: 'post',
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: qs.stringify({
+        "form-name": "contact",
+        ...this.state
+      })
+    })
+    .then(() => console.log("Success"))
+    .catch(err => console.log(err));
+
+    Object.keys(this.state).forEach((key,index) => {
+      if (typeof(this.state[key]) === "string") {
+        this.setState({
+          [key]: ''
+        });
+      }
+
+      if (this.state.hidden) {
+        this.setState({
+          hidden: false
+        });
+      }
+    });
+  }
+
   render() {
     return (
       <Layout>
@@ -25,12 +79,14 @@ class Contact extends Component {
                 thoughts, we want to hear from you!</p>
               <Row>
                 <Col lg={{size: 8, offset: 2}} >
-                  <Form>
+                  <Form onSubmit={this.handleSumbit}>
                     <FormGroup>
                       <Input
                         type="email"
                         name="email"
                         placeholder="Your E-mail"
+                        value={this.state.email}
+                        onChange={this.handleChange}
                       />
                     </FormGroup>
                     <FormGroup>
@@ -38,6 +94,8 @@ class Contact extends Component {
                         type="text"
                         name="name"
                         placeholder="Your Name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
                       />
                     </FormGroup>
                     <FormGroup>
@@ -45,6 +103,8 @@ class Contact extends Component {
                         type="text"
                         name="subject"
                         placeholder="Subject"
+                        value={this.state.subject}
+                        onChange={this.handleChange}
                       />
                     </FormGroup>
                     <FormGroup>
@@ -53,11 +113,24 @@ class Contact extends Component {
                         name="message"
                         placeholder="Message"
                         rows={5}
+                        value={this.state.message}
+                        onChange={this.handleChange}
                       />
                     </FormGroup>
                     <FormGroup>
-                      <Button className="float-right" size="lg" block>Send</Button>
+                      <Button
+                        type="submit"
+                        className="float-right"
+                        size="lg"
+                        block
+                      >
+                          Send
+                      </Button>
                     </FormGroup>
+                    <p hidden={this.state.hidden}>
+                      Thank you.  Your message has been submitted.  We will
+                      contact you shortly.
+                    </p>
                   </Form>
                 </Col>
               </Row>

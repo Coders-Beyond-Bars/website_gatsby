@@ -11,12 +11,29 @@
 .section
   &-header
     width: 70%
+    margin: 40px 0
   &-body
     display: flex
   &-title
     color: $primary-dark-gray
   &-subtitle
     color: $primary-dark-gray
+
+#home-programs
+  .program
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      width: 100%
+
+#home-host
+  .host-site
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      width: 75%
 
 #home-team
   .section-body
@@ -30,12 +47,9 @@
       border-radius: 50%
       width: 50%
       margin: 20px
+      @media screen and (min-width: $tablet)
+        width: 35%
 
     &-name
       font-weight: bold
       margin-bottom: 0
-
-#home-host
-  .host-site
-    img
-      width: 75%
