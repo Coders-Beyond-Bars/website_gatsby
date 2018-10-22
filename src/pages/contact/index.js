@@ -38,12 +38,12 @@ class Contact extends Component {
     e.preventDefault();
 
     axios({
-      url: '/',
-      method: 'post',
+      url: "/",
+      method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
-      body: qs.stringify({
+      data: qs.stringify({
         "form-name": "contact",
         ...this.state
       })
