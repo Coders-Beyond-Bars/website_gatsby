@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   Container,
   Button,
@@ -25,6 +25,7 @@ const Contact = () => {
                 <Row>
                   <Col lg={{size: 8, offset: 2}} >
                     <Form
+                      action="/contact/success/"
                        name="contact"
                        method="post"
                        data-netlify="true"
