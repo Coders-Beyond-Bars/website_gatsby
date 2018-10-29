@@ -28,17 +28,13 @@ a
 .text-gray
   color: $primary-dark-gray
 
+.text-light-gray
+  color: $primary-light-gray
+
 #main
   min-height: 80vh
   & > .container
-    padding-top: 4vh
-
-@import "components/navbar"
-@import "components/footer"
-@import "components/header"
-@import "components/markdown"
-@import "components/home"
-@import "components/team"
+    padding: 4vh 0 10vh 0
 
 .page-title
   color: $primary-yellow
@@ -48,3 +44,18 @@ a
   display: none
   @media (min-width: $desktop)
     display: block
+
+@import "components/navbar"
+@import "components/footer"
+@import "components/header"
+@import "components/markdown"
+@import "components/card"
+@import "components/home"
+@import "components/team"
+@import "components/_hostsites"
+@import "components/_programs"
+@import "components/_pathway"
+@import "components/_timeline"
+@import "components/_challenges"
+@import "components/_mission"
+@import "components/_partners"

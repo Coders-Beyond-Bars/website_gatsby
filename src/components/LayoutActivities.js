@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Layout from './Layout';
-import LeftAboutMenu from './LeftAboutMenu';
+import LeftWorkMenu from './LeftWorkMenu';
 
 
-const AboutLayout = ({ children }) => (
+const ActivitiesLayout = ({ children }) => (
   <Layout>
     <Container>
       <Row>
         <Col lg={2}>
-          <LeftAboutMenu />
+          <LeftWorkMenu />
         </Col>
         <Col lg={10}>
           {children}
@@ -19,4 +19,4 @@ const AboutLayout = ({ children }) => (
   </Layout>
 );
 
-export default AboutLayout;
+export default ActivitiesLayout;

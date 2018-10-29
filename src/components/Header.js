@@ -14,10 +14,9 @@ class Header extends Component {
               Bars
             </h1>
             <p className="header-mission">
-              Empowering incarcerated individuals to transform their own lives
+              Empowering incarcerated individuals to transform their lives
               by educating them in high-tech skills and preparing them for careers
               in high-tech industries for successful re-entry into society</p>
-
             <p className="header-hashtag">
               #PrisonEducation • #ComputerProgramming • #Re-entry
             </p>

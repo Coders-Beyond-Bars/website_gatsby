@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import TEJI from '../img/partners/teji.png';
 
 const Footer = () => {
   return (
@@ -17,10 +18,16 @@ const Footer = () => {
           <Row>
             <Col lg={9} className="contact-info">
               <h4>Coders Beyond Bars</h4>
-              <p>
-                Massachusetts Institute of Technology <br/>
+              <img src={TEJI} alt="TEJI" />
+              <h6>
+                The Educational Justice Institute
+              </h6>
+             <h6 className="text-gray">
+                Massachusetts Institute of Technology
+              </h6>
+              <p className="text-gray">
                 77 Massachusetts Ave. <br/>
-                24-612 <br/>
+                Building 24, Rm 612<br/>
                 Cambridge, MA 02139
               </p>
               <p>

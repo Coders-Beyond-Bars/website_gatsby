@@ -2,10 +2,31 @@ import React from 'react';
 
 import LayoutAbout from '../../components/LayoutAbout';
 
+import teji from '../../img/partners/teji.png';
+import peteyGreene from '../../img/partners/petey-greene.jpg';
+
 
 const Partners = () => {
   return (
-    <div>Parnters</div>
+    <LayoutAbout>
+      <div>
+        <h2 className="page-title">Academic and Community Partners</h2>
+        <div className="partners">
+          <a href="http://teji.mit.edu/">
+            <img
+              src={teji}
+              alt="The Educational Justice Institute"
+              className="img-fluid mx-auto partners-img" />
+          </a>
+          <a href="http://www.peteygreene.org/">
+            <img
+              src={peteyGreene}
+              alt="Petey Greene Program"
+              className="img-fluid mx-auto partners-img" />
+          </a>
+        </div>
+      </div>
+    </LayoutAbout>
   );
 };
 
