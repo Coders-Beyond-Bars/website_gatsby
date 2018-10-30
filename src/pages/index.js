@@ -4,11 +4,14 @@ import { Container, Row, Col } from 'reactstrap';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
+import mission from '../img/mission/mission1.jpg';
+
 import Richard from '../img/team/richard.jpg';
 import Anjali from '../img/team/anjali.jpg';
 import Ed from '../img/advisors/ed.jpg';
 import Pavlos from '../img/advisors/pavlos.jpg';
 import Alan from '../img/advisors/alan.jpg';
+
 
 import TSN from '../img/partners/tsn.png';
 import PeteyGreene from '../img/partners/petey-greene.jpg';
@@ -68,9 +71,10 @@ export default class IndexPage extends React.Component {
             </div>
           </Container>
         </section>
-        <section id="home-about-us" className="home-section section-dark">
+        <section id="home-mission" className="home-section section-dark">
           <Container>
             <h2 className="section-title text-center">Our Mission</h2>
+            <img src={mission} alt="Mission" className="img-fluid mx-auto"/>
             <p>
               <strong>Coders Beyond Bars, Inc. (CBB)</strong> is a not-for-profit organization in Massachusetts with the mission of educating incarcerated individuals in high-tech skills such as coding and preparing them for successful careers in high-tech industries.  With our origin in <a href="http://teji.mit.edu/" className="text-red">The Educational Justice Institute at Massachusetts Institute of Technology</a>, we place ourselves at the intersection of education, technology and criminal justice in order to open up access to communities that have historically been marginalized in these contexts... <Link className="text-red" to="/about/mission/">Read More &rarr;</Link>
             </p>
