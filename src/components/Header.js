@@ -18,7 +18,7 @@ class Header extends Component {
               by educating them in high-tech skills and preparing them for careers
               in high-tech industries for successful re-entry into society</p>
             <p className="header-hashtag">
-              #PrisonEducation • #ComputerProgramming • #Re-entry
+              #PrisonEducation • #Coding • #Re-entry • #DataScience
             </p>
           </div>
         </Container>

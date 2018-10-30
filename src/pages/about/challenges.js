@@ -26,7 +26,7 @@ const Challenges = () => {
             </Col>
             <Col md={9}>
               <p>
-                As elucidated in “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, <strong>the United States has 5% of the world’s population but 25% of the world’s incarcerated population</strong>.  Currently, there are over 2 million behind bars in county jails, state prisons, and federal penitentiaries.  To put this into another perspective, more than one in one-hundred adults between the ages of eighteen and sixty-five are behind bars in the US.  This number does not even include many millions more who are on parole or probation and are still part of the correctional system.
+                As elucidated in “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, <strong>the United States has 5% of the world’s population but 25% of the world’s incarcerated population</strong>.  Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries.  To put this into another perspective, more than one in one-hundred adults between the ages of eighteen and sixty-five are behind bars in the US.  This number does not even include many millions more who are on parole or probation and are still part of the correctional system.
               </p>
             </Col>
           </Row>
@@ -92,7 +92,7 @@ const Challenges = () => {
             </Col>
             <Col md={{ size: 9, order: 1}}>
               <p>
-                In light of these shortage in technical talent in the US, coding bootcamps (aka career accelerators) such have gained popularity among people who want to quickly bootstrap their knowledge in coding in order land entry-level positions in software development or data science.  Nevertheless, in spite of relative affordability compared to four-year university, the cost of entry into these programs can be prohibitively expensive for many individuals in lower income communities.  For the incarcerated, resources such as coding bootcamps are both financially and physically inaccessible.
+                In light of these shortage in technical talent in the US, coding bootcamps (aka career accelerators) have gained popularity among people who want to quickly bootstrap their knowledge in coding for entry-level positions in software development or data science.  Nevertheless, in spite of relative affordability compared to four-year university programs, these programs can be prohibitively expensive for many individuals in lower income communities.  For the incarcerated, resources such as coding bootcamps are both financially and physically inaccessible.
               </p>
             </Col>
           </Row>

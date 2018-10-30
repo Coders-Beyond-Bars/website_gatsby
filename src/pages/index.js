@@ -8,10 +8,15 @@ import Richard from '../img/team/richard.jpg';
 import Anjali from '../img/team/anjali.jpg';
 import Ed from '../img/advisors/ed.jpg';
 import Pavlos from '../img/advisors/pavlos.jpg';
+import Alan from '../img/advisors/alan.jpg';
 
 import Web from '../img/programs/web.png';
 import Databases from '../img/programs/databases.png';
 import Scratch from '../img/programs/scratch.png';
+
+import TSN from '../img/partners/tsn.png';
+import PeteyGreene from '../img/partners/petey-greene.jpg';
+import TEJI from '../img/partners/teji.png';
 
 import cost from '../img/challenges/cost.jpg';
 import massIncarceration from '../img/challenges/mass_incarceration.jpg';
@@ -83,7 +88,7 @@ export default class IndexPage extends React.Component {
               </Col>
             </Row>
             <p>
-              As methodically investigated and elucidated in the New York Time’s Best Seller “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, the United States has 5% of the world’s population but 25% of the world’s incarcerated population.  Currently, there are over 2 million behind bars in county jails, state prisons, and federal penitentiaries... <Link className="text-red" to="/about/challenges/">Read More &rarr;</Link>
+              As elucidated in “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, <strong>the United States has 5% of the world’s population but 25% of the world’s incarcerated population</strong>.  Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries...  <Link className="text-red" to="/about/challenges/">Learn More &rarr;</Link>
             </p>
             </div>
           </Container>
@@ -96,7 +101,7 @@ export default class IndexPage extends React.Component {
             </p>
           </Container>
         </section>
-        <section id="home-programs" className="home-section">
+        {/* <section id="home-programs" className="home-section">
           <Container className="section">
             <div className="section-header mx-auto">
               <h2 className="section-title text-center">Our Programs</h2>
@@ -109,21 +114,16 @@ export default class IndexPage extends React.Component {
               />
             </div>
           </Container>
-        </section>
-        <section id="home-testimonial" className="home-section section-dark">
+        </section> */}
+        <section id="home-testimonial" className="home-section">
           <Container className="section">
-            <div className="section-header mx-auto">
-              <h2 className="section-title text-center">Quotes</h2>
-            </div>
             <Row className="testimonial">
               <Col md={4}>
                 <img src={Ed} alt="Ed McAdams" className="profile-photo mx-auto"/>
               </Col>
               <Col md={8} className="testimonial-description">
                 <p className="font-italic">
-                  "Coders Beyond Bars has been a  blessing for us. They worked closely
-                  with us to make this course available to our students, overcoming
-                  technological challenges in corrections environment."
+                  "It has been impressive to see the interest and investment by our students in this coders program. They are fully engaged and motivated in the learning process. The technical skills that they are learning, along with the collaboration required to work through projects will serve our students well in the future."
                 </p>
                 <h5 className="testimonial-name">Ed McAdams</h5>
                 <p className="font-italic testimonial-title">
@@ -151,29 +151,85 @@ export default class IndexPage extends React.Component {
                 </p>
               </Col>
             </Row>
+            <Row className="testimonial">
+              <Col md={4}>
+                <img src={Alan} alt="Alan L. Spencer" className="profile-photo mx-auto"/>
+              </Col>
+              <Col md={8} className="testimonial-description">
+                <p className="font-italic">
+                  "Coders Beyond Bars provides the right amount of hands on facilitation coupled with remote classroom monitoring to assist the students in navigating the curriculum material."
+                </p>
+                <h5 className="testimonial-name">Alan L. Spencer</h5>
+                <p className="font-italic testimonial-title">
+                  Director of Workforce Development at School of Reentry, Boston Pre-release Center
+                </p>
+              </Col>
+            </Row>
           </Container>
         </section>
-        <section id="home-team" className="home-section">
+        <section id="home-team" className="home-section section-dark">
           <Container className="section">
             <div className="section-header mx-auto">
               <h2 className="section-title text-center">The CBB Team</h2>
+              <p>
+                We are a small team of passionate individuals who are dedicated
+                 to bringing technology education to the correctional environment
+              </p>
             </div>
             <Row className="section-body">
               <Col md={6} className="profile">
                 <img src={Richard} alt="Richard Kim" className="profile-photo"/>
                 <Link to="/about/team/#RichardKim">
                   <p className="profile-name text-center">Richard Kim</p>
-                  <p>Co-founder &amp; Chief Executive Officer</p>
+                  <p className="profile-title text-center">Co-founder &amp; Chief Executive Officer</p>
                 </Link>
               </Col>
               <Col md={6} className="profile">
                 <img src={Anjali} alt="Anjali Moorthy" className="profile-photo"/>
                 <Link to="/about/team/#AnjaliMoorthy">
                   <p className="profile-name text-center">Anjali Moorthy</p>
-                  <p>Co-founder &amp; Executive Directors</p>
+                  <p className="profile-title text-center">Co-founder &amp; Executive Directors</p>
                 </Link>
               </Col>
             </Row>
+          </Container>
+        </section>
+        <section id="home-partners" className="home-section">
+          <Container>
+            <div className="section-header mx-auto">
+              <h2 className="section-title text-center">Community Partners</h2>
+              <p>Our work wouldn't be possible without support from these
+                community partners</p>
+            </div>
+              <Row className="section-body">
+                <Col lg={4} className="partner">
+                  <a href="http://teji.mit.edu/">
+                    <img
+                      src={TEJI}
+                      alt="The Educational Justice Institute"
+                      className="partner-img"
+                    />
+                  </a>
+                </Col>
+                <Col lg={4} className="partner">
+                  <a href="http://www.peteygreene.org/">
+                    <img
+                      src={PeteyGreene}
+                      alt="The Petey Greene Program"
+                      className="partner-img"
+                    />
+                  </a>
+                </Col>
+                <Col lg={4} className="partner">
+                  <a href="https://www.timothysmithnetwork.org/">
+                    <img
+                      src={TSN}
+                      alt="Timothy Smith Network"
+                      className="partner-img"
+                    />
+                  </a>
+                </Col>
+              </Row>
           </Container>
         </section>
       </Layout>

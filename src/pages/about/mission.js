@@ -14,7 +14,10 @@ const Mission = () => {
             </p>
           </div>
           <p>
-            With our origin in <a href="http://teji.mit.edu/" className="text-red">The Educational Justice Institute at Massachusetts Institute of Technology</a>, <strong>Coders Beyond Bars, Inc. (CBB)</strong> is a not-for-profit organization in Massachusetts with the mission of providing incarcerated individuals the opportunity to learn coding and preparing them for successful entry into careers in high-tech industries.
+            Started as an initiative under <a href="http://teji.mit.edu/" className="text-red">The Educational Justice Institute at Massachusetts Institute of Technology</a>, <strong>Coders Beyond Bars, Inc. (CBB)</strong> is a not-for-profit organization in Massachusetts with the mission of providing incarcerated individuals the opportunity to learn coding and preparing them for successful entry into careers in high-tech industries.  Our mission is inspired by work of other non-profit organizations that provide coding education to incarcerated population such as
+            <a href="https://thelastmile.org/" className="text-red"> The Last Mile</a> (California),
+             <a href="https://www.un-loop.org/" className="text-red"> Un-loop</a> (Washington), and
+            <a href="https://www.code4000.org/en" className="text-red"> Code4000</a> (UK).
           </p>
           <p>
             Coding has become a powerful, distinguishing skill in the 21st job market.  Those who possess the ability to read and write code enjoy the opportunities to participate in the new economy as producers of digital products and services while the other remain as its consumers.
