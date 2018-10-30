@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component {
               </Col>
             </Row>
             <p>
-              As elucidated in “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, <strong>the United States has 5% of the world’s population but 25% of the world’s incarcerated population</strong>.  Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries...  <Link className="text-red" to="/about/challenges/">Learn More &rarr;</Link>
+              Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries. To put this into another perspective, more than one in one-hundred adults between the ages of eighteen and sixty-five are behind bars in the US. This number does not even include many millions more who are on parole or probation and are still part of the correctional system...  <Link className="text-red" to="/about/challenges/">Learn More &rarr;</Link>
             </p>
             </div>
           </Container>
@@ -152,7 +152,7 @@ export default class IndexPage extends React.Component {
               <h2 className="section-title text-center">The CBB Team</h2>
               <p>
                 We are a small team of passionate individuals who are dedicated
-                 to bringing technology education to the correctional environment
+                 to bringing technology education to correctional environment
               </p>
             </div>
             <Row className="section-body">
@@ -178,7 +178,7 @@ export default class IndexPage extends React.Component {
             <div className="section-header mx-auto">
               <h2 className="section-title text-center">Community Partners</h2>
               <p>Our work wouldn't be possible without support from these
-                community partners</p>
+                incredible community partners</p>
             </div>
               <Row className="section-body">
                 <Col lg={4} className="partner">

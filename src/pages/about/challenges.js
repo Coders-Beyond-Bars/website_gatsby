@@ -26,7 +26,11 @@ const Challenges = () => {
               </Col>
               <Col md={9}>
                 <p>
-                  As elucidated in “The New Jim Crow: Mass Incarceration in the Age of Colorblindness” by Michelle Alexander, <strong>the United States has 5% of the world’s population but 25% of the world’s incarcerated population</strong>.  Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries.  To put this into another perspective, more than one in one-hundred adults between the ages of eighteen and sixty-five are behind bars in the US.  This number does not even include many millions more who are on parole or probation and are still part of the correctional system.
+                  "The United States has 5% of the world’s population but 25% of the world’s incarcerated population." <br />
+                  -<em>The New Jim Crow: Mass Incarceration in the Age of Colorblindness</em>
+                </p>
+                <p>
+                  Currently, there are over 2 million individuals behind bars in county jails, state prisons, and federal penitentiaries. To put this into another perspective, more than one in one-hundred adults between the ages of eighteen and sixty-five are behind bars in the US. This number does not even include many millions more who are on parole or probation and are still part of the correctional system.
                 </p>
               </Col>
             </Row>
@@ -39,7 +43,7 @@ const Challenges = () => {
               </Col>
               <Col md={{ size: 9, order: 1}}>
                 <p>
-                  While multiple factors contribute to the high incarceration rate in the United States, it is also exacerbated and sustained by high rate of recidivism for those who are released.  Approximately 650,000 incarcerated individuals are released every year from state and federal correctional facilities.  According to a research reported by the Department of Justice, <strong>67.8% of the former inmates were arrested against within 3 years of their release and 76.6% within 5 years</strong>.
+                  While multiple factors contribute to the high incarceration rate in the United States, this problems is exacerbated by high rate of recidivism for those who are released. Approximately 650,000 incarcerated individuals are released every year from state and federal correctional facilities. According to a research reported by the Department of Justice, <strong>67.8% of the former inmates were arrested against within 3 years of their release and 76.6% within 5 years.</strong>.
                 </p>
               </Col>
             </Row>
@@ -52,7 +56,7 @@ const Challenges = () => {
               </Col>
               <Col md={9}>
                 <p>
-                  While we must view the problem of mass incarceration as a humanitarian crisis, it also has economic consequences as well.   According to a report published by the Pew Center in 2011, the growth in prison population in America came with a <strong>substantial cost, with annual State and Federal expenditures on corrections growing by 305% during past two decades, to the tune of $52 billion</strong>.  If 10 states with the highest recidivism rates reduced their rates by 10%, they could save more than $470 million a year.
+                  In the U.S., mass incarceration is not only one of the largest humanitarian crises, it is also one that has severe economic consequences. According to a report published by the Pew Center in 2011, the growth in prison population in America came with a substantial cost, with annual State and Federal expenditures on corrections growing by 305% during past two decades, to the tune of $52 billion. If 10 states with the highest recidivism rates reduced their rates by 10%, they could save more than $470 million a year.
                 </p>
               </Col>
             </Row>
@@ -65,7 +69,10 @@ const Challenges = () => {
               </Col>
               <Col md={{ size: 9, order: 1}}>
                 <p>
-                  Studies show that there is a powerful relationship between unemployment and recidivism rate among formerly incarcerated individuals. Locked out of gainful employment opportunities, many formerly incarcerated individuals fall back to substance abuse or engage in criminal activities.  Up to 60 percent of formerly incarcerated individuals remain jobless a year after their release due to their criminal records and lack of skills applicable in the labor market.  Yet, according to a 2008 research report by the Urban Institute, <strong>individuals who made more than $10 an hour were half as likely to return to prison as those making less than $7 an hour</strong>.
+                  Studies show that there is a powerful relationship between unemployment and recidivism among formerly incarcerated individuals. Locked out of gainful employment opportunities, many formerly incarcerated individuals fall back to substance abuse or engage in criminal activities. Up to 60% of formerly incarcerated individuals remain jobless a year after their release due to their criminal records and lack of employable skills.
+                </p>
+                <p>
+                  Yet, according to a 2008 research report by the Urban Institute, individuals who made more than $10 an hour were half as likely to return to prison as those making less than $7 an hour. This is where the hope lies.
                 </p>
               </Col>
             </Row>

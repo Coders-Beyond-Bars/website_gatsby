@@ -36,17 +36,17 @@ const Mission = () => {
             <h4 className="text-yellow text-center mission-moto">We Educate</h4>
             <img src={mission1} alt="Mission 1" className="mx-auto img-fluid mission-img" />
             <p>
-              We are educators.  We offer educational programs inside, and outside, correctional facilities for incarcerated individuals. Without sacrificing academic rigor, our courses emphasize practical skills that are highly in demand in the technology sector.  We continuously engage with technology leaders to update our curriculum in order to keep our students profiles competitive as prospective employees.
+              We offer educational programs to former and currently incarcerated individuals inside and outside correctional facilities. In addition to maintaining high standards of academic rigor, our courses emphasize practical skills that are highly in-demand. Continuously engaging with leaders in the tech industry, we update our curriculum in order to ensure that the skills we offer our students are reflective of the industry's demands.
             </p>
             <h4 className="text-yellow text-center mission-moto">We Connect</h4>
             <img src={mission2} alt="Mission 2" className="mx-auto img-fluid mission-img" />
             <p>
-              We connect with leaders in the tech sector to inform them about the problems of mass incarceration in the United States, lack of diversity and inclusion in the tech industry, and importance of fostering the next generation of scientists and engineers. We act as a bridge between the leaders in the tech industry and those in the economically marginalized communities by connecting the tech industry with an alternative talent pool.
+              We contribute to the building conversation around problems of mass incarceration in the United States, lack of diversity and inclusion in the tech industry, and importance of fostering a curiosity for STEM fields amongst marginalized communities. We act as a bridge between the leaders in the tech industry and those in the economically marginalized communities by connecting the tech industry with an alternative talent pool.
             </p>
             <h4 className="text-yellow text-center mission-moto">We Inspire</h4>
             <img src={mission3} alt="Mission 3" className="mx-auto img-fluid mission-img" />
             <p>
-              Our goal is to educate the next generation of engineers, developers, and scientists.  We work with youth centers (i.e. juvenile detention centers) to inspire the next generation of scientists and engineers.  Through educational programming and mentorship, we guide them to enroll in higher-ed. institutions to pursue degrees in Science, Technology, Engineering and Mathematics (STEM).
+              Generational change is key to sustainability. We see our students standing as role models to youth in their communities, and hope to inspire the next generation of engineers, developers, and scientists. We also actively work with youth centers to offer educational programming and mentorship, guidance them to enroll in higher-ed. institutions to pursue degrees in Science, Technology, Engineering and Mathematics (STEM).
             </p>
           </div>
         </div>
