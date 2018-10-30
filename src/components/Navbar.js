@@ -41,7 +41,7 @@ class NavBar extends Component {
         <Container>
         <NavbarBrand href="/">
           <img src={logo} alt="Coders Beyond Bars" className="logo-img" />
-          <span className="logo-text">Coders Beyond Bar</span>
+          <span className="logo-text">Coders Beyond Bars</span>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />
         <Collapse isOpen={this.state.collapsed} navbar>
