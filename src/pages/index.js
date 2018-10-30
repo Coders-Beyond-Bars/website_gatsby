@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
@@ -9,10 +9,6 @@ import Anjali from '../img/team/anjali.jpg';
 import Ed from '../img/advisors/ed.jpg';
 import Pavlos from '../img/advisors/pavlos.jpg';
 import Alan from '../img/advisors/alan.jpg';
-
-import Web from '../img/programs/web.png';
-import Databases from '../img/programs/databases.png';
-import Scratch from '../img/programs/scratch.png';
 
 import TSN from '../img/partners/tsn.png';
 import PeteyGreene from '../img/partners/petey-greene.jpg';
@@ -24,27 +20,6 @@ import recidivism from '../img/challenges/recidivism.jpg';
 import unemployment from '../img/challenges/unemployment.jpg';
 
 
-
-const programs = [
-  {
-    src: Databases,
-    header: "Databases and Data Analytics with Python and SQL",
-    altText: "Databases",
-    caption: ""
-  },
-  {
-    src: Web,
-    header: "Web Development using HTML, CSS, and JavaScript",
-    altText: "Web Development",
-    caption: ""
-  },
-  {
-    src: Scratch,
-    header: "Video Game Development with Scratch",
-    altText: "Video Game",
-    caption: ""
-  }
-];
 
 
 export default class IndexPage extends React.Component {
