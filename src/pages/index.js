@@ -167,7 +167,7 @@ export default class IndexPage extends React.Component {
                 <img src={Anjali} alt="Anjali Moorthy" className="profile-photo"/>
                 <Link to="/about/team/#AnjaliMoorthy">
                   <p className="profile-name text-center">Anjali Moorthy</p>
-                  <p className="profile-title text-center">Co-founder &amp; Executive Directors</p>
+                  <p className="profile-title text-center">Co-founder &amp; Director of Youth Programming</p>
                 </Link>
               </Col>
             </Row>

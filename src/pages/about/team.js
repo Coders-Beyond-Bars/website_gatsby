@@ -94,7 +94,7 @@ class Team extends Component {
                         <FontAwesomeIcon icon="plus-circle" size="2x" />}
                     </a>
                     <h5 className="profile-name">Anjali Moorthy</h5>
-                    <p className="profile-title">Co-Founder & Executive Director</p>
+                    <p className="profile-title">Co-Founder &  Director of Youth Programming</p>
                   </div>
                   <Collapse isOpen={this.state.anjali}>
                     <p>
