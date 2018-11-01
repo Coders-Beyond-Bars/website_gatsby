@@ -58,7 +58,7 @@ class Connect extends Component {
                 </CardBody>
                 <CardImg src={sponsor} alt="Sponsor" />
                 <CardBody>
-                  <CardText>We are a young organisation that is currently sustained on our members working on a voluntary basis. As we grow, we are eager to add new members, better infrastructure and the latest resources to be able to give our students the best educational experience possible. To support us financially, please connect with us by filling out the <Link to="/contact/" className="text-red">contact form</Link>.</CardText>
+                  <CardText>We are a young organization that is currently sustained on our members working on a voluntary basis. As we grow, we are eager to add new members, better infrastructure and the latest resources to be able to give our students the best educational experience possible. To support us financially, please connect with us by filling out the <Link to="/contact/" className="text-red">contact form</Link>.</CardText>
                 </CardBody>
               </Card>
             </Col>

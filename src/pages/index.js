@@ -119,7 +119,7 @@ export default class IndexPage extends React.Component {
                 className="testimonial-description"
               >
                 <p className="font-italic" >
-                  "[Coders Beyond Bars] are doing an important work
+                  "Coders Beyond Bars is doing an important work
                   of democratizing access to education in coding and data science,
                   which are essential skills for the next several decades."
                 </p>
