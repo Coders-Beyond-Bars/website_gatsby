@@ -19,12 +19,6 @@ const Partners = () => {
                 alt="The Educational Justice Institute"
                 className="img-fluid mx-auto partners-img" />
             </a>
-            <a href="http://www.peteygreene.org/">
-              <img
-                src={peteyGreene}
-                alt="Petey Greene Program"
-                className="img-fluid mx-auto partners-img" />
-            </a>
             <a href="https://www.timothysmithnetwork.org/">
               <img
                 src={tsn}
@@ -33,7 +27,7 @@ const Partners = () => {
             </a>
           </div>
         </div>
-      </Container>  
+      </Container>
     </LayoutAbout>
   );
 };

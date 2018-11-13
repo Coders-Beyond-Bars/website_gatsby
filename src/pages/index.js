@@ -181,7 +181,7 @@ export default class IndexPage extends React.Component {
                 incredible community partners</p>
             </div>
               <Row className="section-body">
-                <Col lg={4} className="partner">
+                <Col lg={6} className="partner">
                   <a href="http://teji.mit.edu/">
                     <img
                       src={TEJI}
@@ -190,16 +190,7 @@ export default class IndexPage extends React.Component {
                     />
                   </a>
                 </Col>
-                <Col lg={4} className="partner">
-                  <a href="http://www.peteygreene.org/">
-                    <img
-                      src={PeteyGreene}
-                      alt="The Petey Greene Program"
-                      className="partner-img"
-                    />
-                  </a>
-                </Col>
-                <Col lg={4} className="partner">
+                <Col lg={6} className="partner">
                   <a href="https://www.timothysmithnetwork.org/">
                     <img
                       src={TSN}
