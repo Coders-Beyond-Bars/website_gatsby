@@ -71,6 +71,7 @@ const Contact = () => {
                           Send
                       </Button>
                     </FormGroup>
+                    <div data-netlify-recaptcha="true" />
                   </Form>
                 </Col>
               </Row>
