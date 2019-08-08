@@ -1,13 +1,29 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import { Container } from 'reactstrap';
+import React from 'react'
+import withStyles from '@material-ui/core/styles/withStyles'
+import { Link } from 'gatsby'
 
-const NotFoundPage = () => (
-  <Layout>
-    <Container>
-      <h1>Page Not Found</h1>
-    </Container>
-  </Layout>
-);
+import { Typography } from '@material-ui/core'
+import { LandingLayout } from 'components/Layout'
 
-export default NotFoundPage;
+const styles = theme => ({
+  container: {
+    display: 'flex',
+    height: '100vh',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+})
+
+const NotFoundPage = ({ classes }) => (
+  <LandingLayout>
+    <div className={classes.container}>
+      <Typography variant="body1">
+        Uh oh! The page you're looking for does not exist. Click{' '}
+        <Link to="/">here</Link> to go back to home page.
+      </Typography>
+    </div>
+  </LandingLayout>
+)
+
+export default withStyles(styles)(NotFoundPage)
