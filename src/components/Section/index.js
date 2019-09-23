@@ -20,6 +20,9 @@ const styles = theme => ({
   fullScreen: {
     minHeight: "100vh"
   },
+  halfScreen: {
+    minHeight: "50vh"
+  },
   image: {
     zIndex: 2,
     backgroundPosition: "center",
@@ -60,6 +63,7 @@ const Section = ({
   subtitle,
   image,
   fullScreen,
+  halfScreen,
   center,
   ...rest
 }) => {
@@ -68,7 +72,8 @@ const Section = ({
     {
       [classes.shaded]: shaded,
       [classes.image]: image ? true : false,
-      [classes.fullScreen]: fullScreen
+      [classes.fullScreen]: fullScreen,
+      [classes.halfScreen]: halfScreen
     },
     classNames
   );

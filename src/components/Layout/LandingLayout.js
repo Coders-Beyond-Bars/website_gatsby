@@ -1,7 +1,11 @@
 import React from "react";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import {
+  MuiThemeProvider,
+  createMuiTheme,
+  withStyles
+} from "@material-ui/core/styles";
 import purple from "@material-ui/core/colors/purple";
 
 import Navbar from "components/Navbar";
@@ -48,17 +52,23 @@ const theme = createMuiTheme({
   }
 });
 
-const LandingLayout = ({ children }) => {
+const styles = theme => ({
+  main: {
+    marginTop: 60
+  }
+});
+
+const LandingLayout = ({ children, classes }) => {
   return (
     <>
       <CssBaseline />
       <MuiThemeProvider theme={theme}>
         <Navbar />
-        <main>{children}</main>
+        <main className={classes.main}>{children}</main>
         <Footer />
       </MuiThemeProvider>
     </>
   );
 };
 
-export default LandingLayout;
+export default withStyles(styles)(LandingLayout);

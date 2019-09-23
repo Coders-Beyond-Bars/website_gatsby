@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-
+import { Link } from "gatsby";
 import { withStyles } from "@material-ui/core/styles";
 
-import { Button } from "@material-ui/core";
+import { Button, Menu, MenuItem } from "@material-ui/core";
 import Context from "context";
 
 import CBBButton from "components/CBBButton";
@@ -14,12 +14,32 @@ const styles = theme => ({
     "&:hover": {
       color: theme.palette.common.white
     }
+  },
+  dropDownMenu: {
+    borderRadius: 5
   }
 });
 
 class DesktopMenu extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      menuAnchor: null
+    };
+  }
+
+  handleClick = event => {
+    this.setState({ menuAnchor: event.currentTarget });
+  };
+
+  handleClose = () => {
+    this.setState({ menuAnchor: null });
+  };
+
   render() {
     const { classes } = this.props;
+
     return (
       <Context.Consumer>
         {({ section, setSection }) => (
@@ -27,49 +47,48 @@ class DesktopMenu extends Component {
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("header")}
+              component={Link}
+              to="/"
             >
               Home
             </Button>
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("mission")}
+              component={Link}
+              to="/about/"
             >
-              Mission
+              About Us
             </Button>
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("activities")}
+              component={Link}
+              to="/blog/"
             >
-              Activities
+              Blog
             </Button>
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("team")}
+              component={Link}
+              to="/news/"
             >
-              Team
+              News
             </Button>
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("getInvolved")}
+              component={Link}
+              to="/getInvolved/"
             >
               Get Involved
             </Button>
             <Button
               color="secondary"
               className={classes.menuLink}
-              onClick={() => setSection("partners")}
-            >
-              Parters
-            </Button>
-            <Button
-              color="secondary"
-              className={classes.menuLink}
-              onClick={() => setSection("contact")}
+              component={Link}
+              to="/contact/"
             >
               Contact Us
             </Button>
@@ -78,6 +97,8 @@ class DesktopMenu extends Component {
               style={{
                 marginLeft: 10
               }}
+              component={Link}
+              to="/donate/"
             >
               Donate
             </CBBButton>
