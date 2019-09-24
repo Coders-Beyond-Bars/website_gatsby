@@ -19,12 +19,19 @@ class AboutUs extends Component {
         <LandingLayout>
           <Section image={bg} shaded halfScreen center>
             <Container maxWidth="lg">
-              <Typography variant="h4">About Us</Typography>
+              <Fade in={true} timeout={2000}>
+                <Typography variant="h4">About Us</Typography>
+              </Fade>
             </Container>
           </Section>
           <Section center title="Our Mission">
             <Container maxWidth="lg">
-              <Typography variant="h4">Team</Typography>
+              <Typography variant="h5" align="center">
+                We empower returning citizens to transform their lives by
+                educating them in high-tech skills and preparing them for
+                careers in high-tech industries for successful re-entry into
+                society.
+              </Typography>
             </Container>
           </Section>
           <Section shaded center title="Team">
@@ -32,7 +39,11 @@ class AboutUs extends Component {
               <Typography variant="h4">Team</Typography>
             </Container>
           </Section>
-          <Section center title="Partners">
+          <Section
+            center
+            title="Partners"
+            subtitle="We are proud of our partnerships with educational institutions, corporations, and other community-based non-profit organization."
+          >
             <Container maxWidth="lg">
               <Typography variant="h4">Our M</Typography>
             </Container>

@@ -19,7 +19,9 @@ class GetInvolved extends Component {
         <LandingLayout>
           <Section image={bg} shaded halfScreen center>
             <Container maxWidth="lg">
-              <Typography variant="h4">Get Involved</Typography>
+              <Fade in={true} timeout={2000}>
+                <Typography variant="h4">Get Involved</Typography>
+              </Fade>
             </Container>
           </Section>
         </LandingLayout>

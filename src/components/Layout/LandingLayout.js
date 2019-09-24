@@ -24,7 +24,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: "'Open Sans', 'Roboto', 'Arial', sans-serif",
+    fontFamily: "'Roboto', 'Arial', sans-serif",
     h1: {
       fontFamily: "'OCRAstd'"
     },

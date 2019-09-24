@@ -19,7 +19,9 @@ class Blog extends Component {
         <LandingLayout>
           <Section image={bg} shaded halfScreen center>
             <Container maxWidth="lg">
-              <Typography variant="h4">Blog</Typography>
+              <Fade in={true} timeout={2000}>
+                <Typography variant="h4">Blog</Typography>
+              </Fade>
             </Container>
           </Section>
         </LandingLayout>
