@@ -17,12 +17,15 @@ class News extends Component {
           <title>Coders Beyond Bars - In the News</title>
         </Helmet>
         <LandingLayout>
-          <Section image={bg} shaded halfScreen center>
+          <Section image={bg} shaded halfScreen vcenter>
             <Container maxWidth="lg">
               <Fade in={true} timeout={2000}>
                 <Typography variant="h4">In the News</Typography>
               </Fade>
             </Container>
+          </Section>
+          <Section>
+            <Typography variant="h6">News Articles</Typography>
           </Section>
         </LandingLayout>
       </>

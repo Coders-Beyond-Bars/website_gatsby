@@ -106,17 +106,10 @@ class MobileMenu extends Component {
                 primaryTypographyProps={primaryTypographyProps}
               />
             </ListItem>
-            <ListItem button component={Link} to="/blog/">
+            <ListItem button component={Link} to="/education/">
               <ListItemText
-                primary="Blog"
-                key="blog"
-                primaryTypographyProps={primaryTypographyProps}
-              />
-            </ListItem>
-            <ListItem button component={Link} to="/news/">
-              <ListItemText
-                primary="News"
-                key="news"
+                primary="Education"
+                key="education"
                 primaryTypographyProps={primaryTypographyProps}
               />
             </ListItem>

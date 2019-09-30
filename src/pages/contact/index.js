@@ -18,7 +18,14 @@ class Contact extends Component {
           <title>Coders Beyond Bars - Contact Us</title>
         </Helmet>
         <LandingLayout>
-          <Section image={bg} shaded fullScreen center title="Contact Us">
+          <Section
+            image={bg}
+            shaded
+            fullScreen
+            center
+            title="Contact Us"
+            subtitle="Whether you are looking to volunteer with us as a mentor, to learn more about our organization, or to just share us your thoughts, we want to hear from you!"
+          >
             <Container maxWidth="lg">
               <Grid container spacing={2} justify="center">
                 <Grid item xs={11} sm={9} md={7}>

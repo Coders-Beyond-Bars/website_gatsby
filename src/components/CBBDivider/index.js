@@ -8,7 +8,8 @@ const styles = theme => ({
   divider: {
     display: "flex",
     width: "90%",
-    margin: "20px 0 20px 0"
+    margin: "20px 0 20px 0",
+    alignSelf: "center"
   },
   line: {
     width: "100%",

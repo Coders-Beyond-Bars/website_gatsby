@@ -36,34 +36,19 @@ const styles = theme => {
 };
 
 class HeaderSection extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      fadeIn: false
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
-      fadeIn: true
-    });
-  }
-
   render() {
-    const { fadeIn } = this.state;
-    const { classes, ...rest } = this.props;
+    const { classes, onClickLearn, ...rest } = this.props;
     return (
       <Section
         image={bg}
         {...rest}
         shaded
         fullScreen
-        center
+        vcenter
         classNames={classes.header}
       >
         <Container maxWidth="lg" className={classes.container}>
-          <Fade in={fadeIn} timeout={2000}>
+          <Fade in={true} timeout={2000}>
             <Typography variant="h4" color="inherit" gutterBottom>
               Supporting returning citizens to become producers of digital
               technology and helping them attain meaningful careers in the tech
@@ -73,20 +58,20 @@ class HeaderSection extends Component {
           <Context.Consumer>
             {({ setSection }) => (
               <div className={classes.buttons}>
-                <Fade in={fadeIn} timeout={3000}>
+                <Fade in={true} timeout={3000}>
                   <CBBButton
                     size="large"
                     style={{ width: 200, margin: "25px 5px 25px 5px" }}
-                    onClick={() => setSection("mission")}
+                    onClick={onClickLearn}
                   >
                     Learn More
                   </CBBButton>
                 </Fade>
-                <Fade in={fadeIn} timeout={3000}>
+                <Fade in={true} timeout={3000}>
                   <CBBButton
                     size="large"
                     style={{ width: 200, margin: "25px 5px 25px 5px" }}
-                    onClick={() => null}
+                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=url"
                   >
                     Donate
                   </CBBButton>

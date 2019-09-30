@@ -1,9 +1,11 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
-
-import { Typography } from "@material-ui/core";
+import { Link } from "gatsby";
+import { Typography, Container, Grid } from "@material-ui/core";
 
 import Section from "components/Section";
+
+import mikeJoe from "assets/images/stock/MikeAndJoe.jpg";
 
 const styles = theme => ({
   activities: {
@@ -15,11 +17,17 @@ const styles = theme => ({
 const ActivitiesSection = ({ classes, ...rest }) => {
   return (
     <Section title="Activities" {...rest}>
-      <div className={classes.activities}>
-        <Typography variant="h5" align="center">
-          What We Do
+      <Container maxWidth="lg">
+        <Grid container spacing={2}>
+          <Grid item md={6}>
+            <img src={mikeJoe} alt="Mentor and Student" />
+          </Grid>
+        </Grid>
+        <Typography variant="body1">
+          Learn more about our mission and our activities{" "}
+          <Link to="/about/">here</Link>
         </Typography>
-      </div>
+      </Container>
     </Section>
   );
 };

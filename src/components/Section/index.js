@@ -42,15 +42,18 @@ const styles = theme => ({
   },
   container: {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center"
+    flexDirection: "column"
   },
   subtitle: {
-    fontSize: "1.3rem",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    width: "85%",
+    alignSelf: "center"
   },
-  center: {
+  vcenter: {
     justifyContent: "center"
+  },
+  hcenter: {
+    alignItems: "center"
   }
 });
 
@@ -64,7 +67,8 @@ const Section = ({
   image,
   fullScreen,
   halfScreen,
-  center,
+  vcenter,
+  hcenter,
   ...rest
 }) => {
   const sectionClass = clsx(
@@ -78,24 +82,26 @@ const Section = ({
     classNames
   );
   const containerClass = clsx(classes.container, {
-    [classes.center]: center
+    [classes.vcenter]: vcenter,
+    [classes.hcenter]: hcenter
   });
   const style = {
     backgroundImage: `url(${image})`
   };
   return (
     <section className={sectionClass} {...rest} style={style}>
-      <Grid container spacing={2} justify="center">
+      <Grid container spacing={1} justify="center">
         <Grid item xs={11} className={containerClass}>
           {title && (
             <>
-              <Typography variant="h3" gutterBottom>
+              <Typography variant="h4" gutterBottom align="center">
                 {title}
               </Typography>
               <Typography
                 variant="body1"
                 className={classes.subtitle}
                 color={shaded ? "inherit" : "secondary"}
+                align="center"
               >
                 {subtitle}
               </Typography>

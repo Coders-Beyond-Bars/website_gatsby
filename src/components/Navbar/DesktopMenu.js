@@ -64,17 +64,9 @@ class DesktopMenu extends Component {
               color="secondary"
               className={classes.menuLink}
               component={Link}
-              to="/blog/"
+              to="/education/"
             >
-              Blog
-            </Button>
-            <Button
-              color="secondary"
-              className={classes.menuLink}
-              component={Link}
-              to="/news/"
-            >
-              News
+              Education
             </Button>
             <Button
               color="secondary"
@@ -93,7 +85,6 @@ class DesktopMenu extends Component {
               Contact Us
             </Button>
             <CBBButton
-              color="secondary"
               style={{
                 marginLeft: 10
               }}

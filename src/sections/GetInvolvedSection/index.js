@@ -14,11 +14,14 @@ const styles = theme => ({
 
 const GetInvovedSection = ({ classes, ...rest }) => {
   return (
-    <Section title="Get Involved" {...rest}>
+    <Section
+      title="Get Involved"
+      {...rest}
+      shaded
+      subtitle="Our work is made possible by the generous contributions by various members of local communities"
+    >
       <div className={classes.getInvolved}>
-        <Typography variant="h5" align="center">
-          Get Involved
-        </Typography>
+        <Typography variant="body1">Whether supporting </Typography>
       </div>
     </Section>
   );
