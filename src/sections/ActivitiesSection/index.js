@@ -1,26 +1,24 @@
 import React from "react";
-import withStyles from "@material-ui/core/styles/withStyles";
 import { Link } from "gatsby";
 import { Typography, Container, Grid } from "@material-ui/core";
 
 import Section from "components/Section";
-
+import useStyles from "assets/jss/sections/activities";
 import mikeJoe from "assets/images/stock/MikeAndJoe.jpg";
 
-const styles = theme => ({
-  activities: {
-    width: "80%",
-    margin: 20
-  }
-});
+const ActivitiesSection = props => {
+  const classes = useStyles();
 
-const ActivitiesSection = ({ classes, ...rest }) => {
   return (
-    <Section title="Activities" {...rest}>
+    <Section title="Activities" {...props}>
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item md={6}>
-            <img src={mikeJoe} alt="Mentor and Student" />
+            <img
+              src={mikeJoe}
+              alt="Mentor and Student"
+              className={classes.imageRounded}
+            />
           </Grid>
         </Grid>
         <Typography variant="body1">
@@ -32,4 +30,4 @@ const ActivitiesSection = ({ classes, ...rest }) => {
   );
 };
 
-export default withStyles(styles)(ActivitiesSection);
+export default ActivitiesSection;

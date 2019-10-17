@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Typography, Grid, Card } from "@material-ui/core";
 
 import Section from "components/Section";

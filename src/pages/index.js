@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 
-import { LandingLayout } from "components/Layout";
+import Layout from "components/Layout";
 
 import HeaderSection from "sections/HeaderSection";
 import MissionSection from "sections/MissionSection";
 import ActivitiesSection from "sections/ActivitiesSection";
-import TeamSection from "sections/TeamSection";
-import GetInvolvedSection from "sections/GetInvolvedSection";
+import TestimonialSection from "sections/TestimonialSection";
 import PartnersSection from "sections/PartnersSection";
 
 class Index extends Component {
@@ -65,14 +64,13 @@ class Index extends Component {
           />
           <meta name="author" content="Richard Kim" />
         </Helmet>
-
-        <LandingLayout>
+        <Layout>
           <HeaderSection id="header" onClickLearn={this.handleClickLearn} />
           <MissionSection id="mission" shaded />
           <ActivitiesSection id="activities" />
-          <GetInvolvedSection id="getInvolved" />
+          <TestimonialSection id="testimonial" shaded />
           <PartnersSection id="partners" />
-        </LandingLayout>
+        </Layout>
       </div>
     );
   }

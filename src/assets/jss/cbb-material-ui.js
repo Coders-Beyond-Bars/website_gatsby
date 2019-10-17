@@ -1,5 +1,42 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+const profileCard = {
+  backgroundColor: "inherit",
+  border: 0,
+  "&:hover": {
+    backgroundColor: "inherit"
+  }
+};
+
+const profileCardAction = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  "&:hover": {
+    backgroundColor: "inherit"
+  }
+};
+
+const profilePic = {
+  maxWidth: "80%",
+  borderRadius: 200,
+  display: "block",
+  marginLeft: "auto",
+  marginRight: "auto"
+};
+
+const imageRounded = {
+  borderRadius: 15
+};
+
+const textWhite = {
+  color: "#fff"
+};
+
+const textItalic = {
+  fontStyle: "italic"
+};
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -41,4 +78,12 @@ const theme = createMuiTheme({
   }
 });
 
-export { theme };
+export {
+  theme,
+  profilePic,
+  profileCard,
+  profileCardAction,
+  imageRounded,
+  textWhite,
+  textItalic
+};

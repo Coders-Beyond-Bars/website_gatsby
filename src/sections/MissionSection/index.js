@@ -1,19 +1,11 @@
 import React from "react";
-import withStyles from "@material-ui/core/styles/withStyles";
-
 import { Typography, Container } from "@material-ui/core";
 
 import Section from "components/Section";
 
-const styles = theme => ({
-  missionBox: {
-    width: "80%"
-  }
-});
-
-const MissionSection = ({ classes, ...rest }) => {
+const MissionSection = props => {
   return (
-    <Section title="Mission" {...rest}>
+    <Section title="Mission" {...props}>
       <Container maxWidth="lg">
         <Typography variant="h5" align="center">
           We empower returning citizens to transform their lives by educating
@@ -25,4 +17,4 @@ const MissionSection = ({ classes, ...rest }) => {
   );
 };
 
-export default withStyles(styles)(MissionSection);
+export default MissionSection;

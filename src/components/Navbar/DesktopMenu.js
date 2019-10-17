@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import { withStyles } from "@material-ui/core/styles";
 
-import { Button, Menu, MenuItem } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import Context from "context";
 
 import CBBButton from "components/CBBButton";
@@ -64,9 +64,9 @@ class DesktopMenu extends Component {
               color="secondary"
               className={classes.menuLink}
               component={Link}
-              to="/education/"
+              to="/program/"
             >
-              Education
+              Our Program
             </Button>
             <Button
               color="secondary"
