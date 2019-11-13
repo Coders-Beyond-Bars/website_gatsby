@@ -6,7 +6,10 @@ const useStyles = makeStyles(theme =>
       display: "flex",
       flexDirection: "column",
       justifyContent: "flex-start",
-      alignItems: "flex-start"
+      alignItems: "flex-start",
+      [theme.breakpoints.down("sm")]: {
+        alignItems: "center"
+      }
     },
     header: {
       [theme.breakpoints.only("xs")]: {

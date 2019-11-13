@@ -37,6 +37,25 @@ const textItalic = {
   fontStyle: "italic"
 };
 
+const link = {
+  color: "inherit",
+  fontWeight: "bold",
+  textDecoration: "none"
+};
+
+const flex = {
+  display: "flex",
+  flexDirection: "column"
+};
+
+const verticalCenter = {
+  justifyContent: "center"
+};
+
+const horizontalCenter = {
+  alignItems: "center"
+};
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -85,5 +104,9 @@ export {
   profileCardAction,
   imageRounded,
   textWhite,
-  textItalic
+  textItalic,
+  link,
+  flex,
+  verticalCenter,
+  horizontalCenter
 };

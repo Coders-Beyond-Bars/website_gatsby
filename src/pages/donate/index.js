@@ -26,10 +26,10 @@ const Donate = () => {
           <Typography variant="body1" gutterBottom>
             Thank you for supporting Coders Beyond Bars. We are a non-profit
             organization that is currently sustained through volunteers and
-            small financial donations from individuals who believe in our
-            mission. As we grow, we are eager to add new members, better
-            infrastructure and the latest resources to be able to provide our
-            students the best educational experience possible.
+            financial donations from individuals who believe in our mission. As
+            we grow, we are eager to add new members, better infrastructure and
+            the latest resources to be able to provide our students the best
+            educational experience possible.
           </Typography>
           <Typography variant="body1">
             Coders Beyond Bars is a registered 501(c)(3) and your donation will

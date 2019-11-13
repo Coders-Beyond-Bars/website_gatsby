@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Typography, Fade, Container } from "@material-ui/core";
 
 import CBBButton from "components/CBBButton";
@@ -6,8 +6,6 @@ import Section from "components/Section";
 
 import bg from "assets/images/background/bg1.jpg";
 import useStyles from "assets/jss/sections/header";
-
-import Context from "context";
 
 const HeaderSection = ({ onClickLearn, ...rest }) => {
   const classes = useStyles();
@@ -43,7 +41,7 @@ const HeaderSection = ({ onClickLearn, ...rest }) => {
             <CBBButton
               size="large"
               style={{ width: 200, margin: "25px 5px 25px 5px" }}
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=url"
+              href="/donate/"
             >
               Donate
             </CBBButton>

@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { Typography, Container, Grid } from "@material-ui/core";
 import Layout from "components/Layout";
-import { Content, HTMLContent } from "components/Content";
+import { HTMLContent } from "components/Content";
 import Section from "components/Section";
 
 export const NewsPostTemplate = ({

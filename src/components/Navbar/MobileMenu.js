@@ -21,16 +21,14 @@ const styles = theme => {
       paddingTop: 25
     },
     listItemText: {
+      color: theme.palette.secondary.main,
+      fontFamily: "Hammersmith One",
       primaryTypographyProps: {
         fontFamily: theme.typography.title.fontFamily
       }
     },
     drawer: {
       backgroundColor: "gray"
-    },
-    listItemText: {
-      color: theme.palette.secondary.main,
-      fontFamily: "Hammersmith One"
     },
     nested: {
       paddingLeft: theme.spacing(4)

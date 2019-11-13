@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core";
@@ -36,7 +36,7 @@ const GetInvolved = () => {
                 <img
                   src={codeImg}
                   alt="Participate"
-                  className={classes.image}
+                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
@@ -63,7 +63,7 @@ const GetInvolved = () => {
                 out a form to introduce yourself.
               </Typography>
               <CBBButton href="#" color="primary">
-                Learn More
+                Contact Us
               </CBBButton>
             </Grid>
             <Hidden xsDown>
@@ -71,7 +71,7 @@ const GetInvolved = () => {
                 <img
                   src={codeImg}
                   alt="Participate"
-                  className={classes.image}
+                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
@@ -80,7 +80,11 @@ const GetInvolved = () => {
         <Section shaded>
           <Grid container spacing={4}>
             <Grid item sm={6}>
-              <img src={donateImg} alt="Donate" className={classes.image} />
+              <img
+                src={donateImg}
+                alt="Donate"
+                className={classes.imageRounded}
+              />
             </Grid>
             <Grid item sm={6}>
               <Typography variant="h5" gutterBottom>
@@ -110,7 +114,7 @@ const GetInvolved = () => {
                 <img
                   src={volunteerImg}
                   alt="Volunteer"
-                  className={classes.image}
+                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
@@ -134,7 +138,7 @@ const GetInvolved = () => {
                 <img
                   src={volunteerImg}
                   alt="Volunteer"
-                  className={classes.image}
+                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>

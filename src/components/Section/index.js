@@ -98,7 +98,7 @@ const Section = ({
                 {title}
               </Typography>
               <Typography
-                variant="body1"
+                variant="h6"
                 className={classes.subtitle}
                 color={shaded ? "inherit" : "secondary"}
                 align="center"

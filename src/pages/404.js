@@ -1,5 +1,5 @@
 import React from "react";
-import withStyles from "@material-ui/core/styles/withStyles";
+
 import { Link } from "gatsby";
 
 import { Typography } from "@material-ui/core";
@@ -14,7 +14,10 @@ const NotFoundPage = () => {
       <div className={classes.container}>
         <Typography variant="body1">
           Uh oh! The page you're looking for does not exist. Click{" "}
-          <Link to="/">here</Link> to go back to home page.
+          <Link to="/" className={classes.link}>
+            here
+          </Link>{" "}
+          to go back to home page.
         </Typography>
       </div>
     </Layout>

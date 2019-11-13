@@ -11,8 +11,8 @@ const TestimonialSection = props => {
   return (
     <Section {...props}>
       <Container maxWidth="lg">
-        <Grid container spacing={2}>
-          <Grid item md={3}>
+        <Grid container spacing={2} alignItems="center" justify="center">
+          <Grid item md={3} sm={4}>
             <img
               src={edmcadams}
               alt="Ed McAdams"
@@ -31,7 +31,7 @@ const TestimonialSection = props => {
               Boston Pre-release Center
             </Typography>
           </Grid>
-          <Grid item md={9}>
+          <Grid item md={9} sm={8}>
             <Typography variant="h6">
               It has been impressive to see the interest and investment by our
               students in this coders program. They are fully engaged and

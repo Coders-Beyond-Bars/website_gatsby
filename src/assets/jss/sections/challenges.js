@@ -1,21 +1,13 @@
 import { makeStyles } from "@material-ui/styles";
 import {
-  profilePic,
-  profileCardAction,
-  profileCard,
-  textWhite,
-  imageRounded,
+  link,
   flex,
-  verticalCenter,
-  horizontalCenter
+  horizontalCenter,
+  verticalCenter
 } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
-  profileCard,
-  profileCardAction,
-  profilePic,
-  textWhite,
-  imageRounded,
+  link,
   verticalCenter: {
     ...flex,
     ...verticalCenter
@@ -23,6 +15,10 @@ const useStyles = makeStyles({
   horizontalCenter: {
     ...flex,
     ...horizontalCenter
+  },
+  image: {
+    margin: 0,
+    width: "100%"
   }
 });
 

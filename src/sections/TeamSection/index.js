@@ -61,12 +61,12 @@ const TeamSection = ({ classes, ...rest }) => {
   const {
     allMarkdownRemark: { edges: teamMembers }
   } = data;
-  console.log(teamMembers);
+
   return (
     <Section title="Team" shaded hcenter {...rest}>
       <Grid container spacing={1} justify="center">
         {teamMembers.map(member => (
-          <Grid item sm={4} md={3}>
+          <Grid item sm={4} md={3} key={member.node.id}>
             <Card
               component={Link}
               to={member.node.fields.slug}

@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
+import { link } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
   container: {
@@ -7,7 +8,8 @@ const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center"
-  }
+  },
+  link
 });
 
 export default useStyles;
