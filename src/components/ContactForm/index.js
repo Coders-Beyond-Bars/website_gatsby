@@ -110,9 +110,6 @@ class ContactForm extends Component {
             <Typography variant="body1" align="center">
               Thank you for contacting us! We will contact you shortly.
             </Typography>
-            <Typography variant="body1" align="center">
-              Write Another Message
-            </Typography>
           </>
         ) : (
           <form
