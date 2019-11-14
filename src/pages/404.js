@@ -1,13 +1,27 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import { Container } from 'reactstrap';
+import React from "react";
 
-const NotFoundPage = () => (
-  <Layout>
-    <Container>
-      <h1>Page Not Found</h1>
-    </Container>
-  </Layout>
-);
+import { Link } from "gatsby";
+
+import { Typography } from "@material-ui/core";
+import Layout from "components/Layout";
+
+import useStyles from "assets/jss/pages/notfoundPage";
+
+const NotFoundPage = () => {
+  const classes = useStyles();
+  return (
+    <Layout>
+      <div className={classes.container}>
+        <Typography variant="body1">
+          Uh oh! The page you're looking for does not exist. Click{" "}
+          <Link to="/" className={classes.link}>
+            here
+          </Link>{" "}
+          to go back to home page.
+        </Typography>
+      </div>
+    </Layout>
+  );
+};
 
 export default NotFoundPage;
