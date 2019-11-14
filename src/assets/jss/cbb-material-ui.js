@@ -90,6 +90,9 @@ const theme = createMuiTheme({
     },
     title: {
       fontFamily: "'OCRAstd'"
+    },
+    body1: {
+      fontSize: 14
     }
   },
   shape: {

@@ -22,7 +22,7 @@ export const TeamProfileTemplate = ({
   return (
     <Section>
       <Grid container spacing={1}>
-        <Grid item sm={4}>
+        <Grid item sm={4} md={4} xs={12}>
           <img src={image} alt="Richard Kim" className={classes.profilePic} />
           <Typography variant="h6" align="center">
             {name}
@@ -31,7 +31,7 @@ export const TeamProfileTemplate = ({
             {title}
           </Typography>
         </Grid>
-        <Grid item sm={8}>
+        <Grid item sm={8} md={6} xs={12} className={classes.verticalCenter}>
           <ProfileContent content={content} />
         </Grid>
       </Grid>

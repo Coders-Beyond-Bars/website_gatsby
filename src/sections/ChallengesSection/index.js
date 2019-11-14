@@ -58,8 +58,8 @@ const ChallengesSection = props => {
               incarcerated individuals are released every year from state and
               federal correctional facilities. According to a research reported
               by the Department of Justice, 67.8% of the former inmates were
-              arrested against within 3 years of their release and 76.6% within
-              5 years.
+              arrested again within 3 years of their release and 76.6% within 5
+              years.
             </Typography>
           </Grid>
           <Hidden xsDown>

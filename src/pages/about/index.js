@@ -51,22 +51,21 @@ const AboutUs = () => {
               >
                 <Typography variant="body1" gutterBottom>
                   Coding has become a powerful, distinguishing skill in the 21st
-                  job market. Those who possess the ability to read and write
-                  code enjoy the opportunities to participate in the new economy
-                  as producers of digital products and services while the other
-                  remain as its consumers.
+                  Century job market. Those who possess the ability to read and
+                  write code enjoy the opportunities to participate in the new
+                  economy as producers of digital products and services.
                 </Typography>
                 <Typography variant="body1" gutterBottom>
                   However, resources to acquire coding skills are far from
                   broadly accessible across all communities. Many incarcerated
                   individuals are locked out, literally and figuratively, from
                   educational resources to acquire coding skills. Their families
-                  and communities that they are from also do not have the
-                  knowledge and the know-how to properly utilize affordable
-                  educational resources. If educational opportunities in coding
-                  is not broadly accessible to more communities, including the
-                  incarcerated, then coding has the potential of becoming a
-                  polarizing force in income and wealth inequality.
+                  and communities, in many cases, do not have the knowledge to
+                  properly utilize affordable educational resources. If
+                  educational opportunities in coding is not broadly accessible
+                  to more communities, including the incarcerated, then coding
+                  has the potential of becoming a polarizing force in income and
+                  wealth inequality.
                 </Typography>
                 <Typography variant="body1" gutterBottom>
                   In light of this background, we place ourselves at the

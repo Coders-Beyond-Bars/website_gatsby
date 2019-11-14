@@ -23,26 +23,32 @@ const Donate = () => {
           </Container>
         </Section>
         <Section>
-          <Typography variant="body1" gutterBottom>
-            Thank you for supporting Coders Beyond Bars. We are a non-profit
-            organization that is currently sustained through volunteers and
-            financial donations from individuals who believe in our mission. As
-            we grow, we are eager to add new members, better infrastructure and
-            the latest resources to be able to provide our students the best
-            educational experience possible.
-          </Typography>
-          <Typography variant="body1">
-            Coders Beyond Bars is a registered 501(c)(3) and your donation will
-            be tax-deductible.
-          </Typography>
-          <CBBButton
-            size="large"
-            color="primary"
-            style={{ width: 200, margin: "25px 5px 25px 5px" }}
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=url"
-          >
-            Donate
-          </CBBButton>
+          <Container maxWidth="lg">
+            <Typography variant="h5" gutterBottom>
+              Support This Year’s Boston Pre-Release Center Cohort
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Thank you for supporting Coders Beyond Bars. We are a non-profit
+              organization that is currently sustained through volunteers and
+              financial donations from individuals who believe in our mission.
+              The donation you make today will support the students attending
+              our BPRC program. Funds will support the technology, software and
+              equipment required for each student to best educational experience
+              possible.
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Coders Beyond Bars is a registered 501(c)(3) and your donation
+              will be tax-deductible.
+            </Typography>
+            <CBBButton
+              size="large"
+              color="primary"
+              style={{ width: 200, margin: "25px 5px 25px 5px" }}
+              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=url"
+            >
+              Donate
+            </CBBButton>
+          </Container>
         </Section>
       </Layout>
     </>

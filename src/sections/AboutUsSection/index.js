@@ -10,12 +10,16 @@ import mentorship from "assets/images/mission/mentorship.jpg";
 import advocacy from "assets/images/mission/advocacy.jpg";
 import employment from "assets/images/mission/employment.jpg";
 
+import useStyles from "assets/jss/sections/about";
+
 const AboutSection = () => {
+  const classes = useStyles();
+
   return (
     <Section>
       <Container maxWidth="lg">
         <Grid container spacing={0} justify="center">
-          <Grid item sm={4}>
+          <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
               image={education}
               title="Education"
@@ -26,8 +30,8 @@ const AboutSection = () => {
             to meet the growing demand for high-tech jobs in Massachusetts."
             />
           </Grid>
-          <Grid item sm={4}></Grid>
-          <Grid item sm={4}>
+          <Grid item sm={4} xs={1}></Grid>
+          <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
               image={community}
               title="Community"
@@ -35,15 +39,15 @@ const AboutSection = () => {
             />
           </Grid>
           <Grid item sm={4}></Grid>
-          <Grid item sm={4}>
+          <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
               image={mentorship}
               title="Mentorship"
-              description="CBB’s management team has decades of experience working with both the incarcerated and returning citizen population. Some members of   our team have experience life behind the wall and understand, first hand, how difficult transitioning back to society can be. Our resident life coach Bob Balfour works directly with our students to assist them through the everyday challenges of life. Bob has worked with hundreds of individuals dealing with a variety of challenges from basic coping skills to recovery. Bob sees the promise in everyone and more importantly helps them see it for themselves."
+              description="CBB’s management team has decades of experience working with both the incarcerated and returning citizen population. Some members of our team have experience life behind the wall and understand, first hand, how difficult transitioning back to society can be. We work directly with our students to assist them through the everyday challenges of life. Our team has worked with hundreds of individuals dealing with a variety of challenges from basic coping skills to recovery."
             />
           </Grid>
           <Grid item sm={4}></Grid>
-          <Grid item sm={4}>
+          <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
               image={advocacy}
               title="Advocacy"
@@ -51,7 +55,7 @@ const AboutSection = () => {
             />
           </Grid>
           <Grid item sm={4}></Grid>
-          <Grid item sm={4}>
+          <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
               image={employment}
               title="Employment"

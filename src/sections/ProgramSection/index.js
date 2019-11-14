@@ -85,9 +85,9 @@ const ProgramSection = props => {
               Pre-boarding Training
             </Typography>
             <Typography variant="body1" gutterBottom>
-              After being accepted into the program, candidates undertake
-              <strong>four months</strong> of pre-boarding training in which
-              they commit approximately five to six hours a week to learn
+              After being accepted into the program, candidates undertake{" "}
+              <strong>four months</strong> months of pre-boarding training in
+              which they commit approximately five to six hours a week to learn
               fundamental concepts in computer programming and web development.
               This step in the program provides our candidates an opportunity to
               explore software development before they take a deep dive into the

@@ -62,7 +62,7 @@ const GetInvolved = () => {
                 this exciting industry by clicking on the link below and fill
                 out a form to introduce yourself.
               </Typography>
-              <CBBButton href="#" color="primary">
+              <CBBButton href="/contact/" color="primary">
                 Contact Us
               </CBBButton>
             </Grid>
