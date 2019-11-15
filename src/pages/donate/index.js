@@ -33,8 +33,8 @@ const Donate = () => {
               financial donations from individuals who believe in our mission.
               The donation you make today will support the students attending
               our BPRC program. Funds will support the technology, software and
-              equipment required for each student to best educational experience
-              possible.
+              equipment required for each student to enjoy the best educational
+              experience possible.
             </Typography>
             <Typography variant="body1" gutterBottom>
               Coders Beyond Bars is a registered 501(c)(3) and your donation
@@ -44,7 +44,7 @@ const Donate = () => {
               size="large"
               color="primary"
               style={{ width: 200, margin: "25px 5px 25px 5px" }}
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=url"
+              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYN3BL7XRMA64&source=urly"
             >
               Donate
             </CBBButton>
