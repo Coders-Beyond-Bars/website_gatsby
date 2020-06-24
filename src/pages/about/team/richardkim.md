@@ -1,7 +1,7 @@
 ---
 templateKey: team-profile
 name: Richard Kim
-title: Technology Education (Co-founder)
+title: Technology Education (Founder)
 image: "/img/richardkim.jpg"
 ---
 

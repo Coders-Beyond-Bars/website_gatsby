@@ -6,22 +6,7 @@ import { Typography, Grid, TextField } from "@material-ui/core";
 
 import CBBButton from "components/CBBButton";
 
-const styles = theme => {
-  return {
-    requestForm: {
-      maxWidth: 1000,
-      padding: 25,
-      backgroundColor: "rgba(240, 240, 240, 0.9)",
-      color: theme.palette.secondary.main
-    },
-    white: {
-      color: "white"
-    },
-    select: {
-      borderBottom: "1px solid #fff"
-    }
-  };
-};
+import styles from "assets/jss/components/contactformStyles"
 
 const encode = data => {
   return Object.keys(data)
@@ -46,7 +31,6 @@ const defaultState = {
 class ContactForm extends Component {
   constructor(props) {
     super(props);
-
     this.state = defaultState;
   }
 
@@ -88,7 +72,7 @@ class ContactForm extends Component {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "request-demo",
+          "form-name": "contact-us",
           name,
           email,
           subject,
@@ -103,6 +87,7 @@ class ContactForm extends Component {
   render() {
     const { name, email, subject, message, errors, success } = this.state;
     const { classes } = this.props;
+    
     return (
       <div className={clsx(classes.requestForm)}>
         {success ? (
@@ -115,11 +100,11 @@ class ContactForm extends Component {
           <form
             noValidate
             onSubmit={this.handleSubmit}
-            name="request-demo"
+            name="contact-us"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="request-demo" />
+            <input type="hidden" name="form-name" value="contact-us" />
             <Grid container spacing={1} justify="center">
               <Grid item xs={12}>
                 <TextField
@@ -132,17 +117,6 @@ class ContactForm extends Component {
                   fullWidth
                   error={errors.name}
                   helperText={errors.name && "Your Name is required"}
-                  InputLabelProps={{
-                    style: {
-                      color: "inherit"
-                    }
-                  }}
-                  InputProps={{
-                    style: {
-                      color: "inherit",
-                      borderBottom: "1px solid #fff"
-                    }
-                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -157,17 +131,6 @@ class ContactForm extends Component {
                   fullWidth
                   error={errors.email}
                   helperText={errors.email && "Email is required"}
-                  InputLabelProps={{
-                    style: {
-                      color: "inherit"
-                    }
-                  }}
-                  InputProps={{
-                    style: {
-                      color: "inherit",
-                      borderBottom: "1px solid #fff"
-                    }
-                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -181,17 +144,6 @@ class ContactForm extends Component {
                   fullWidth
                   error={errors.subject}
                   helperText={errors.subject && "Subject is required"}
-                  InputLabelProps={{
-                    style: {
-                      color: "inherit"
-                    }
-                  }}
-                  InputProps={{
-                    style: {
-                      color: "inherit",
-                      borderBottom: "1px solid #fff"
-                    }
-                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -207,34 +159,18 @@ class ContactForm extends Component {
                   fullWidth
                   error={errors.subject}
                   helperText={errors.subject && "Message is required"}
-                  InputLabelProps={{
-                    style: {
-                      color: "inherit"
-                    }
-                  }}
-                  InputProps={{
-                    style: {
-                      color: "inherit",
-                      borderBottom: "1px solid #fff"
-                    }
-                  }}
                 />
               </Grid>
               <Grid
                 item
                 xs={12}
                 md={4}
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center"
-                }}
               >
                 <CBBButton
                   size="large"
-                  variant="outlined"
                   fullWidth
                   type="submit"
+                  color="primary"
                 >
                   Submit
                 </CBBButton>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Helmet from "react-helmet";
 import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core";
 
 import Layout from "components/Layout";
@@ -14,13 +13,10 @@ import codeImg from "assets/images/stock/code.jpg";
 import donateImg from "assets/images/stock/donate.jpg";
 import volunteerImg from "assets/images/stock/volunteer.jpg";
 
+
 const GetInvolved = () => {
   const classes = useStyles();
   return (
-    <>
-      <Helmet>
-        <title>Coders Beyond Bars - Get Involved</title>
-      </Helmet>
       <Layout>
         <Section image={bg} shaded halfScreen vcenter>
           <Container maxWidth="lg">
@@ -41,27 +37,26 @@ const GetInvolved = () => {
               </Grid>
             </Hidden>
             <Grid item sm={6}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 Participate
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Are you a returning citizen? Or, are you a friend or family
+                Are you a returning citizen? Or, are you a friend or a family
                 member of someone who has experience in the criminial-justice
                 system?
               </Typography>
               <Typography variant="body1" gutterBottom>
                 Massachusetts' tech industry is rapidly expanding, and many tech
                 companies are looking for qualified individuals, regardless of
-                their background, to fill over 10,000 open positions in software
-                engineering, data analytics, and web development.
+                their background, to fill over 10,000 open job openings.
               </Typography>
               <Typography variant="body1" gutterBottom>
                 Maybe you might have found the process of joining this industry
                 too daunting and difficult. It doesn't have to be, and we are
-                here to help. Learn more about the opportunities ahead of you in
-                this exciting industry by clicking on the link below and fill
-                out a form to introduce yourself.
+                here to help. Learn more about the opportunities available for you in
+                by clicking on the link below and fill out a form to introduce yourself.
               </Typography>
+              <br />
               <CBBButton href="/contact/" color="primary">
                 Contact Us
               </CBBButton>
@@ -87,20 +82,22 @@ const GetInvolved = () => {
               />
             </Grid>
             <Grid item sm={6}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 Donate
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Activities of Coders Beyond Bars are supported through generous
+                Our programs are supported through generous
                 donations of individuals and business partners who believe in
-                our mission to providing returning citizens with an opportunity
-                to join the tech industry.
+                our mission of providing second-chances to returning citizens
+                and empowering them to be successful, contributing members of our
+                society again.
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Your contributions will help provide stipend to our outstanding
+                Your contributions will help provide stipends to our outstanding
                 students and purchase educational materials to provide high
                 quality educational experience for our students.
               </Typography>
+              <br />
               <CBBButton component={Link} to="/donate/" color="primary">
                 Donate
               </CBBButton>
@@ -119,7 +116,7 @@ const GetInvolved = () => {
               </Grid>
             </Hidden>
             <Grid item sm={6}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 Volunteer / Mentor
               </Typography>
               <Typography variant="body1" gutterBottom>
@@ -129,6 +126,7 @@ const GetInvolved = () => {
                 meaningful way. If you are able to contribute to one of these
                 strands, fill out our contact form and get in touch!
               </Typography>
+              <br />
               <CBBButton component={Link} to="/contact/" color="secondary">
                 Contact Us
               </CBBButton>
@@ -145,7 +143,6 @@ const GetInvolved = () => {
           </Grid>
         </Section>
       </Layout>
-    </>
   );
 };
 

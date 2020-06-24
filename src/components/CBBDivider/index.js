@@ -4,20 +4,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 import CBBIcon from "components/CBBIcon";
 
-const styles = theme => ({
-  divider: {
-    display: "flex",
-    width: "90%",
-    margin: "20px 0 20px 0",
-    alignSelf: "center"
-  },
-  line: {
-    width: "100%",
-    position: "relative",
-    margin: 15,
-    borderBottom: "2px solid #757575"
-  }
-});
+import styles from "assets/jss/components/cbbdividerStyles";
 
 const CBBDivider = ({ classes, dark }) => {
   const lineStyle = {

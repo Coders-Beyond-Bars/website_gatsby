@@ -2,39 +2,12 @@ import React from "react";
 import { Link as RouterLink } from "gatsby";
 
 import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Link, Hidden } from "@material-ui/core";
-
-import Logo from "assets/images/logos/cbb-transparent-wide.svg";
+import { AppBar, Container, Toolbar, Link, Hidden, Typography } from "@material-ui/core";
 
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
-const styles = theme => ({
-  appBar: {
-    zIndex: theme.zIndex.drawer + 1
-  },
-  grow: {
-    flexGrow: 1
-  },
-  flexRow: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center"
-  },
-  leftContainer: {
-    display: "flex",
-    alignItems: "center"
-  },
-  logoLink: {
-    display: "flex",
-    alignSelf: "center"
-  },
-  logo: {
-    width: 140,
-    alignSelf: "center",
-    margin: 0
-  }
-});
+import styles from 'assets/jss/components/navbarStyles'
 
 class Navbar extends React.Component {
   render() {
@@ -47,16 +20,18 @@ class Navbar extends React.Component {
         color="primary"
         id="navbar"
       >
+      <Container maxWidth="lg">
         <Toolbar>
           <div className={classes.grow}>
             <div className={classes.leftContainer}>
               <Link to="/" component={RouterLink} className={classes.logoLink}>
-                <img
-                  src={Logo}
-                  alt="Coders Beyond Bars"
-                  className={classes.logo}
-                />
+                <Typography variant="h4" color="inherit" className={classes.logo}>
+                  reboot
+                </Typography>
               </Link>
+              <Typography variant="subtitle1" color="inherit" className={classes.subtitle}>
+                to technology
+              </Typography>
             </div>
           </div>
           <Hidden smDown>
@@ -66,6 +41,7 @@ class Navbar extends React.Component {
             <MobileMenu />
           </Hidden>
         </Toolbar>
+        </Container>
       </AppBar>
     );
   }

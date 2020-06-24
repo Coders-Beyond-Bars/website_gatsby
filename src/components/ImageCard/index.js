@@ -1,22 +1,7 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Typography, Container, Grow } from "@material-ui/core";
 
-const useStyles = makeStyles({
-  card: {
-    borderRadius: 15,
-    minHeight: 300,
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "#ffffff"
-  },
-  title: {
-    color: "#ffffff",
-    textShadow: "1px 1px 2px #cccccc"
-  }
-});
+import useStyles from "assets/jss/components/imagecardStyles";
 
 const ImageCard = ({ image, title, description }) => {
   const [hover, setDescription] = useState(false);

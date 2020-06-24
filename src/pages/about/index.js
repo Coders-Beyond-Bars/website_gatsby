@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { Typography, Fade, Container, Grid } from "@material-ui/core";
 
 import Layout from "components/Layout";
@@ -10,19 +9,15 @@ import AboutUsSection from "sections/AboutUsSection";
 import TeamSection from "sections/TeamSection";
 
 import useStyles from "assets/jss/pages/about";
-import bg from "assets/images/background/bg11.jpg";
+import bg from "assets/images/background/bg5.jpg";
 import code from "assets/images/stock/code2.jpg";
 
 const AboutUs = () => {
   const classes = useStyles();
 
   return (
-    <>
-      <Helmet>
-        <title>Coders Beyond Bars - About Us</title>
-      </Helmet>
       <Layout>
-        <Section image={bg} shaded halfScreen vcenter>
+        <Section image={bg} shaded halfScreen hcenter vcenter>
           <Container maxWidth="lg">
             <Fade in={true} timeout={2000}>
               <Typography variant="h4">About Us</Typography>
@@ -83,7 +78,6 @@ const AboutUs = () => {
         <AboutUsSection id="what-we-do" />
         <TeamSection id="team" />
       </Layout>
-    </>
   );
 };
 

@@ -83,12 +83,15 @@ const theme = createMuiTheme({
       fontFamily: "'OCRAstd'"
     },
     h5: {
-      fontFamily: "'Hammersmith One'"
+      fontFamily: "'OCRAstd'"
     },
     h6: {
       fontFamily: "'Hammersmith One'"
     },
     title: {
+      fontFamily: "'OCRAstd'"
+    },
+    subtitle1: {
       fontFamily: "'OCRAstd'"
     },
     body1: {

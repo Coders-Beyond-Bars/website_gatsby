@@ -2,10 +2,16 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "Coders Beyond Bars",
+    title: "Reboot to Tech",
     author: "Richard Kim",
+    email: "info@reboot2tech.org",
+    company: "Reboot to Tech, Inc.",
+    streetAddress: "186 Alewife Brook Pkwy",
+    city: "Cambridge",
+    state: "MA",
+    zipCode: "02138",
     description:
-      "Coders Beyond Bars - Empowering returning citizens to become producers of digital technology"
+      "Empowering returning citizens to become producers of digital technology"
   },
   plugins: [
     "gatsby-plugin-sass",

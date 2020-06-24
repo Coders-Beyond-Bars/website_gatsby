@@ -11,37 +11,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-const styles = theme => {
-  return {
-    iconButton: {
-      marginRight: 10
-    },
-    list: {
-      width: 250,
-      paddingTop: 25
-    },
-    listItemText: {
-      color: theme.palette.secondary.main,
-      fontFamily: "Hammersmith One",
-      primaryTypographyProps: {
-        fontFamily: theme.typography.title.fontFamily
-      }
-    },
-    drawer: {
-      backgroundColor: "gray"
-    },
-    nested: {
-      paddingLeft: theme.spacing(4)
-    },
-    subHeader: {
-      marginBottom: 0
-    },
-    subMenu: {
-      paddingTop: 0,
-      paddingBottom: 0
-    }
-  };
-};
+import styles from "assets/jss/components/mobilemenuStyles";
 
 class MobileMenu extends Component {
   constructor(props) {
@@ -106,7 +76,7 @@ class MobileMenu extends Component {
             </ListItem>
             <ListItem button component={Link} to="/program/">
               <ListItemText
-                primary="Our Program"
+                primary="Programs"
                 key="program"
                 primaryTypographyProps={primaryTypographyProps}
               />

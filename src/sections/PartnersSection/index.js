@@ -12,7 +12,7 @@ const PartnersSection = props => {
     <Section
       title="Our Partners"
       {...props}
-      subtitle="We are proud to partner  with educational institutions, corporations, and other community-based non-profit organizations that supports our mission of providing second chance to returning citizens."
+      subtitle="We are proud to partner with universities, colleges, corporations, and other community-based non-profit organizations that supports our mission of providing second chance to returning citizens."
     >
       <Grid container spacing={8} justify="space-between">
         <Grid item md={4}>
