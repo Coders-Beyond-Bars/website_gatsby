@@ -77,9 +77,13 @@ class SubscribeForm extends Component {
                 value={email}
                 onChange={this.handleChange}
                 margin="normal"
-                color="white"
                 fullWidth
                 placeholder="Your E-mail Address"
+                inputProps={{
+                  style: {
+                    color: "white"
+                  }
+                }}
               />
             </Grid>
             <Grid item xs={4}>

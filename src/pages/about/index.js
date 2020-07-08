@@ -7,10 +7,12 @@ import Section from "components/Section";
 import MissionSection from "sections/MissionSection";
 import AboutUsSection from "sections/AboutUsSection";
 import TeamSection from "sections/TeamSection";
+import DonateSection from "sections/DonateSection";
 
 import useStyles from "assets/jss/pages/about";
 import bg from "assets/images/background/bg5.jpg";
 import code from "assets/images/stock/code2.jpg";
+
 
 const AboutUs = () => {
   const classes = useStyles();
@@ -77,6 +79,7 @@ const AboutUs = () => {
         </Section>
         <AboutUsSection id="what-we-do" />
         <TeamSection id="team" />
+        <DonateSection id="donate" />
       </Layout>
   );
 };

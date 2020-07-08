@@ -1,3 +1,5 @@
+import { logo, subtitle } from '../cbb-material-ui'
+
 const navbarStyles = theme => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1
@@ -22,14 +24,8 @@ const navbarStyles = theme => ({
       textDecoration: "none"
     }
   },
-  logo: {
-    lineHeight: 1.0
-  },
-  subtitle: {
-    marginLeft: 20,
-    lineHeight: 0.5,
-    fontSize: '1.2em'
-  }
+  logo,
+  subtitle
 });
 
 export default navbarStyles;

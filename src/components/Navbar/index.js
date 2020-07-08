@@ -3,6 +3,7 @@ import { Link as RouterLink } from "gatsby";
 
 import { withStyles } from "@material-ui/core/styles";
 import { AppBar, Container, Toolbar, Link, Hidden, Typography } from "@material-ui/core";
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
@@ -25,12 +26,13 @@ class Navbar extends React.Component {
           <div className={classes.grow}>
             <div className={classes.leftContainer}>
               <Link to="/" component={RouterLink} className={classes.logoLink}>
+                <PowerSettingsNewIcon style={{ fontSize: 24 }} />{" "}
                 <Typography variant="h4" color="inherit" className={classes.logo}>
                   reboot
                 </Typography>
               </Link>
               <Typography variant="subtitle1" color="inherit" className={classes.subtitle}>
-                to technology
+                to tech
               </Typography>
             </div>
           </div>

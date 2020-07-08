@@ -43,13 +43,17 @@ const Section = ({
   const style = {
     backgroundImage: `url(${image})`
   };
-  console.log(containerClass)
+
   return (
     <section className={sectionClass} style={style} {...rest}>
       <Container maxWidth={maxWidth} className={containerClass}>
         {title && (
           <>
-            <Typography variant="h4" gutterBottom align="center">
+            <Typography
+              variant="h4"
+              color={shaded ? "inherit" : "secondary"}
+              gutterBottom 
+              align="center">
               {title}
             </Typography>
             <Typography

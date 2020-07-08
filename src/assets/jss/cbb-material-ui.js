@@ -1,5 +1,15 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+const logo = {
+  lineHeight: 1.0
+}
+
+const subtitle = {
+  marginLeft: 40,
+  lineHeight: 0.5,
+  fontSize: '1.2em'
+}
+
 const profileCard = {
   backgroundColor: "inherit",
   border: 0,
@@ -114,5 +124,7 @@ export {
   link,
   flex,
   verticalCenter,
-  horizontalCenter
+  horizontalCenter,
+  logo,
+  subtitle
 };

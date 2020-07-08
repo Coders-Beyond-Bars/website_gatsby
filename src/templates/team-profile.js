@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import { Typography, Grid } from "@material-ui/core";
 
 import Layout from "components/Layout";
 import { Content, HTMLContent } from "components/Content";
 import Section from "components/Section";
+import SEO from "components/SEO";
 
 import useStyles from "assets/jss/templates/team-profile";
 
@@ -49,17 +49,13 @@ TeamProfileTemplate.propTypes = {
 
 const TeamProfile = ({ data }) => {
   const { markdownRemark: profile } = data;
-
+  console.log(profile)
   return (
-    <>
-      <Helmet>
-        <title>{`${profile.frontmatter.name}`}</title>
-        <meta
-          name="description"
-          content={`${profile.frontmatter.name} ${profile.frontmatter.title}`}
-        />
-      </Helmet>
       <Layout>
+        <SEO
+          title={`${profile.frontmatter.name}`}
+          description={`${profile.frontmatter.name} ${profile.frontmatter.title}`}
+        />
         <TeamProfileTemplate
           content={profile.html}
           contentComponent={HTMLContent}
@@ -68,7 +64,6 @@ const TeamProfile = ({ data }) => {
           image={profile.frontmatter.image}
         />
       </Layout>
-    </>
   );
 };
 
