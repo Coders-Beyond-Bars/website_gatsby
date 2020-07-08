@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Fade, Container, Grid } from "@material-ui/core";
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
-import CBBButton from "components/CBBButton";
 import Section from "components/Section";
 
 import bg from "assets/images/background/bg1.jpg";

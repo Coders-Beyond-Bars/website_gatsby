@@ -49,7 +49,6 @@ TeamProfileTemplate.propTypes = {
 
 const TeamProfile = ({ data }) => {
   const { markdownRemark: profile } = data;
-  console.log(profile)
   return (
       <Layout>
         <SEO

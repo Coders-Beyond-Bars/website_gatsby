@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { Typography, Fade, Container } from "@material-ui/core";
 
 import Layout from "components/Layout";

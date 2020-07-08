@@ -1,13 +1,5 @@
-import { makeStyles, createStyles } from "@material-ui/styles";
-import {
-  profilePic,
-  textWhite,
-  link,
-  imageRounded,
-  flex,
-  verticalCenter,
-  horizontalCenter
-} from "../cbb-material-ui";
+import { makeStyles } from "@material-ui/styles";
+import { imageRounded } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
   imageRounded
