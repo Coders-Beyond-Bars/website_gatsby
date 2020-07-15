@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Typography, Grid, Container } from "@material-ui/core";
 import { withStyles } from "@material-ui/styles";
 
 import Layout from "components/Layout";
 import Section from "components/Section";
+import CBBButton from "components/CBBButton";
 
 import pic from "assets/images/stock/mission.png";
 
@@ -32,20 +32,21 @@ const Index = ({ classes }) => (
                   className={classes.imageRounded}
                 />
               </Grid>
-              <Grid item sm={7} md={8} className={classes.verticalCenter}>
+              <Grid item sm={7} md={8}>
                 <Typography variant="h6" gutterBottom>
-                  Started as an Coders
-                  Beyond Bars initiative under The Educational Justice
-                  Institute at Massachusetts Institute of Technology, Reboot to Tech
+                  Started as <em>Coders
+                  Beyond Bars</em> initiative under The Educational Justice
+                  Institute at Massachusetts Institute of Technology, <bold>Reboot to Tech </bold>
                   is a not-for-profit organization in Massachusetts with
                   the mission of providing returning citizens the opportunity
-                  to learn skills in software
-                  development and preparing them for successful entry into
-                  careers in high-tech industries.{" "}
-                  <Link to="/about" className={classes.link}>
-                    Read More
-                  </Link>
+                  to learn valuable technical skills in rapidly growing industries
+                  such as software engineering and advanced manufacturing,
+                  and preparing them for successful transition back into
+                  society by attaining rewarding careers.{" "}
                 </Typography>
+                <CBBButton href="/about/" color="primary">
+                  Read More
+                </CBBButton>
               </Grid>
             </Grid>
           </Container>

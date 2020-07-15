@@ -32,7 +32,7 @@ const Footer = ({ classes }) => {
       <section className={classes.main}>
         <Container>
           <Grid container spacing={0}>
-            <Grid item sm={8} xs={12}>
+            <Grid item sm={8} xs={12} className={classes.item}>
               <Typography variant="h5" color="inherit" gutterBottom>
                 {metadata.company}
               </Typography>
@@ -50,7 +50,7 @@ const Footer = ({ classes }) => {
                 {metadata.email}
               </Link>
             </Grid>
-            <Grid item sm={4} xs={12}>
+            <Grid item sm={4} xs={12} className={classes.item}>
               <SubscribeForm />
             </Grid>
           </Grid>

@@ -41,7 +41,7 @@ const GetInvolved = () => {
                 Participate
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Are you a returning citizen? Or, are you a friend or a family
+                Are you a returning citizen? Or are you a friend or a family
                 member of someone who has experience in the criminial-justice
                 system?
               </Typography>
@@ -51,10 +51,10 @@ const GetInvolved = () => {
                 their background, to fill over 10,000 open job openings.
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Maybe you might have found the process of joining this industry
+                Maybe you think the process of joining this industry is
                 too daunting and difficult. It doesn't have to be, and we are
-                here to help. Learn more about the opportunities available for you in
-                by clicking on the link below and fill out a form to introduce yourself.
+                here to help. Learn more about the opportunities available for you
+                by clicking on the link below and filling out a form to introduce yourself.
               </Typography>
               <br />
               <CBBButton href="/contact/" color="primary">
@@ -94,7 +94,7 @@ const GetInvolved = () => {
               </Typography>
               <Typography variant="body1" gutterBottom>
                 Your contributions will help provide stipends to our outstanding
-                students and purchase educational materials to provide high
+                students and purchase educational materials to provide a high
                 quality educational experience for our students.
               </Typography>
               <br />

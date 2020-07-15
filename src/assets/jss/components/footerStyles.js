@@ -4,9 +4,12 @@ const footerStyles = theme => ({
   },
   main: {
     color: "white",
-    height: 200,
-    padding: "35px 0 25px 0",
+    minHeight: 200,
+    padding: "35px 0 15px 0",
     backgroundColor: theme.palette.secondary.main
+  },
+  item: {
+    padding: "0 0 20px 0"
   },
   bottom: {
     color: "white",

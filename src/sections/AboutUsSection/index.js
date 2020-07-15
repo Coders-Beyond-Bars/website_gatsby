@@ -24,10 +24,10 @@ const AboutSection = () => {
               image={education}
               title="Education"
               description="Education is a critical component in creating both professional
-            and personal opportunities for future growth. CBB’s focus is to
+            and personal opportunities for future growth. Our focus is to
             educate returning citizens in the areas of software engineering
-            and data analysis with the goal of creating a strong labor force
-            to meet the growing demand for high-tech jobs in Massachusetts."
+            and advanced manfuacturing with the goal of creating a strong labor force
+            to meet the growing demand for high-tech talent in Massachusetts."
             />
           </Grid>
           <Grid item sm={4} xs={1}></Grid>
@@ -35,7 +35,13 @@ const AboutSection = () => {
             <ImageCard
               image={community}
               title="Community"
-              description="Transitions in life always present challenges. Having experienced difficult challenges in our own lives, we understand the importance of being surrounded by an encouraging, supportive and caring community. CBB’s focus on community brings each of our students a variety of resources including; life coaching, professional mentorship, and connections to a broad range of personal resources."
+              description="Transitions in life always present challenges.
+              Having experienced difficult challenges in our own lives, we
+              understand the importance of being surrounded by an encouraging,
+              supportive and caring community. Our focus on community brings
+              each of our students a variety of resources including; life
+              coaching, professional mentorship, and connections to a
+               broad range of personal resources."
             />
           </Grid>
           <Grid item sm={4}></Grid>
@@ -43,7 +49,16 @@ const AboutSection = () => {
             <ImageCard
               image={mentorship}
               title="Mentorship"
-              description="CBB’s management team has decades of experience working with both the incarcerated and returning citizen population. Some members of our team have experience life behind the wall and understand, first hand, how difficult transitioning back to society can be. We work directly with our students to assist them through the everyday challenges of life. Our team has worked with hundreds of individuals dealing with a variety of challenges from basic coping skills to recovery."
+              description="Our leadership team has decades of
+              experience working with both the incarcerated
+              and returning citizen population. Some members
+              of our team have experience life behind the wall
+              and understand, first hand, how difficult
+              transitioning back to society can be. We work
+              directly with our students to assist them through
+              the everyday challenges of life. Our team has
+              worked with hundreds of individuals dealing with a
+              variety of challenges from basic coping skills to recovery."
             />
           </Grid>
           <Grid item sm={4}></Grid>
@@ -51,7 +66,14 @@ const AboutSection = () => {
             <ImageCard
               image={advocacy}
               title="Advocacy"
-              description="Tackling the problem surrounding stigma around incarceration requires more than effort on the part of the returning citizens.  Society at large must undergo change in its views toward educating and working with returning citizens.  We actively connect with communities at large - the business community and the public sector - to educate and inform them of benefits and opportunities in providing returning citizens' with second chance."
+              description="Tackling the problem surrounding stigma around
+              incarceration requires more than effort on the part of the
+              returning citizens.  Society at large must undergo change
+              in its views toward educating and working with returning citizens.
+              We actively connect with communities at large -
+              the business community and the public sector -
+              to educate and inform them of benefits and opportunities
+              in providing returning citizens' with second chance."
             />
           </Grid>
           <Grid item sm={4}></Grid>
@@ -59,7 +81,16 @@ const AboutSection = () => {
             <ImageCard
               image={employment}
               title="Employment"
-              description="CBB’s promise to our students goes beyond education. Education is a critical factor in success but education alone is simply not enough. Our students need help navigating the job search and interview process. To better support our students, CBB is building a network of business relationships with hiring managers in the high-tech space who often struggle to source talent and see the value of our program in terms of our commitment to train a reliable untapped labor force."
+              description="Our promise to our students goes
+              beyond education. Education is a critical factor in success
+              but education alone is simply not enough. Our
+              students need help navigating the job search and
+              interview process. To better support our students,
+              Reboot is building a network of business relationships
+              with hiring managers in the high-tech space who
+              often struggle to source talent and see the value of
+              our program in terms of our commitment to train a reliable
+              untapped labor force."
             />
           </Grid>
         </Grid>
