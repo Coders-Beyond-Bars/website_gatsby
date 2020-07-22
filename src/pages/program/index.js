@@ -39,7 +39,7 @@ const Program = () => {
             <Grid item xs={12} sm={8}>
               <Typography variant="body1">It is estimated that there are approximately 11,000
                 software engineering jobs in Massachusetts that are going unfilled due to
-                shortage of talent in software development.  In light of this shortage,
+                shortage of skilled talent in software development.  In light of this shortage,
                 many firms that we connected with in Massachusetts seeking
                 software engineers have indicated interest in hiring
                 returning citizens with the right skills.
@@ -51,9 +51,9 @@ const Program = () => {
                   developers with limited training in coding to build complex
                   enterprise level softwares including customer-relationship management
                   software (CRM), project management tools, human resource software, etc.
-                  Upon compelition of training, Quickbase and Reboot will introduce
-                  the students to companies in Massachusetts that already relies on
-                  Quickbase's platform.
+                  Upon completion of training, Quickbase and Reboot will introduce
+                  students to companies in Massachusetts that already rely on
+                  Quickbase platform.
               </Typography>
             </Grid>
           </Grid>
@@ -72,19 +72,18 @@ const Program = () => {
               <Typography variant="body1">According to a report issued by The New England Council
                 and Deloitte,
                 "Advanced to Advantageous: The Case for New England’s Manufacturing Revolution,"
-                advanced manufacturing in Massachusetts and New England at large is facing steep
-                shortages in workers as existing pool of workers in traditional manufacturing
-                industries retire and mismatch in educational institutions and the industry persists.
+                advanced manufacturing sector in Massachusetts and New England in general faces steep
+                shortage in workers as existing traditional manufacturing workers
+                retire and mismatch between education curriculum and needs of the industry persists.
               </Typography>
               <br />
               <Typography variant="body1">In partnership with {" "}
                 <a href="https://www.namcnetwork.com/">The Northeast Advanced Manufacturing Consortium (NAMC)</a>,
-
-                we introduces our students to skills in advanced manufacturing including 3D printing, CNC milling,
-                and other foundational skills prepare them in their career path in advanced manufacturing.
+                we introduce our students to skills in advanced manufacturing including 3D printing, CNC milling,
+                and other foundational skills to prepare them for careers in advanced manufacturing.
                 Upon sucessful completion of our program, students should be well prepared to
                 attain Level 1 of Applied Manufacturing Technology Certification Pathway and
-                be ready to join appreticeship programs at local manufacturers in Massachusetts
+                be ready to join appreticeship programs in local manufacturers in Massachusetts
                  affiliated with NAMC.
               </Typography>
             </Grid>

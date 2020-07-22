@@ -9,7 +9,7 @@ const MissionSection = props => {
       <Container maxWidth="lg">
         <Typography variant="h5" align="center">
           We empower returning citizens to transform their lives by educating
-          them in high-tech skills, preparing them for careers in high-tech
+          them in tech skills, preparing them for careers in high-tech
           industries and successful re-entry into society.
         </Typography>
       </Container>
