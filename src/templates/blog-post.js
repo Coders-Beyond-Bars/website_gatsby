@@ -85,7 +85,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  const title = this.props.data.site.siteMetadata.title
+  const title = data.site.siteMetadata.title
 
   return (
     <Layout>
