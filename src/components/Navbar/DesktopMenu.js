@@ -1,60 +1,67 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
-import { withStyles } from "@material-ui/core/styles";
+import React, { Component } from "react"
+import { StaticQuery, graphql, Link } from "gatsby"
 
-import { Button } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles"
+import { Button } from "@material-ui/core"
 
-import CBBButton from "components/CBBButton";
+import CBBButton from "components/CBBButton"
 
-import styles from "assets/jss/components/desktopmenuStyles";
+import styles from "assets/jss/components/desktopmenuStyles"
+
 
 class DesktopMenu extends Component {
   render() {
-    const { classes } = this.props;
-
-    return (<>
-              <Button
-                color="secondary"
-                className={classes.menuLink}
-                component={Link}
-                to="/about/"
-              >
-                About Us
-              </Button>
-              <Button
-                color="secondary"
-                className={classes.menuLink}
-                component={Link}
-                to="/program/"
-              >
-                Programs
-              </Button>
-              <Button
-                color="secondary"
-                className={classes.menuLink}
-                component={Link}
-                to="/getInvolved/"
-              >
-                Get Involved
-              </Button>
-              <Button
-                color="secondary"
-                className={classes.menuLink}
-                component={Link}
-                to="/contact/"
-              >
-                Contact Us
-              </Button>
-              <CBBButton
-                style={{
-                  marginLeft: 10
-                }}
-                component={Link}
-                to="/donate/"
-              >
-                Donate
-              </CBBButton>
+    const { classes } = this.props
+    return (
+      <StaticQuery
+        query={
+          graphql`
+            query {
+              site {
+                siteMetadata {
+                  navLinks {
+                    text
+                    url
+                    button
+                  }
+                }
+              }
+            }
+          `
+        }
+        render={data => {
+          const menu = data.site.siteMetadata.navLinks
+          return (
+            <>
+              {menu.map(item => {
+                if (item.button) {
+                  return (
+                    <CBBButton
+                      color="inherit"
+                      component={Link}
+                      to={item.url}
+                      style={{ marginLeft: 0 }}
+                    >
+                      {item.text}
+                     </CBBButton>
+                    )
+                } else {
+                  return (
+                    <Button 
+                      color="inherit" 
+                      className={classes.menuLink}
+                      component={Link}
+                      to={item.url}
+                    >
+                      {item.text}
+                    </Button>
+                  )
+                }
+              })}
             </>
+          )
+        }}
+      />
     );
   }
 }

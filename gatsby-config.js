@@ -10,24 +10,49 @@ module.exports = {
     city: "Cambridge",
     state: "MA",
     zipCode: "02138",
-    description:
-      "Empowering returning citizens to become producers of digital technology"
+    description: "Empowering returning citizens to become producers of digital technology",
+    navLinks: [
+      {
+        text: "Home",
+        url: "/"
+      },
+      {
+        text: "About Us",
+        url: "/about/"
+      },
+      {
+        text: "Blog",
+        url: "/blog/"
+      },
+      {
+        text: "Get Involved",
+        url: "/get_involved/"
+      },
+      {
+        text: "Contact Us",
+        url: "/contact/",
+      },
+      {
+        text: "Donate",
+        url: "/donate/",
+        button: true
+      }
+    ]
   },
   plugins: [
-    "gatsby-plugin-sass",
     `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/assets/typography`
+        pathToConfigModule: `src/assets/typography/index.js`
       }
     },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Coders Beyond Bars",
-        short_name: "CBB",
+        name: "Reboot to Tech",
+        short_name: "Reboot",
         start_url: "/",
         background_color: "#FDD146",
         theme_color: "#6D6E71",
@@ -80,8 +105,10 @@ module.exports = {
         name: "images"
       }
     },
+    "gatsby-plugin-sass",
     "gatsby-transformer-remark",
     "gatsby-plugin-offline",
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-netlify-cms"
   ]
 };

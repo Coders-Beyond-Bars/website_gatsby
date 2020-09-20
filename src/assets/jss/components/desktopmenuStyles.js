@@ -3,12 +3,10 @@ const desktopmenuStyles = theme => ({
     textTransform: "capitalize",
     fontFamily: theme.typography.title.fontFamily,
     "&:hover": {
-      color: theme.palette.common.white
-    }
-  },
-  dropDownMenu: {
-    borderRadius: 5
+      color: "inherit"
+    },
+    margin: "0 5px"
   }
 });
 
-export default desktopmenuStyles;
+export default desktopmenuStyles

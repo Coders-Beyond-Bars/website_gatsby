@@ -4,9 +4,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 import { Typography, Container } from "@material-ui/core";
 
-import CBBDivider from "components/CBBDivider";
+import Divider from "components/CBBDivider";
 
-import styles from "assets/jss/components/sectionStyles";
+import sectionStyles from "assets/jss/components/sectionStyles";
+
 
 const Section = ({
   classes,
@@ -48,10 +49,10 @@ const Section = ({
     <section className={sectionClass} style={style} {...rest}>
       <Container maxWidth={maxWidth} className={containerClass}>
         {title && (
-          <>
+          <div className={classes.titleContainer}>
             <Typography
               variant="h4"
-              color={shaded ? "inherit" : "secondary"}
+              color={shaded ? "inherit" : "primary"}
               gutterBottom 
               align="center">
               {title}
@@ -59,13 +60,13 @@ const Section = ({
             <Typography
               variant="h6"
               className={classes.subtitle}
-              color={shaded ? "inherit" : "secondary"}
+              color={shaded ? "inherit" : "primary"}
               align="center"
             >
               {subtitle}
             </Typography>
-            <CBBDivider dark={shaded ? false : true} />
-          </>
+            <Divider dark={shaded ? false : true} />
+          </div>
         )}
         {children}
       </Container>
@@ -73,4 +74,4 @@ const Section = ({
   );
 };
 
-export default withStyles(styles)(Section);
+export default withStyles(sectionStyles)(Section);

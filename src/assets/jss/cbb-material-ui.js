@@ -1,5 +1,7 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+import "assets/sass/main.sass"
+
 const logo = {
   lineHeight: 1.0
 }

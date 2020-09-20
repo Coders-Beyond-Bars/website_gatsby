@@ -1,4 +1,4 @@
-const sectionStyles = theme => ({
+const sectionStyle = theme => ({
   section: {
     display: "flex",
     padding: "45px 0",
@@ -34,10 +34,15 @@ const sectionStyles = theme => ({
   },
   container: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
-  subtitle: {
-    fontWeight: "bold",
+  titleContainer: {
+    width: '100%',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
+  subtitle: {    
     width: "85%",
     alignSelf: "center"
   },
@@ -49,4 +54,4 @@ const sectionStyles = theme => ({
   }
 });
 
-export default sectionStyles;
+export default sectionStyle;

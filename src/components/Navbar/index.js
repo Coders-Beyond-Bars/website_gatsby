@@ -1,41 +1,56 @@
-import React from "react";
-import { Link as RouterLink } from "gatsby";
+import React, { Component } from "react"
+import classNames from 'classnames'
+import { Link } from "gatsby"
 
-import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Container, Toolbar, Link, Hidden, Typography } from "@material-ui/core";
-import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import { withStyles } from "@material-ui/core/styles"
+import { AppBar, Toolbar, Hidden, Typography } from "@material-ui/core"
 
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
 import styles from 'assets/jss/components/navbarStyles'
 
-class Navbar extends React.Component {
+
+class Navbar extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = { top: 0 }
+    this.detectScroll = this.detectScroll.bind(this)
+  }
+  
+  componentDidMount() {
+    window.addEventListener("scroll", this.detectScroll)
+  }
+
+  detectScroll() {
+    this.setState({
+      top: window.pageYOffset
+    })
+  }
+
   render() {
-    const { classes } = this.props;
+    const { top } = this.state
+    const { classes } = this.props
+
+    const appBarClass = classNames(
+      classes.appBar,
+      {
+        [classes.transparent]: top < 60
+      }
+    )
 
     return (
       <AppBar
         position="fixed"
-        className={classes.appBar}
+        className={appBarClass}
         color="primary"
         id="navbar"
       >
-      <Container maxWidth="lg">
         <Toolbar>
-          <div className={classes.grow}>
-            <div className={classes.leftContainer}>
-              <Link to="/" component={RouterLink} className={classes.logoLink}>
-                <PowerSettingsNewIcon style={{ fontSize: 24 }} />{" "}
-                <Typography variant="h4" color="inherit" className={classes.logo}>
-                  reboot
-                </Typography>
-              </Link>
-              <Typography variant="subtitle1" color="inherit" className={classes.subtitle}>
-                to tech
-              </Typography>
-            </div>
-          </div>
+          <Link to="/" className={classNames(classes.logo, classes.link)} >
+            <Typography variant="h5">Reboot to Tech</Typography>
+          </Link>
           <Hidden smDown>
             <DesktopMenu />
           </Hidden>
@@ -43,9 +58,8 @@ class Navbar extends React.Component {
             <MobileMenu />
           </Hidden>
         </Toolbar>
-        </Container>
       </AppBar>
-    );
+    )
   }
 }
 

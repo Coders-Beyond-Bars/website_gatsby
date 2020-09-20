@@ -1,12 +1,14 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import { withStyles } from "@material-ui/core/styles";
-import { Container, Typography, Link, Grid } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles"
+import { Container, Typography, Link, Grid } from "@material-ui/core"
 
-import SubscribeForm from 'components/SubscribeForm';
+import Section from 'components/Section'
+import SubscribeForm from 'components/SubscribeForm'
+import SocialMedia from 'components/SocialMedia'
 
-import styles from "assets/jss/components/footerStyles";
+import styles from "assets/jss/components/footerStyles"
 
 const Footer = ({ classes }) => {
   const data = useStaticQuery(graphql`
@@ -29,19 +31,20 @@ const Footer = ({ classes }) => {
 
   return (
     <footer>
-      <section className={classes.main}>
-        <Container>
+      <Section shaded>
+        <Container maxWidth="lg">
           <Grid container spacing={0}>
-            <Grid item sm={8} xs={12} className={classes.item}>
-              <Typography variant="h5" color="inherit" gutterBottom>
+            <Grid item lg={8} md={7} sm={6} xs={12} className={classes.item}>
+              <Typography variant="h6" color="inherit" gutterBottom>
                 {metadata.company}
               </Typography>
-              <Typography variant="h6" color="inherit">
+              <Typography variant="body1" color="inherit">
                 {metadata.streetAddress}
               </Typography>
-              <Typography variant="h6" color="inherit">
+              <Typography variant="body1" color="inherit">
                 {metadata.city}, {metadata.state} {metadata.zipCode}
               </Typography>
+              <br />
               <Link
                 href={`mailto:${metadata.email}`}
                 variant="body1"
@@ -50,17 +53,18 @@ const Footer = ({ classes }) => {
                 {metadata.email}
               </Link>
             </Grid>
-            <Grid item sm={4} xs={12} className={classes.item}>
+            <Grid item lg={4} md={5} sm={6} xs={12} className={classes.item}>
               <SubscribeForm />
+              <SocialMedia />
             </Grid>
           </Grid>
         </Container>
-      </section>
+      </Section>
       <section className={classes.bottom}>
-        <Container>
+        <Container maxWidth="lg">
           <Grid container spacing={1}>
             <Grid item sm={6} xs={12}>
-              <Typography variant="body1" color="secondary">
+              <Typography variant="body1" color="inherit">
                 &copy;{date.getFullYear()} {metadata.company} All rights reserved.
               </Typography>
             </Grid>
