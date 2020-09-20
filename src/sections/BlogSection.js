@@ -5,6 +5,7 @@ import { Typography, Container } from '@material-ui/core'
 import Section from 'components/Section'
 import BlogRoll from 'components/BlogRoll'
 
+
 class BlogSection extends Component {
     render() {
         const { classes, data, ...rest } = this.props
@@ -12,7 +13,7 @@ class BlogSection extends Component {
         return (
             <Section {...rest}
                 title="Blog"
-                subtitle={`Keep up with our latest stories.`}
+                subtitle={`Keep up with our latest activities.`}
                 >
                 <Container maxWidth="lg">
                     <BlogRoll />

@@ -1,76 +1,135 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "components/Layout";
-import { HTMLContent } from "components/Content";
-import Section from "components/Section";
+import React from 'react'
+import PropTypes from 'prop-types'
+import _ from 'lodash'
+import { graphql, Link } from 'gatsby'
 
-export const BlogPostTemplate = ({
+import { Typography, Container, Grid, Chip, Divider } from '@material-ui/core'
+
+import Section from 'components/Section'
+import SEO from 'components/SEO'
+import Layout from 'components/Layout'
+import Content, { HTMLContent } from 'components/Content'
+
+import makeStyles from 'assets/jss/templates/blog-post'
+
+import 'assets/sass/main.sass'
+
+
+const BlogPostTemplate = ({
   content,
   contentComponent,
-  title,
-  date,
   description,
-  tags
+  tags,
+  title,
+  author,
+  date,
+  featuredImage
 }) => {
+  const PostContent = contentComponent || Content
+  const classes = makeStyles();
+
   return (
-    <Section>
-      {title} {date} {description}
-    </Section>
-  );
-};
+    <div id="blog-post">
+      <Section halfScreen vcenter shaded image={featuredImage}>
+        <Container maxWidth="lg">
+          <Grid container spacing={0}>
+            <Grid item xs={12} sm={7}>
+              <Typography variant="h4" gutterBottom>{title}</Typography>
+              <div >
+                <Typography variant="h6" style={{
+                display: 'inline'
+              }}>{author} </Typography>
+                <Typography variant="body1" style={{
+                display: 'inline'
+              }}>{date}</Typography>
+              </div>
+              <Typography variant="body2">
+                {description}
+              </Typography>
+            </Grid>  
+          </Grid>
+        </Container>
+      </Section>
+      <Section id="blog-content">
+        <PostContent content={content} />
+      </Section>
+      <Section>
+        <Typography variant="h5" gutterBottom>Topics</Typography>
+        <Divider varient="inset" light />
+        <div className={classes.tags}>
+          {tags.map((tag, key) => <Chip 
+                                    key={key} 
+                                    label={tag}
+                                    size="small" 
+                                    className={classes.tag} 
+                                    component={Link}
+                                    to={`/blog/tags/${_.kebabCase(tag)}`}
+                                  />)}
+        </div>
+      </Section>
+    </div>
+  )
+}
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  title: PropTypes.string,
-  date: PropTypes.string,
   description: PropTypes.string,
+  title: PropTypes.string,
+  author: PropTypes.string,
+  date: PropTypes.string,
+  featuredImage: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string)
-};
+}
+
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data
+  const title = this.props.data.site.siteMetadata.title
 
   return (
-    <>
-      <Helmet>
-        <title>{`${post.frontmatter.title}`}</title>
-      </Helmet>
-      <Layout>
-        <BlogPostTemplate
-          content={post.html}
-          contentComponent={HTMLContent}
-          title={post.frontmatter.title}
-          date={post.frontmatter.date}
-          description={post.frontmatter.description}
-          tags={post.frontmatter.tags}
-        />
-      </Layout>
-    </>
-  );
-};
+    <Layout>
+      <SEO
+        
+        title={`Blog: ${post.frontmatter.title} | ${title}`}
+        description={post.frontmatter.description}
+      />
+      <BlogPostTemplate 
+        title={post.frontmatter.title}
+        author={post.frontmatter.author}
+        date={post.frontmatter.date}
+        featuredImage={post.frontmatter.featuredimage}
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        tags={post.frontmatter.tags}
+      />
+    </Layout>
+  )
+}
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
-};
+export { BlogPostTemplate }
+export default BlogPost
 
-export default BlogPost;
 
-export const blogPostQuery = graphql`
+export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
+        author
+        featuredimage
         description
         tags
       }
     }
   }
-`;
+`

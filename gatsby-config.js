@@ -21,12 +21,12 @@ module.exports = {
         url: "/about/"
       },
       {
-        text: "Blog",
-        url: "/blog/"
-      },
-      {
         text: "Get Involved",
         url: "/get_involved/"
+      },
+      {
+        text: "Blog",
+        url: "/blog/"
       },
       {
         text: "Contact Us",

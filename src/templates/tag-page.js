@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { Grid } from '@material-ui/core'
 
 import Section from 'components/Section'
-import { LandingLayout } from 'components/Layout'
+import Layout from 'components/Layout'
 import BlogPostCard from 'components/BlogPostCard'
 import SEO from 'components/SEO'
 
@@ -19,8 +19,8 @@ class TagPage extends Component {
     const title = this.props.data.site.siteMetadata.title
     
     return (
-      <LandingLayout>
-        <SEO title={`${tag} | ${title}`} />
+      <Layout>
+        <SEO title={`Blog: ${tag} | ${title}`} />
         <HeaderSection 
           image={bg} 
           shaded 
@@ -49,7 +49,7 @@ class TagPage extends Component {
             })}
           </Grid>
         </Section>
-      </LandingLayout>
+      </Layout>
     )
   }
 }

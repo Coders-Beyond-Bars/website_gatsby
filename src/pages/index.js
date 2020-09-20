@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-
+import { Link } from "gatsby"
 import { Typography, Grid, Container } from "@material-ui/core";
 import { withStyles } from "@material-ui/styles";
 
 import Layout from "components/Layout";
-// import Section from "components/Section";
-// import CBBButton from "components/CBBButton";
+import Section from "components/Section";
+import CBBButton from "components/CBBButton";
 import SEO from "components/SEO"
 
 import MasterHeaderSection from 'sections/MasterHeaderSection'
-import MissionSection from "sections/MissionSection";
-// import ChallengesSection from "sections/ChallengesSection";
-// import TestimonialSection from "sections/TestimonialSection";
-// import PartnersSection from "sections/PartnersSection";
-// import DonateSection from "sections/DonateSection";
+import ChallengesSection from "sections/ChallengesSection"
+import TestimonialSection from "sections/TestimonialSection"
+import PartnersSection from "sections/PartnersSection"
+import DonateSection from "sections/DonateSection"
 
 import styles from "assets/jss/pages/home";
 
@@ -22,7 +21,7 @@ import Context from 'context'
 
 const SECTIONS = [
   "header",
-  "mission"
+  "challenges"
 ]
 
 class Index extends Component {
@@ -85,7 +84,33 @@ class Index extends Component {
         <Context.Provider value={this.state}>
           <Layout>
             <MasterHeaderSection id="header" />
-            <MissionSection id="mission" />
+            <ChallengesSection shaded id="challenges" />
+            <Section id="solutions">
+              <Grid container spacing={0}>
+                <Grid item xs={12} sm={6}>
+
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography variant="body1">
+                    Lorem ipsum ...
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography variant="body1">
+                    Lorem ipsum ... 
+                    <CBBButton color="primary">
+                      Learn more
+                    </CBBButton>
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  
+                </Grid>
+              </Grid>
+            </Section>
+            <PartnersSection id="partners" />
+            <TestimonialSection shaded id="testimonial" />
+            <DonateSection id="donate" />
           </Layout>
         </Context.Provider>
       </>

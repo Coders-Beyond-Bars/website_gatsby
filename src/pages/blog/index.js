@@ -15,7 +15,7 @@ const Blog = () => {
     <>
       <SEO title="Blog" />
       <Layout>
-        <HeaderSection image={bg} shaded title="Reboot Blog" subtitle="Stay up to date on our latest activities" /> 
+        <HeaderSection image={bg} shaded title="Blog" subtitle="Stay up to date on our latest activities" /> 
         <Section>
           <BlogRoll />
         </Section>

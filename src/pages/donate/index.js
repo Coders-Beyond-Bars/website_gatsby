@@ -1,21 +1,23 @@
 import React from "react";
-import { Typography, Fade, Container } from "@material-ui/core";
+import { Typography, Container } from "@material-ui/core";
 
 import Layout from "components/Layout";
 import Section from "components/Section";
 import CBBButton from "components/CBBButton";
 
+import HeaderSection from "sections/HeaderSection"
 import bg from "assets/images/background/bg10.jpg";
 
 const Donate = () => (
     <Layout>
-          <Section image={bg} shaded halfScreen vcenter>
-            <Container maxWidth="lg">
-              <Fade in={true} timeout={2000}>
-                <Typography variant="h4">Donate</Typography>
-              </Fade>
-            </Container>
-          </Section>
+          <HeaderSection 
+            image={bg} 
+            shaded 
+            title="Support Us" 
+            subtitle="Your generous contributions will support the technology, software and
+            equipment required for each student to enjoy the best educational
+            experience possible." 
+          />
           <Section>
             <Container maxWidth="lg">
               <Typography variant="body1" gutterBottom>
@@ -23,9 +25,7 @@ const Donate = () => (
                 organization that is currently sustained through volunteers and
                 financial donations from individuals who believe in our mission.
                 The donation you make today will support the students attending
-                our BPRC program. Funds will support the technology, software and
-                equipment required for each student to enjoy the best educational
-                experience possible.
+                our BPRC program.
               </Typography>
               <Typography variant="body1" gutterBottom>
                 Reboot to Tech, Inc. is a registered 501(c)(3) and your donation

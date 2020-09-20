@@ -15,7 +15,7 @@ class HeaderSection extends Component {
           <Grid container spacing={0}>
             <Grid item xs={12} sm={7}>
               <Fade in={true} timeout={2000}>
-                <Typography variant="h4">{title}</Typography>
+                <Typography variant="h4" gutterBottom>{title}</Typography>
               </Fade>
               <Fade in={true} timeout={2000}>
                 <Typography variant="h6">
