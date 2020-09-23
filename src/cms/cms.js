@@ -5,5 +5,5 @@ import BlogPostPreview from "./preview-templates/BlogPostPreview"
 import 'assets/sass/main.sass'
 
 CMS.init()
-CMS.registerPreviewStyle("main.css")
+CMS.registerPreviewStyle("main.sass")
 CMS.registerPreviewTemplate("blog", BlogPostPreview)

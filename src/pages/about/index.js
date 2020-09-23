@@ -78,7 +78,7 @@ const AboutUs = () => {
           </Container>
         </Section>
         <AboutUsSection id="what-we-do" />
-        <TeamSection id="team" />
+        {/* <TeamSection id="team" /> */}
         <DonateSection id="donate" />
       </Layout>
   );
