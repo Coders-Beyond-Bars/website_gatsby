@@ -25,6 +25,7 @@ const navbarStyles = theme => ({
     display: 'flex',
     alignSelf: 'center',
     flexGrow: 1,
+    paddingTop: 10
   },
   logoLink: {
     display: "flex",

@@ -43,7 +43,8 @@ const BlogPostTemplate = ({
                 display: 'inline'
               }}>{date}</Typography>
               </div>
-              <Typography variant="body2">
+              <br />
+              <Typography variant="body1">
                 {description}
               </Typography>
             </Grid>  

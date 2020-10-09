@@ -55,7 +55,7 @@ const Footer = ({ classes }) => {
             </Grid>
             <Grid item lg={4} md={5} sm={6} xs={12} className={classes.item}>
               <SubscribeForm />
-              <SocialMedia />
+              {/* <SocialMedia /> */}
             </Grid>
           </Grid>
         </Container>

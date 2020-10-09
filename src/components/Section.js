@@ -60,7 +60,7 @@ const Section = ({
             <Typography
               variant="h6"
               className={classes.subtitle}
-              color={shaded ? "inherit" : "primary"}
+              color={shaded ? "inherit" : "secondary"}
               align="center"
             >
               {subtitle}

@@ -5,7 +5,8 @@ import { withStyles } from "@material-ui/styles";
 
 import Layout from "components/Layout";
 import Section from "components/Section";
-import CBBButton from "components/CBBButton";
+import CBBButton from "components/CBBButton"
+import Parallax from "components/Parallax"
 import SEO from "components/SEO"
 
 import MasterHeaderSection from 'sections/MasterHeaderSection'
@@ -15,6 +16,10 @@ import PartnersSection from "sections/PartnersSection"
 import DonateSection from "sections/DonateSection"
 
 import styles from "assets/jss/pages/home";
+
+import parallaxImg1 from "assets/images/parallax/parallax1.jpg"
+import parallaxImg2 from "assets/images/parallax/parallax2.jpg"
+import parallaxImg3 from "assets/images/parallax/parallax4.jpg"
 
 import Context from 'context'
 
@@ -85,6 +90,7 @@ class Index extends Component {
           <Layout>
             <MasterHeaderSection id="header" />
             <ChallengesSection shaded id="challenges" />
+            <Parallax image={parallaxImg1} />
             <Section id="solutions">
               <Grid container spacing={0}>
                 <Grid item xs={12} sm={6}>
@@ -108,7 +114,9 @@ class Index extends Component {
                 </Grid>
               </Grid>
             </Section>
+            <Parallax image={parallaxImg2} />
             <PartnersSection id="partners" />
+            <Parallax image={parallaxImg3} />
             <TestimonialSection shaded id="testimonial" />
             <DonateSection id="donate" />
           </Layout>

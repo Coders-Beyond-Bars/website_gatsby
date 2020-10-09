@@ -38,8 +38,14 @@ const profilePic = {
 };
 
 const imageRounded = {
-  borderRadius: 15
+  borderRadius: 15,
+  width: "100%"
 };
+
+const fullWidth = {
+  width: "100%",
+  margin: 0
+}
 
 const textWhite = {
   color: "#fff"
@@ -111,7 +117,7 @@ const theme = createMuiTheme({
     }
   },
   shape: {
-    borderRadius: 25
+    borderRadius: 0
   }
 });
 
@@ -128,5 +134,6 @@ export {
   verticalCenter,
   horizontalCenter,
   logo,
-  subtitle
+  subtitle,
+  fullWidth
 };

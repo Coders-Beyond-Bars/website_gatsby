@@ -4,6 +4,7 @@ const cbbbuttonStyles = theme => {
       fontFamily: theme.typography.title.fontFamily,
       borderWidth: 5,
       borderColor: "white",
+      borderRadius: 25,
       color: "white",
       textTransform: "capitalize",
       "&:hover": {

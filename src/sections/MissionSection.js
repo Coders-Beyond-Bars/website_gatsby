@@ -6,11 +6,11 @@ import Section from "components/Section";
 const MissionSection = props => {
   return (
     <Section title="Mission" {...props}>
-      <Container maxWidth="lg">
-        <Typography variant="h5" align="center">
-          We empower returning citizens to transform their lives by educating
-          them in tech skills, preparing them for careers in high-tech
-          industries and successful re-entry into society.
+      <Container maxWidth="md">
+        <Typography variant="h5" align="center" gutterBottom>
+          We support returning citizens in their re-entry back into society by 
+          providing education in high-tech job skills and hands-on
+          learning experience through internship/apprenticeship.  
         </Typography>
       </Container>
     </Section>

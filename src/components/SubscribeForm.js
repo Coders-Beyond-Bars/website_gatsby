@@ -70,7 +70,7 @@ class SubscribeForm extends Component {
         >
           <input type="hidden" nam="form-name" value="subscribe-mailing-list" />
           <Grid container spacing={1}>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
               <TextField
                 id="email"
                 name="email"
@@ -86,8 +86,8 @@ class SubscribeForm extends Component {
                 }}
               />
             </Grid>
-            <Grid item xs={4}>
-              <CBBButton size="large" variant="outlined" type="submit">
+            <Grid item xs={12} sm={4}>
+              <CBBButton fullWidth variant="outlined" type="submit">
                 Subscribe
               </CBBButton>
             </Grid>

@@ -13,6 +13,9 @@ const headerStyle = theme => {
       headerText: {
         marginTop: '40%',
       },
+      logoContainer: {
+        marginBottom: '3%'
+      },
       buttons: {
         display: 'flex',
         justifyContent: 'center',

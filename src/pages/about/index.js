@@ -1,16 +1,18 @@
 import React from "react";
-import { Typography, Fade, Container, Grid } from "@material-ui/core";
+import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core";
 
-import Layout from "components/Layout";
+import Layout from "components/Layout"
+import Parallax from "components/Parallax"
 
 import Section from "components/Section";
 import MissionSection from "sections/MissionSection";
 import AboutUsSection from "sections/AboutUsSection";
-import TeamSection from "sections/TeamSection";
 import DonateSection from "sections/DonateSection";
 
 import useStyles from "assets/jss/pages/about";
 import bg from "assets/images/background/bg5.jpg";
+import techjob1 from "assets/images/stock/techjob1.jpg"
+import advmanuf from "assets/images/stock/adv_manuf.jpg"
 import code from "assets/images/stock/code2.jpg";
 
 
@@ -27,7 +29,55 @@ const AboutUs = () => {
           </Container>
         </Section>
         <MissionSection id="mission" shaded />
-        <Section title="What We Do">
+        <Section>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={12} md={6}>
+              <img src={techjob1} alt="Tech Skill" className={classes.fullWidth} />
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} className={classes.verticalCenter}>
+              <Container maxWidth="md">
+                <Typography variant="h4" gutterBottom color="secondary">
+                  The Challenge
+                </Typography>
+                <Typography variant="body1">
+                  Studies show that having a gainful employment with stable income is the greatest
+                  contributing factor in prevent a returning citizens from going back to correctional facilities.
+                  As a result, many re-entry programs in correctional facilities aims 
+
+                
+                </Typography>
+                <Typography variant="body1">
+                Proin cursus risus non enim vulputate, vel blandit justo lobortis. Sed mollis massa in lectus volutpat laoreet. Praesent id tempus nisi. Suspendisse eu purus finibus, porta ipsum eget, bibendum magna. Aliquam enim nisi, ultrices ac sollicitudin aliquet, luctus quis purus. Vestibulum vehicula magna diam, nec ornare nunc ultricies in. Morbi lobortis tristique nisi sit amet euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac viverra augue. Nunc vel luctus arcu. Aenean sagittis lectus ante, quis ullamcorper turpis mattis sagittis. Nunc eu egestas metus. Nullam justo nisl, porta sed interdum a, tempor sed nisl. Ut ornare dictum feugiat.
+                </Typography>
+              </Container>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} className={classes.verticalCenter} >
+              <Container maxWidth="md">
+                <Typography variant="h4" gutterBottom color="secondary">
+                  Our Solution
+                </Typography>
+                <Typography variant="body1" gutterBottom>
+                Immersive coding boot camps give students opportunity to learn by doing in a collaborative environment. Many hours are spent coding, applying the principles taught in the lectures. Working together on teams to solve complex code challenges simulates the real-world work experience.  Jobs are available — some coding boot camps have demonstrated placement rates comparable to top four-year colleges.
+
+                Code Platoon was created to connect members of the veteran community with job opportunities using a similar model, while facilitating the transition into civilian life.  Code Platoon teaches veterans and military spouses marketable skills that leverage core competencies, transforming them into software developers through an immersive, hands­-on, educational process and paid internship program.
+                </Typography>
+                <ul>
+                  <li><Typography variant="body1">Computer Programming</Typography></li>
+                  <li>System Administration</li>
+                  <li>Computer Aided Design (CAD)</li>
+                  <li>Computer Numerical Control (CNC) Machines</li>
+                </ul>
+                <Typography variant="body1" gutterBottom>
+                  Proin cursus risus non enim vulputate, vel blandit justo lobortis. Sed mollis massa in lectus volutpat laoreet. Praesent id tempus nisi. Suspendisse eu purus finibus, porta ipsum eget, bibendum magna. Aliquam enim nisi, ultrices ac sollicitudin aliquet, luctus quis purus. Vestibulum vehicula magna diam, nec ornare nunc ultricies in. Morbi lobortis tristique nisi sit amet euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac viverra augue. Nunc vel luctus arcu. Aenean sagittis lectus ante, quis ullamcorper turpis mattis sagittis. Nunc eu egestas metus. Nullam justo nisl, porta sed interdum a, tempor sed nisl. Ut ornare dictum feugiat.
+                </Typography>
+              </Container>
+            </Grid>
+            <Grid item sm={6}>
+              <img src={advmanuf} alt="Coding" className={classes.fullWidth} />
+            </Grid>
+          </Grid>
+        </Section>
+        <Section title="Our Story" shaded>
           <Container maxWidth="lg">
             <Grid container spacing={2}>
               <Grid
@@ -37,7 +87,7 @@ const AboutUs = () => {
                 xs={12}
                 className={classes.horizontalCenter}
               >
-                <img src={code} alt="Coding" className={classes.imageRounded} />
+                <img src={code} alt="Coding" />
               </Grid>
               <Grid
                 item
@@ -77,8 +127,7 @@ const AboutUs = () => {
             </Grid>
           </Container>
         </Section>
-        <AboutUsSection id="what-we-do" />
-        {/* <TeamSection id="team" /> */}
+        <AboutUsSection id="What We Do" />
         <DonateSection id="donate" />
       </Layout>
   );

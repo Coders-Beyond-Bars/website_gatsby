@@ -41,6 +41,7 @@ class DesktopMenu extends Component {
                       component={Link}
                       to={item.url}
                       style={{ marginLeft: 0 }}
+                      size="large"
                     >
                       {item.text}
                      </CBBButton>

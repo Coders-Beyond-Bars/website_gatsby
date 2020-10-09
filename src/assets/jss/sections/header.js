@@ -1,5 +1,5 @@
 import { logo } from '../cbb-material-ui'
-import { makeStyles, createStyles } from "@material-ui/styles";
+import { makeStyles, createStyles } from "@material-ui/styles"
 
 const useStyles = makeStyles(theme =>
   createStyles({

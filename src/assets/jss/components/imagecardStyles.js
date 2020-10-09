@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   card: {
-    borderRadius: 15,
     minHeight: 300,
     display: "flex",
     flexDirection: "column",

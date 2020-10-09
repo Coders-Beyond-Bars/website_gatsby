@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
 import { AppBar, Toolbar, Hidden, Typography } from "@material-ui/core"
 
+import Logo from 'components/Logo'
+
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
@@ -40,6 +42,8 @@ class Navbar extends Component {
       }
     )
 
+    const logoColor = top < 60 ? "primary" : "inherit"
+
     return (
       <AppBar
         position="fixed"
@@ -49,7 +53,11 @@ class Navbar extends Component {
       >
         <Toolbar>
           <Link to="/" className={classNames(classes.logo, classes.link)} >
-            <Typography variant="h5">Reboot to Tech</Typography>
+            <Logo 
+              logoColor={logoColor}
+              subColor="inherit"
+              size={2}
+            />
           </Link>
           <Hidden smDown>
             <DesktopMenu />

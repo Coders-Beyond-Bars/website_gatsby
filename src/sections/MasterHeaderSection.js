@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import classnames from "classnames"
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import { Typography, Fade, Container, IconButton } from '@material-ui/core'
@@ -8,7 +8,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Context from 'context'
 
 import Section from 'components/Section'
+import Logo from 'components/Logo'
 import SubscribeForm from 'components/SubscribeForm'
+
 
 import bg from 'assets/images/background/bg3.jpg'
 import styles from 'assets/jss/sections/headerStyles'
@@ -38,37 +40,27 @@ class HeaderSection extends Component {
         classNames={classes.header}
       >
         <Container maxWidth="md" className={classes.container}>
-          
             <Fade in={fadeIn} timeout={2000}>
-              <div className={classes.headerText}>
-              <Typography
-                variant="h3"
-                color="inherit"
-                gutterBottom
-              >
-                Accelerate Machine Learning
-              </Typography>
+              <div className={classnames(classes.logoContainer, classes.headerText)}>
+                <Logo 
+                  size={5}
+                  logoColor="primary"
+                  subColor="inherit"
+                />
               </div>
             </Fade>
             <Fade in={fadeIn} timeout={2000}>
-              <Typography
-                variant="h4"
-                color="inherit"
-                gutterBottom
-              >
-                Powered of bare-metal
-              </Typography>
+              <div>
+                <Typography
+                  variant="h4"
+                  color="inherit"
+                  align="center"
+                  gutterBottom
+                >
+                  Empowering returning citizens to become producers of digital technology
+                </Typography>
+              </div>
             </Fade>
-            <Fade in={fadeIn} timeout={3000}>
-              <Typography
-                variant="h6"
-                color="inherit"
-                gutterBottom
-              >
-                Explore a new way to invest in Japan and Emerging Markets
-              </Typography>
-            </Fade>
-          
           <Fade in={fadeIn} timeout={3000}>
             <div className={classes.subscribe}>
               <SubscribeForm />
@@ -83,7 +75,7 @@ class HeaderSection extends Component {
                     aria-label="learn" 
                     color="inherit" 
                     size="medium"
-                    onClick={() => setSection('mission')}
+                    onClick={() => setSection('challenges')}
                   >
                     <ExpandMoreIcon fontSize="large" />
                 </IconButton>

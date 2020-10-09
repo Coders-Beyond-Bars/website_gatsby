@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames"
 import { Link } from "gatsby";
 import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core";
 
@@ -8,7 +9,7 @@ import CBBButton from "components/CBBButton";
 
 import useStyles from "assets/jss/pages/getInvolved";
 
-import bg from "assets/images/background/bg3.jpg";
+import bg from "assets/images/background/bg22.jpg";
 import codeImg from "assets/images/stock/code.jpg";
 import donateImg from "assets/images/stock/donate.jpg";
 import volunteerImg from "assets/images/stock/volunteer.jpg";
@@ -27,16 +28,15 @@ const GetInvolved = () => {
         </Section>
         <Section>
           <Grid container spacing={4}>
-            <Hidden smUp>
-              <Grid item sm={6}>
+            <Hidden mdUp>
+              <Grid item xs={12} sm={12}>
                 <img
                   src={codeImg}
                   alt="Participate"
-                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
-            <Grid item sm={6}>
+            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
               <Typography variant="h4" gutterBottom>
                 Participate
               </Typography>
@@ -57,16 +57,23 @@ const GetInvolved = () => {
                 by clicking on the link below and filling out a form to introduce yourself.
               </Typography>
               <br />
-              <CBBButton href="/contact/" color="primary">
-                Contact Us
-              </CBBButton>
+              <div className={classnames(classes.flex, classes.horizontalCenter)}>
+                <CBBButton
+                  component={Link} 
+                  to="/donate/" 
+                  href="/contact/" 
+                  color="primary"
+                  size="large"
+                >
+                  Contact Us
+                </CBBButton>
+              </div>
             </Grid>
-            <Hidden xsDown>
-              <Grid item sm={6}>
+            <Hidden smDown>
+              <Grid item md={6}>
                 <img
                   src={codeImg}
                   alt="Participate"
-                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
@@ -74,14 +81,13 @@ const GetInvolved = () => {
         </Section>
         <Section shaded>
           <Grid container spacing={4}>
-            <Grid item sm={6}>
+            <Grid item xs={12} sm={12} md={6}>
               <img
                 src={donateImg}
                 alt="Donate"
-                className={classes.imageRounded}
               />
             </Grid>
-            <Grid item sm={6}>
+            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
               <Typography variant="h4" gutterBottom>
                 Donate
               </Typography>
@@ -98,24 +104,30 @@ const GetInvolved = () => {
                 quality educational experience for our students.
               </Typography>
               <br />
-              <CBBButton component={Link} to="/donate/" color="primary">
-                Donate
-              </CBBButton>
+              <div className={classnames(classes.flex, classes.horizontalCenter)}>
+                <CBBButton 
+                  component={Link} 
+                  to="/donate/" 
+                  color="primary"
+                  size="large"
+                >
+                  Donate
+                </CBBButton>
+              </div>
             </Grid>
           </Grid>
         </Section>
         <Section>
           <Grid container spacing={4}>
-            <Hidden smUp>
-              <Grid item sm={6}>
+            <Hidden mdUp>
+              <Grid item xs={12} sm={12}>
                 <img
                   src={volunteerImg}
                   alt="Volunteer"
-                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
-            <Grid item sm={6}>
+            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
               <Typography variant="h4" gutterBottom>
                 Volunteer / Mentor
               </Typography>
@@ -127,16 +139,22 @@ const GetInvolved = () => {
                 strands, fill out our contact form and get in touch!
               </Typography>
               <br />
-              <CBBButton component={Link} to="/contact/" color="secondary">
-                Contact Us
-              </CBBButton>
+              <div className={classnames(classes.flex, classes.horizontalCenter)}>
+                <CBBButton 
+                  component={Link} 
+                  to="/contact/" 
+                  color="secondary"
+                  size="large"  
+                >
+                  Contact Us
+                </CBBButton>
+              </div>
             </Grid>
-            <Hidden xsDown>
-              <Grid item sm={6}>
+            <Hidden smDown>
+              <Grid item md={6}>
                 <img
                   src={volunteerImg}
                   alt="Volunteer"
-                  className={classes.imageRounded}
                 />
               </Grid>
             </Hidden>
