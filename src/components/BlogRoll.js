@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
-import { Typography, Grid, TextField } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 
 import BlogPostCard from 'components/BlogPostCard'
 

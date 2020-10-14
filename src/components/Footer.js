@@ -6,7 +6,6 @@ import { Container, Typography, Link, Grid } from "@material-ui/core"
 
 import Section from 'components/Section'
 import SubscribeForm from 'components/SubscribeForm'
-import SocialMedia from 'components/SocialMedia'
 
 import styles from "assets/jss/components/footerStyles"
 

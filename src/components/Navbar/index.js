@@ -3,12 +3,12 @@ import classNames from 'classnames'
 import { Link } from "gatsby"
 
 import { withStyles } from "@material-ui/core/styles"
-import { AppBar, Toolbar, Hidden, Typography } from "@material-ui/core"
+import { AppBar, Toolbar, Hidden } from "@material-ui/core"
 
 import Logo from 'components/Logo'
 
-import DesktopMenu from "./DesktopMenu";
-import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu"
+import MobileMenu from "./MobileMenu"
 
 import styles from 'assets/jss/components/navbarStyles'
 

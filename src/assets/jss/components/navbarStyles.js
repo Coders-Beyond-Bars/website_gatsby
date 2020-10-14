@@ -1,4 +1,4 @@
-import { logo, subtitle } from '../cbb-material-ui'
+import { subtitle } from '../cbb-material-ui'
 
 const navbarStyles = theme => ({
   appBar: {

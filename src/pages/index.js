@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "gatsby"
-import { Typography, Grid, Container } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { withStyles } from "@material-ui/styles";
 
 import Layout from "components/Layout";

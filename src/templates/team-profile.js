@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { Typography, Grid } from "@material-ui/core";
 
 import Layout from "components/Layout";
-import { Content, HTMLContent } from "components/Content";
+import Content, { HTMLContent } from "components/Content";
 import Section from "components/Section";
 import SEO from "components/SEO";
 

@@ -57,7 +57,7 @@ class SubscribeForm extends Component {
           </Typography>
         ) : (
           <Typography variant="h6">
-            Subscribe to our mailing list:
+            Stay informed by subscribing to our mailing list:
           </Typography>
         )}
 
@@ -79,9 +79,10 @@ class SubscribeForm extends Component {
                 margin="normal"
                 fullWidth
                 placeholder="Your E-mail Address"
-                inputProps={{
+                InputProps={{
                   style: {
-                    color: "white"
+                    color: "white",
+                    borderBottom: "2px solid #fff"
                   }
                 }}
               />

@@ -1,19 +1,19 @@
-import React from "react";
-import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core";
+import React from "react"
+import { Typography, Fade, Container, Grid } from "@material-ui/core"
 
 import Layout from "components/Layout"
-import Parallax from "components/Parallax"
 
-import Section from "components/Section";
-import MissionSection from "sections/MissionSection";
-import AboutUsSection from "sections/AboutUsSection";
-import DonateSection from "sections/DonateSection";
+import Section from "components/Section"
+import MissionSection from "sections/MissionSection"
+import AboutUsSection from "sections/AboutUsSection"
+import DonateSection from "sections/DonateSection"
 
-import useStyles from "assets/jss/pages/about";
-import bg from "assets/images/background/bg5.jpg";
+import useStyles from "assets/jss/pages/about"
+
+import bg from "assets/images/background/bg5.jpg"
 import techjob1 from "assets/images/stock/techjob1.jpg"
 import advmanuf from "assets/images/stock/adv_manuf.jpg"
-import code from "assets/images/stock/code2.jpg";
+import code from "assets/images/stock/code2.jpg"
 
 
 const AboutUs = () => {

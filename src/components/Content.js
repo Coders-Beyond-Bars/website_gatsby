@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const HTMLContent = ({ content, className }) => (
+const HTMLContent = ({ content, className }) => (
   <div
     className={className}
     dangerouslySetInnerHTML={{ __html: content }}
@@ -9,7 +9,7 @@ export const HTMLContent = ({ content, className }) => (
   />
 );
 
-export const Content = ({ content, className }) => (
+const Content = ({ content, className }) => (
   <div className={className} style={{ fontSize: 14 }}>
     {content}
   </div>
@@ -20,4 +20,7 @@ Content.propTypes = {
   className: PropTypes.string
 };
 
-HTMLContent.propTypes = Content.propTypes;
+HTMLContent.propTypes = Content.propTypes
+
+export { HTMLContent }
+export default Content

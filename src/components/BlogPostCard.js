@@ -4,7 +4,7 @@ import _ from 'lodash'
 import { Link } from 'gatsby'
 
 import withStyles from '@material-ui/core/styles/withStyles'
-import { Typography, Card, Chip, Divider, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core'
+import { Typography, Card, Chip, Divider, CardActions, CardContent, CardMedia } from '@material-ui/core'
 
 import blogPostCardStyle from 'assets/jss/components/blogpostcardStyle'
 

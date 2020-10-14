@@ -1,4 +1,4 @@
-import { makeStyles, createStyles } from "@material-ui/styles"
+import { makeStyles } from "@material-ui/styles"
 
 const logoStyles = makeStyles(theme => ({
     logo: {

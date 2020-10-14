@@ -4,12 +4,10 @@ import { Container, Grid, Fade, Typography } from "@material-ui/core";
 import Layout from "components/Layout";
 import Section from "components/Section";
 import ContactForm from "components/ContactForm";
-import Parallax from "components/Parallax"
 
 import MapSection from "sections/MapSection"
 
 import bg from "assets/images/background/bg6.jpg";
-import parallax7 from "assets/images/parallax/parallax7.jpg"
 
 const Contact = () => (
       <Layout>
