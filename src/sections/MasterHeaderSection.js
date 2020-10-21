@@ -36,7 +36,7 @@ class HeaderSection extends Component {
         {...rest}
         shaded
         fullScreen
-        center
+        hcenter
         classNames={classes.header}
       >
         <Container maxWidth="md" className={classes.container}>

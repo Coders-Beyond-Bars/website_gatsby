@@ -19,7 +19,7 @@ const GetInvolved = () => {
   const classes = useStyles();
   return (
       <Layout>
-        <Section image={bg} shaded halfScreen vcenter>
+        <Section id="header" image={bg} shaded halfScreen vcenter>
           <Container maxWidth="lg">
             <Fade in={true} timeout={2000}>
               <Typography variant="h4">Get Involved</Typography>

@@ -11,7 +11,7 @@ import { theme } from "assets/jss/cbb-material-ui"
 const Layout = ({ children }) => (
   <>
     <CssBaseline />
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={theme}>      
       <Navbar />
         <main>{children}</main>
       <Footer />

@@ -12,6 +12,7 @@ import bg from "assets/images/background/bg6.jpg";
 const Contact = () => (
       <Layout>
         <Section
+          id="header" 
           image={bg}
           shaded
           halfScreen
