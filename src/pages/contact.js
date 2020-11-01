@@ -1,16 +1,14 @@
-import React from "react";
-import { Container, Grid, Fade, Typography } from "@material-ui/core";
+import React from "react"
+import { Container, Grid, Fade, Typography } from "@material-ui/core"
 
-import Layout from "components/Layout";
-import Section from "components/Section";
-import ContactForm from "components/ContactForm";
+import Layout from "components/Layout"
+import Section from "components/Section"
+import ContactForm from "components/ContactForm"
 
-import MapSection from "sections/MapSection"
-
-import bg from "assets/images/background/bg6.jpg";
+import bg from "assets/images/background/bg6.jpg"
 
 const Contact = () => (
-      <Layout>
+      <Layout title="Contact Us">
         <Section
           id="header" 
           image={bg}
@@ -37,7 +35,6 @@ const Contact = () => (
         <Section hcenter>
           <ContactForm />
         </Section>
-        <MapSection />
       </Layout>
 );
 

@@ -22,7 +22,6 @@ class DesktopMenu extends Component {
                   navLinks {
                     text
                     url
-                    button
                   }
                 }
               }

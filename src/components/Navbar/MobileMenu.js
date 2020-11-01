@@ -51,7 +51,6 @@ class MobileMenu extends Component {
                   navLinks {
                     text
                     url
-                    button
                   }
                 } 
               } 

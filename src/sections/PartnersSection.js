@@ -15,7 +15,7 @@ const PartnersSection = props => {
       {...props}
       subtitle="We are proud to partner with universities, colleges, corporations, and other community-based non-profit organizations that supports our mission of providing second chance to returning citizens."
     >
-      <Grid container spacing={8} justify="space-between">
+      <Grid container spacing={8} justify="space-around">
         <Grid item md={3} sm={4}>
           <img src={mccarter} alt="McCarter & English" />
         </Grid>

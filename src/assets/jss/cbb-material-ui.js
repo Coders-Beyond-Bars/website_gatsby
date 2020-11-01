@@ -57,7 +57,6 @@ const textItalic = {
 
 const link = {
   color: "inherit",
-  fontWeight: "bold",
   textDecoration: "none"
 };
 

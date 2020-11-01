@@ -14,7 +14,11 @@ const ChallengesSection = props => {
   const classes = useStyles();
 
   return (
-    <Section title="Challenges" {...props}>
+    <Section 
+      title="Challenges" 
+      subtitle=""
+      {...props}
+    >
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item md={2} sm={3} xs={12} className={classes.horizontalCenter}>
