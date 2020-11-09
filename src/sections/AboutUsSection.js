@@ -4,11 +4,11 @@ import { Grid, Container } from "@material-ui/core";
 import Section from "components/Section";
 import ImageCard from "components/ImageCard";
 
-import education from "assets/images/mission/education.jpg";
-import community from "assets/images/mission/community.jpg";
-import mentorship from "assets/images/mission/mentorship.jpg";
-import advocacy from "assets/images/mission/advocacy.jpg";
-import employment from "assets/images/mission/employment.jpg";
+// import education from "assets/images/mission/education.jpg";
+// import community from "assets/images/mission/community.jpg";
+// import mentorship from "assets/images/mission/mentorship.jpg";
+// import advocacy from "assets/images/mission/stock20-800x800.jpg";
+// import employment from "assets/images/mission/employment.jpg";
 
 import useStyles from "assets/jss/sections/about";
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
       returning citizens attaining careers in high-tech industries.  Here are what we do to 
       meet our vision."
       >
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <Grid container spacing={0} justify="center">
           <Grid item sm={4} xs={12} className={classes.grid}>
             <ImageCard
@@ -98,7 +98,7 @@ const AboutSection = () => {
             />
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
     </Section>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react"
-import classnames from "classnames"
 import { Link } from "gatsby"
 import { Typography, Fade, Container, Grid, Hidden } from "@material-ui/core"
 
@@ -12,7 +11,7 @@ import useStyles from "assets/jss/pages/companies"
 
 import bg from "assets/images/background/bg11.jpg"
 import massachusettsMap from "assets/images/massachusetts.png"
-import stockImage1 from "assets/images/stock/stock7-800x800.jpg"
+import stockImage1 from "assets/images/stock/stock19-800x800.jpg"
 import stockImage2 from "assets/images/stock/stock9-800x800.jpg"
 import stockImage3 from "assets/images/stock/stock10-800x800.jpg"
 import stockImage4 from "assets/images/stock/stock16-800x800.jpg"

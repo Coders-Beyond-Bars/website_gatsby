@@ -13,7 +13,7 @@ import AboutUsSection from "sections/AboutUsSection"
 import useStyles from "assets/jss/pages/about"
 
 import bg from "assets/images/background/bg5.jpg"
-import techjob1 from "assets/images/stock/techjob1.jpg"
+import techjob1 from "assets/images/stock/stock1-800x800.jpg"
 import advmanuf from "assets/images/stock/adv_manuf.jpg"
 import code from "assets/images/stock/code2.jpg"
 import contactUsImg from "assets/images/parallax/parallax8-6720x2800.jpg"
