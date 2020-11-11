@@ -1,48 +1,43 @@
-import React, { Component } from "react"
-import classNames from 'classnames'
-import { Link } from "gatsby"
+import React, { Component } from "react";
+import classNames from "classnames";
+import { Link } from "gatsby";
 
-import { withStyles } from "@material-ui/core/styles"
-import { AppBar, Toolbar, Hidden } from "@material-ui/core"
+import { withStyles } from "@material-ui/core/styles";
+import { AppBar, Toolbar, Hidden } from "@material-ui/core";
 
-import Logo from 'components/Logo'
+import Logo from "components/Logo";
 
-import DesktopMenu from "./DesktopMenu"
-import MobileMenu from "./MobileMenu"
-
-import styles from 'assets/jss/components/navbarStyles'
-
+import styles from "assets/jss/components/navbarStyles";
+import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
 
 class Navbar extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = { top: 0 }
-    this.detectScroll = this.detectScroll.bind(this)
+    this.state = { top: 0 };
+    this.detectScroll = this.detectScroll.bind(this);
   }
-  
+
   componentDidMount() {
-    window.addEventListener("scroll", this.detectScroll)
+    window.addEventListener("scroll", this.detectScroll);
   }
 
   detectScroll() {
     this.setState({
-      top: window.pageYOffset
-    })
+      top: window.pageYOffset,
+    });
   }
 
   render() {
-    const { top } = this.state
-    const { classes } = this.props
+    const { top } = this.state;
+    const { classes } = this.props;
 
-    const appBarClass = classNames(
-      classes.appBar,
-      {
-        [classes.transparent]: top < 60
-      }
-    )
+    const appBarClass = classNames(classes.appBar, {
+      [classes.transparent]: top < 60,
+    });
 
-    const logoColor = top < 60 ? "primary" : "inherit"
+    const logoColor = top < 60 ? "primary" : "inherit";
 
     return (
       <AppBar
@@ -52,12 +47,8 @@ class Navbar extends Component {
         id="navbar"
       >
         <Toolbar>
-          <Link to="/" className={classNames(classes.logo, classes.link)} >
-            <Logo 
-              logoColor={logoColor}
-              subColor="inherit"
-              size={2}
-            />
+          <Link to="/" className={classNames(classes.logo, classes.link)}>
+            <Logo logoColor={logoColor} subColor="inherit" size={2} />
           </Link>
           <Hidden smDown>
             <DesktopMenu />
@@ -67,7 +58,7 @@ class Navbar extends Component {
           </Hidden>
         </Toolbar>
       </AppBar>
-    )
+    );
   }
 }
 

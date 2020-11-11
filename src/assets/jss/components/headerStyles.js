@@ -1,7 +1,7 @@
-const headerStyles = theme => ({
+const headerStyles = (theme) => ({
   header: {
-    minHeight: "100vh"
-  }
+    minHeight: "100vh",
+  },
 });
 
-export default headerStyles
+export default headerStyles;

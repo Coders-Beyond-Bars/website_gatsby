@@ -8,7 +8,7 @@ import styles from "assets/jss/components/cbbdividerStyles";
 
 const CBBDivider = ({ classes, dark }) => {
   const lineStyle = {
-    borderBottomColor: dark ? "#757575" : "#fafafa"
+    borderBottomColor: dark ? "#757575" : "#fafafa",
   };
   return (
     <div className={classes.divider}>

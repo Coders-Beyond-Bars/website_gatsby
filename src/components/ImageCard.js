@@ -9,7 +9,7 @@ const ImageCard = ({ image, title, description }) => {
 
   const imageStyle = {
     background: `url(${image}) no-repeat center top`,
-    backgroundSize: "cover"
+    backgroundSize: "cover",
   };
 
   const handleMouseEnter = () => {

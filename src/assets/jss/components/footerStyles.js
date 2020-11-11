@@ -1,33 +1,33 @@
-const footerStyles = theme => ({
+const footerStyles = (theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   main: {
     color: "white",
     minHeight: 200,
     padding: "35px 0 15px 0",
-    backgroundColor: theme.palette.secondary.main
+    backgroundColor: theme.palette.secondary.main,
   },
   item: {
-    padding: "0 0 20px 0"
+    padding: "0 0 20px 0",
   },
   bottom: {
     color: "white",
     padding: "15px 0 15px 0",
-    backgroundColor: theme.palette.secondary.light
+    backgroundColor: theme.palette.secondary.light,
   },
   contact: {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   grid: {
     display: "flex",
     justifyContent: "flex-end",
     [theme.breakpoints.only("xs")]: {
       justifyContent: "flex-start",
-      marginTop: 8
-    }
-  }
+      marginTop: 8,
+    },
+  },
 });
 
-export default footerStyles
+export default footerStyles;

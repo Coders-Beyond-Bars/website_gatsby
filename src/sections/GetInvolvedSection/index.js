@@ -5,11 +5,11 @@ import { Typography } from "@material-ui/core";
 
 import Section from "components/Section";
 
-const styles = theme => ({
+const styles = (theme) => ({
   getInvolved: {
     width: "80%",
-    margin: 20
-  }
+    margin: 20,
+  },
 });
 
 const GetInvovedSection = ({ classes, ...rest }) => {

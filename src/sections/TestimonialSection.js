@@ -6,7 +6,7 @@ import useStyles from "assets/jss/templates/team-profile";
 
 import edmcadams from "assets/images/testimonial/ed-mcadams.jpg";
 
-const TestimonialSection = props => {
+const TestimonialSection = (props) => {
   const classes = useStyles();
   return (
     <Section {...props}>

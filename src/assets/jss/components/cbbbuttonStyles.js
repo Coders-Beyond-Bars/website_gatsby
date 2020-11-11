@@ -1,4 +1,4 @@
-const cbbbuttonStyles = theme => {
+const cbbbuttonStyles = (theme) => {
   return {
     button: {
       fontFamily: theme.typography.title.fontFamily,
@@ -10,8 +10,8 @@ const cbbbuttonStyles = theme => {
       "&:hover": {
         borderColor: "white",
         borderWidth: 5,
-        color: theme.palette.secondary.main
-      }
+        color: theme.palette.secondary.main,
+      },
     },
     primaryColor: {
       borderColor: theme.palette.primary.main,
@@ -19,8 +19,8 @@ const cbbbuttonStyles = theme => {
       backgroundColor: theme.palette.primary.main,
       "&:hover": {
         backgroundColor: theme.palette.primary.main,
-        borderColor: theme.palette.primary.main
-      }
+        borderColor: theme.palette.primary.main,
+      },
     },
     secondaryColor: {
       borderColor: theme.palette.secondary.main,
@@ -29,9 +29,9 @@ const cbbbuttonStyles = theme => {
       "&:hover": {
         borderColor: theme.palette.secondary.light,
         color: "white",
-        backgroundColor: theme.palette.secondary.light
-      }
-    }
+        backgroundColor: theme.palette.secondary.light,
+      },
+    },
   };
 };
 

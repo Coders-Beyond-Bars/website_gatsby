@@ -1,19 +1,19 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
 
-import { Typography } from '@material-ui/core'
+import { Typography } from "@material-ui/core";
 
-import Section from 'components/Section'
+import Section from "components/Section";
 
-const styles = theme => ({
+const styles = (theme) => ({
   testimonial: {
-    fontStyle: 'oblique',
+    fontStyle: "oblique",
   },
   testimonialBox: {
-    width: '80%',
+    width: "80%",
     margin: 20,
   },
-})
+});
 
 const Testimonial = ({ classes, statement, source, image }) => {
   return (
@@ -25,7 +25,7 @@ const Testimonial = ({ classes, statement, source, image }) => {
         <Typography variant="h6">{source}</Typography>
       </div>
     </Section>
-  )
-}
+  );
+};
 
-export default withStyles(styles)(Testimonial)
+export default withStyles(styles)(Testimonial);

@@ -10,15 +10,11 @@ import recidivism from "assets/images/challenges/recidivism.jpg";
 import unemployment from "assets/images/challenges/unemployment.jpg";
 import cost from "assets/images/challenges/cost.jpg";
 
-const ChallengesSection = props => {
+const ChallengesSection = (props) => {
   const classes = useStyles();
 
   return (
-    <Section 
-      title="Challenges" 
-      subtitle=""
-      {...props}
-    >
+    <Section title="Challenges" subtitle="" {...props}>
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item md={2} sm={3} xs={12} className={classes.horizontalCenter}>

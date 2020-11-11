@@ -8,7 +8,7 @@ import {
   flex,
   verticalCenter,
   horizontalCenter,
-  fullWidth
+  fullWidth,
 } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
@@ -19,16 +19,16 @@ const useStyles = makeStyles({
   imageRounded,
   fullWidth,
   section: {
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
   },
   verticalCenter: {
     ...flex,
-    ...verticalCenter
+    ...verticalCenter,
   },
   horizontalCenter: {
     ...flex,
-    ...horizontalCenter
-  }
+    ...horizontalCenter,
+  },
 });
 
 export default useStyles;

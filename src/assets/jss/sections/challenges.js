@@ -3,23 +3,23 @@ import {
   link,
   flex,
   horizontalCenter,
-  verticalCenter
+  verticalCenter,
 } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
   link,
   verticalCenter: {
     ...flex,
-    ...verticalCenter
+    ...verticalCenter,
   },
   horizontalCenter: {
     ...flex,
-    ...horizontalCenter
+    ...horizontalCenter,
   },
   image: {
     margin: 0,
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 export default useStyles;

@@ -1,30 +1,30 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import { withStyles } from "@material-ui/core/styles"
-import { Container, Typography, Link, Grid } from "@material-ui/core"
+import { withStyles } from "@material-ui/core/styles";
+import { Container, Typography, Link, Grid } from "@material-ui/core";
 
-import Section from 'components/Section'
-import SubscribeForm from 'components/SubscribeForm'
+import Section from "components/Section";
+import SubscribeForm from "components/SubscribeForm";
 
-import styles from "assets/jss/components/footerStyles"
+import styles from "assets/jss/components/footerStyles";
 
 const Footer = ({ classes }) => {
   const data = useStaticQuery(graphql`
-      query FooterQuery {
-        site {
-          siteMetadata {
-            title
-            email
-            company
-            streetAddress
-            city
-            state
-            zipCode
-          }
+    query FooterQuery {
+      site {
+        siteMetadata {
+          title
+          email
+          company
+          streetAddress
+          city
+          state
+          zipCode
         }
       }
-    `)
+    }
+  `);
   const metadata = data.site.siteMetadata;
   const date = new Date();
 
@@ -64,14 +64,15 @@ const Footer = ({ classes }) => {
           <Grid container spacing={1}>
             <Grid item sm={6} xs={12}>
               <Typography variant="body1" color="inherit">
-                &copy;{date.getFullYear()} {metadata.company} All rights reserved.
+                &copy;{date.getFullYear()} {metadata.company} All rights
+                reserved.
               </Typography>
             </Grid>
           </Grid>
         </Container>
       </section>
-  </footer>
-  )
-}
+    </footer>
+  );
+};
 
 export default withStyles(styles)(Footer);

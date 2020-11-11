@@ -1,19 +1,19 @@
-const sectionStyle = theme => ({
+const sectionStyle = (theme) => ({
   section: {
     display: "flex",
     padding: "45px 0",
     position: "relative",
-    backgroundColor: "white"
+    backgroundColor: "white",
   },
   shaded: {
     color: "white",
-    backgroundColor: "rgba(10, 10, 10, 0.9)"
+    backgroundColor: "rgba(10, 10, 10, 0.9)",
   },
   fullScreen: {
-    minHeight: "100vh"
+    minHeight: "100vh",
   },
   halfScreen: {
-    minHeight: "50vh"
+    minHeight: "50vh",
   },
   image: {
     zIndex: 2,
@@ -29,29 +29,29 @@ const sectionStyle = theme => ({
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   container: {
     display: "flex",
     flexDirection: "column",
   },
   titleContainer: {
-    width: '100%',
+    width: "100%",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   },
-  subtitle: {    
+  subtitle: {
     width: "85%",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   vcenter: {
-    justifyContent: "center"
+    justifyContent: "center",
   },
   hcenter: {
     alignItems: "center",
-  }
+  },
 });
 
 export default sectionStyle;

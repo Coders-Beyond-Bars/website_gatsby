@@ -8,7 +8,7 @@ import bprc from "assets/images/hostsites/bprc.png";
 import southbay from "assets/images/hostsites/southbay.png";
 import youth_center from "assets/images/hostsites/youth_center.png";
 
-const HostSiteSection = props => {
+const HostSiteSection = (props) => {
   const classes = useStyles();
 
   return (

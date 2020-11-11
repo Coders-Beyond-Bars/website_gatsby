@@ -1,23 +1,23 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-import "assets/sass/main.sass"
+import "assets/sass/main.sass";
 
 const logo = {
-  lineHeight: 1.0
-}
+  lineHeight: 1.0,
+};
 
 const subtitle = {
   marginLeft: 40,
   lineHeight: 0.5,
-  fontSize: '1.2em'
-}
+  fontSize: "1.2em",
+};
 
 const profileCard = {
   backgroundColor: "inherit",
   border: 0,
   "&:hover": {
-    backgroundColor: "inherit"
-  }
+    backgroundColor: "inherit",
+  },
 };
 
 const profileCardAction = {
@@ -25,8 +25,8 @@ const profileCardAction = {
   flexDirection: "column",
   alignItems: "center",
   "&:hover": {
-    backgroundColor: "inherit"
-  }
+    backgroundColor: "inherit",
+  },
 };
 
 const profilePic = {
@@ -34,90 +34,89 @@ const profilePic = {
   borderRadius: 200,
   display: "block",
   marginLeft: "auto",
-  marginRight: "auto"
+  marginRight: "auto",
 };
 
 const imageRounded = {
   borderRadius: 15,
-  width: "100%"
+  width: "100%",
 };
 
 const fullWidth = {
   width: "100%",
-  margin: 0
-}
+  margin: 0,
+};
 
 const textWhite = {
-  color: "#fff"
+  color: "#fff",
 };
 
 const textItalic = {
-  fontStyle: "italic"
+  fontStyle: "italic",
 };
 
 const link = {
   color: "inherit",
-  textDecoration: "none"
 };
 
 const flex = {
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
 };
 
 const verticalCenter = {
-  justifyContent: "center"
+  justifyContent: "center",
 };
 
 const horizontalCenter = {
-  alignItems: "center"
+  alignItems: "center",
 };
 
 const theme = createMuiTheme({
   palette: {
     primary: {
       main: "#FDD146",
-      contrastText: "#fff"
+      contrastText: "#fff",
     },
     secondary: {
       main: "#6D6E71",
       light: "#D1D3D4",
-      contrastText: "#fff"
-    }
+      contrastText: "#fff",
+    },
   },
   typography: {
     fontFamily: "'Roboto', 'Open Sans', 'Arial', sans-serif",
     h1: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     h2: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     h3: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     h4: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     h5: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     h6: {
-      fontFamily: "'Hammersmith One'"
+      fontFamily: "'Hammersmith One'",
     },
     title: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     subtitle1: {
-      fontFamily: "'OCRAstd'"
+      fontFamily: "'OCRAstd'",
     },
     body1: {
-      fontSize: 14
-    }
+      fontSize: 14,
+    },
   },
   shape: {
-    borderRadius: 0
-  }
+    borderRadius: 0,
+  },
 });
 
 export {
@@ -134,5 +133,5 @@ export {
   horizontalCenter,
   logo,
   subtitle,
-  fullWidth
+  fullWidth,
 };

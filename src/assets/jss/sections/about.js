@@ -1,27 +1,27 @@
 import { makeStyles, createStyles } from "@material-ui/styles";
 import { imageRounded } from "../cbb-material-ui";
 
-const useStyles = makeStyles(theme =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     imageCard: {
       position: "relative",
-      textAlign: "center"
+      textAlign: "center",
     },
     cardImage: {
       ...imageRounded,
-      width: "100%"
+      width: "100%",
     },
     cardTitle: {
       position: "absolute",
       top: "50%",
-      color: "white"
+      color: "white",
     },
     grid: {
       marginBottom: 0,
       [theme.breakpoints.only("xs")]: {
-        marginBottom: 15
-      }
-    }
+        marginBottom: 15,
+      },
+    },
   })
 );
 

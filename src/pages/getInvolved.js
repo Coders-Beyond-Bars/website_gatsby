@@ -1,159 +1,150 @@
-import React from "react"
-import classnames from "classnames"
-import { Link } from "gatsby"
-import { Typography, Grid, Hidden } from "@material-ui/core"
+import React from "react";
+import classnames from "classnames";
+import { Typography, Grid, Hidden } from "@material-ui/core";
 
-import Layout from "components/Layout"
-import Header from "components/Header"
-import Section from "components/Section"
-import CBBButton from "components/CBBButton"
+import Layout from "components/Layout";
+import Header from "components/Header";
+import Section from "components/Section";
+import CBBButton from "components/CBBButton";
 
-import ProgramSection from "sections/ProgramSection"
+import ProgramSection from "sections/ProgramSection";
 
-import useStyles from "assets/jss/pages/getInvolved"
+import useStyles from "assets/jss/pages/getInvolved";
 
-import bg from "assets/images/background/bg22.jpg"
-import stockImage1 from "assets/images/stock/stock7-800x800.jpg"
-import stockImage2 from "assets/images/stock/stock18-800x800.jpg"
-import stockImage3 from "assets/images/stock/stock12-800x800.jpg"
-import codeImg from "assets/images/stock/code.jpg"
-import donateImg from "assets/images/stock/donate.jpg"
-import volunteerImg from "assets/images/stock/volunteer.jpg"
-import parallaxImg from "assets/images/parallax/parallax7.jpg"
+import bg from "assets/images/background/bg22.jpg";
+import stockImage1 from "assets/images/stock/stock7-800x800.jpg";
+import stockImage2 from "assets/images/stock/stock18-800x800.jpg";
+import stockImage3 from "assets/images/stock/stock12-800x800.jpg";
 
+import parallaxImg from "assets/images/parallax/parallax7.jpg";
 
 const GetInvolved = () => {
   const classes = useStyles();
+
   return (
-      <Layout title="Get Involved">
-        <Header
-          image={bg}
-          title="Ready to reboot your career and life?"
-          subtitle="Imagine having an opportunity to make an honest living and be valued again as a contributing member of your community."
-          shaded
-          halfScreen
-          hcenter
-          vcenter
-        />
-        <Section shaded>
-          <Grid container spacing={4}>
-            <Hidden mdUp>
-              <Grid item xs={12} sm={12}>
-                <img
-                  src={stockImage1}
-                  alt="Participate"
-                />
-              </Grid>
-            </Hidden>
-            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
-              <Typography 
-                variant="h4" 
-                gutterBottom
-              >
-                Learn high-tech skills
-              </Typography>
-              <Typography 
-                variant="h6" 
-                gutterBottom
-              >
-                Today's job market demand ever more sophisticated employees equipped with knowledge and skills in information technology and 
-                advanced machinery.  Career opportunities for those with these relevant qualifications are rapidly expanding across the country.  
-              </Typography>
-              <Typography
-                variant="h6" 
-                gutterBottom
-              >
-                You may have missed your opportunity to pick up skills in those job markets. Perhaps, you feel the process 
-                of joining these tehcnical industries is too daunting and difficult. It doesn't have to be, and we are
-                here to connect you with the right training programs and apprenticeships to help you acquire the latest skills in rapidly growing industries.
-              </Typography>
+    <Layout title="Get Involved">
+      <Header
+        image={bg}
+        title="Ready to reboot your career and life?"
+        subtitle="Imagine having an opportunity to make an honest living and be valued again as a contributing member of your community."
+        shaded
+        halfScreen
+        hcenter
+        vcenter
+      />
+      <Section shaded>
+        <Grid container spacing={4}>
+          <Hidden mdUp>
+            <Grid item xs={12} sm={12}>
+              <img src={stockImage1} alt="Participate" />
             </Grid>
-            <Hidden smDown>
-              <Grid item md={6}>
-                <img
-                  src={stockImage1}
-                  alt="Participate"
-                />
-              </Grid>
-            </Hidden>
+          </Hidden>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            className={classnames(classes.flex, classes.verticalCenter)}
+          >
+            <Typography variant="h4" gutterBottom>
+              Learn high-tech skills
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              Today's job market demand ever more sophisticated employees
+              equipped with knowledge and skills in information technology and
+              advanced machinery. Career opportunities for those with these
+              relevant qualifications are rapidly expanding across the country.
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              You may have missed your opportunity to pick up skills in those
+              job markets. Perhaps, you feel the process of joining these
+              tehcnical industries is too daunting and difficult. It doesn't
+              have to be, and we are here to connect you with the right training
+              programs and apprenticeships to help you acquire the latest skills
+              in rapidly growing industries.
+            </Typography>
           </Grid>
-        </Section>
-        <Section>
-          <Grid container spacing={4}>
-            <Grid item xs={12} sm={12} md={6}>
-              <img
-                src={stockImage2}
-                alt="Donate"
-              />
+          <Hidden smDown>
+            <Grid item md={6}>
+              <img src={stockImage1} alt="Participate" />
             </Grid>
-            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
-              <Typography 
-                variant="h4" 
-                gutterBottom
-                color="secondary"
-              >
-                Earn while you learn
-              </Typography>
-              <Typography variant="h6" gutterBottom color="secondary">
-                You have many financial obligations including rent, child support, legal fees, etc.  Going back to school to earn
-                an an degree may not be a realistic option for you right now. 
-              </Typography>
-              <Typography variant="h6" gutterBottom color="secondary">
-                Instead of paying tuition to learn, through our apprenticeship program with corporate partners, you earn an income with living wage to 
-                meet your financial needs while you acquire your skills and gain professional experience.
-              </Typography>
-            </Grid>
+          </Hidden>
+        </Grid>
+      </Section>
+      <Section>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={12} md={6}>
+            <img src={stockImage2} alt="Donate" />
           </Grid>
-        </Section>
-        <Section shaded>
-          <Grid container spacing={4}>
-            <Hidden mdUp>
-              <Grid item xs={12} sm={12}>
-                <img
-                  src={stockImage3}
-                  alt="Volunteer"
-                />
-              </Grid>
-            </Hidden>
-            <Grid item xs={12} sm={12} md={6} className={classnames(classes.flex, classes.verticalCenter)}>
-              <Typography
-                variant="h4" 
-                gutterBottom
-              >
-                Pave the pathway toward financial security 
-              </Typography>
-              <Typography 
-                variant="h6" 
-                gutterBottom
-              >
-                Our apprenticeship program is designed to be a launchpad for a career path with ample growth opportunities in advancement and higher-paid positions.  
-                We work with corporate partners to identify jobs with growth opportunities both financially and professionally. 
-                There are no dead-end jobs in our reboot program.
-              </Typography>
-            </Grid>
-            <Hidden smDown>
-              <Grid item md={6}>
-                <img
-                  src={stockImage3}
-                  alt="Volunteer"
-                />
-              </Grid>
-            </Hidden>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            className={classnames(classes.flex, classes.verticalCenter)}
+          >
+            <Typography variant="h4" gutterBottom color="secondary">
+              Earn while you learn
+            </Typography>
+            <Typography variant="h6" gutterBottom color="secondary">
+              You have many financial obligations including rent, child support,
+              legal fees, etc. Going back to school to earn an an degree may not
+              be a realistic option for you right now.
+            </Typography>
+            <Typography variant="h6" gutterBottom color="secondary">
+              Instead of paying tuition to learn, through our apprenticeship
+              program with corporate partners, you earn an income with living
+              wage to meet your financial needs while you acquire your skills
+              and gain professional experience.
+            </Typography>
           </Grid>
-        </Section>
-        <ProgramSection />
-        <Section
-          title="Change starts here"
-          subtitle="Ready to jump start your career?"
-          shaded
-          image={parallaxImg}
-          hcenter
-        >
-          <CBBButton color="primary" size="large">
-            Contact Us
-          </CBBButton>
-        </Section>
-      </Layout>
+        </Grid>
+      </Section>
+      <Section shaded>
+        <Grid container spacing={4}>
+          <Hidden mdUp>
+            <Grid item xs={12} sm={12}>
+              <img src={stockImage3} alt="Volunteer" />
+            </Grid>
+          </Hidden>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            className={classnames(classes.flex, classes.verticalCenter)}
+          >
+            <Typography variant="h4" gutterBottom>
+              Pave the pathway toward financial security
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              Our apprenticeship program is designed to be a launchpad for a
+              career path with ample growth opportunities in advancement and
+              higher-paid positions. We work with corporate partners to identify
+              jobs with growth opportunities both financially and
+              professionally. There are no dead-end jobs in our reboot program.
+            </Typography>
+          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <img src={stockImage3} alt="Volunteer" />
+            </Grid>
+          </Hidden>
+        </Grid>
+      </Section>
+      <ProgramSection />
+      <Section
+        title="Change starts here"
+        subtitle="Ready to jump start your career?"
+        shaded
+        image={parallaxImg}
+        hcenter
+      >
+        <CBBButton color="primary" size="large">
+          Contact Us
+        </CBBButton>
+      </Section>
+    </Layout>
   );
 };
 

@@ -16,12 +16,12 @@ const AboutSection = () => {
   const classes = useStyles();
 
   return (
-    <Section 
+    <Section
       title="What We Do"
       subtitle="Reboot to Tech as a 501(c)(3) non-profit organization is committed to supporting 
       returning citizens attaining careers in high-tech industries.  Here are what we do to 
       meet our vision."
-      >
+    >
       {/* <Container maxWidth="lg">
         <Grid container spacing={0} justify="center">
           <Grid item sm={4} xs={12} className={classes.grid}>

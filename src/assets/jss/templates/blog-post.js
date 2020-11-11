@@ -1,18 +1,18 @@
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from "@material-ui/core/styles";
 
 const blogposttemplateStyle = makeStyles({
   root: {
-    paddingTop: 60
+    paddingTop: 60,
   },
   subtitle: {
-    display: "inline"
+    display: "inline",
   },
   tags: {
-    margin: "15px 0"
+    margin: "15px 0",
   },
   tag: {
-    marginRight: 8
-  }
-})
+    marginRight: 8,
+  },
+});
 
-export default blogposttemplateStyle
+export default blogposttemplateStyle;

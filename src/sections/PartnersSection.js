@@ -7,8 +7,11 @@ import tejiLogo from "assets/images/sponsors/teji.jpg";
 import mccarter from "assets/images/sponsors/mccarter_english.jpg";
 import rcc from "assets/images/sponsors/rcc.jpg";
 import quickbase from "assets/images/sponsors/quickbase.jpg";
+import madaket from "assets/images/sponsors/madaket.png";
+import workforce from "assets/images/sponsors/workforce.jpg";
+import namc from "assets/images/sponsors/namc.jpg";
 
-const PartnersSection = props => {
+const PartnersSection = (props) => {
   return (
     <Section
       title="Our Partners"
@@ -20,13 +23,19 @@ const PartnersSection = props => {
           <img src={mccarter} alt="McCarter & English" />
         </Grid>
         <Grid item md={3} sm={4}>
-          <img src={tejiLogo} alt="The Educational Justice Institute at MIT" />
-        </Grid>
-        <Grid item md={3} sm={4}>
           <img src={rcc} alt="Rxobury Community College" />
         </Grid>
         <Grid item md={3} sm={4}>
           <img src={quickbase} alt="Quickbase" />
+        </Grid>
+        <Grid item md={3} sm={4}>
+          <img src={madaket} alt="Quickbase" />
+        </Grid>
+        <Grid item md={3} sm={4}>
+          <img src={namc} alt="Quickbase" />
+        </Grid>
+        <Grid item md={3} sm={4}>
+          <img src={workforce} alt="Quickbase" />
         </Grid>
       </Grid>
     </Section>

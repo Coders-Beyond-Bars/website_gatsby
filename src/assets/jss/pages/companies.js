@@ -1,18 +1,25 @@
 import { makeStyles } from "@material-ui/styles";
-import { imageRounded, fullWidth, flex, horizontalCenter, verticalCenter, link } from "../cbb-material-ui";
+import {
+  imageRounded,
+  fullWidth,
+  flex,
+  horizontalCenter,
+  verticalCenter,
+  link,
+} from "../cbb-material-ui";
 
 const useStyles = makeStyles({
   imageRounded,
   fullWidth,
   link,
   section: {
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
   },
   horizontalCenter,
   verticalCenter: {
     ...flex,
-    ...verticalCenter
-  }
+    ...verticalCenter,
+  },
 });
 
 export default useStyles;

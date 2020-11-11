@@ -1,4 +1,10 @@
-import { imageRounded, fullWidth, link, flex, verticalCenter } from "../cbb-material-ui";
+import {
+  imageRounded,
+  fullWidth,
+  link,
+  flex,
+  verticalCenter,
+} from "../cbb-material-ui";
 
 const homeStyles = {
   fullWidth,
@@ -6,13 +12,13 @@ const homeStyles = {
   link,
   verticalCenter: {
     ...flex,
-    ...verticalCenter
+    ...verticalCenter,
   },
   buttonContainer: {
     margin: 20,
     display: "flex",
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 };
 
 export default homeStyles;

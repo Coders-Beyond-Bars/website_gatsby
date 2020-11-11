@@ -1,41 +1,31 @@
-import React from "react"
-import { Container, Grid, Fade, Typography } from "@material-ui/core"
+import React from "react";
+import { Container, Grid, Fade, Typography } from "@material-ui/core";
 
-import Layout from "components/Layout"
-import Section from "components/Section"
-import ContactForm from "components/ContactForm"
+import Layout from "components/Layout";
+import Header from "components/Header";
+import Section from "components/Section";
+import ContactForm from "components/ContactForm";
 
-import bg from "assets/images/background/bg6.jpg"
+import bg from "assets/images/background/bg6.jpg";
 
 const Contact = () => (
-      <Layout title="Contact Us">
-        <Section
-          id="header" 
-          image={bg}
-          shaded
-          halfScreen
-          vcenter
-        >
-          <Container maxWidth="lg">
-            <Fade in={true} timeout={2000}>
-              <Grid container spacing={0}>
-                <Grid item xs={8}>
-                  <Typography variant="h4" gutterBottom>
-                    Contact Us
-                  </Typography>
-                  <Typography variant="h6">
-                    Whether you are looking to volunteer with us as a mentor,
-                    to learn more about our organization, or to just share us your thoughts, we want to hear from you!
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Fade>
-          </Container>
-        </Section>
-        <Section hcenter>
-          <ContactForm />
-        </Section>
-      </Layout>
+  <Layout title="Contact Us">
+    <Header
+      id="header"
+      image={bg}
+      title="Contact Us"
+      subtitle="Whether you are looking to volunteer with us as a mentor, to
+      learn more about our organization, or to just share us your
+      thoughts, we want to hear from you!"
+      shaded
+      halfScreen
+      hcenter
+      vcenter
+    />
+    <Section hcenter>
+      <ContactForm />
+    </Section>
+  </Layout>
 );
 
 export default Contact;

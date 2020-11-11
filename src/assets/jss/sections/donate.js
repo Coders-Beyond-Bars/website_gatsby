@@ -6,11 +6,11 @@ const useStyles = makeStyles({
   div: {
     display: "flex",
     flexDirection: "column",
-    justify: "center"
+    justify: "center",
   },
   donateButton: {
-    maxWidth: "80%"
-  }
+    maxWidth: "80%",
+  },
 });
 
 export default useStyles;

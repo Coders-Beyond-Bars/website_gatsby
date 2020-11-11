@@ -8,7 +8,6 @@ import Divider from "components/CBBDivider";
 
 import sectionStyles from "assets/jss/components/sectionStyles";
 
-
 const Section = ({
   classes,
   classNames,
@@ -24,25 +23,24 @@ const Section = ({
   hcenter,
   ...rest
 }) => {
-
   const sectionClass = clsx(
     classes.section,
     {
       [classes.shaded]: shaded,
-      [classes.image]: image ? true : false,
+      [classes.image]: !!image,
       [classes.fullScreen]: fullScreen,
-      [classes.halfScreen]: halfScreen
+      [classes.halfScreen]: halfScreen,
     },
     classNames
   );
 
   const containerClass = clsx(classes.container, {
     [classes.vcenter]: vcenter,
-    [classes.hcenter]: hcenter
+    [classes.hcenter]: hcenter,
   });
 
   const style = {
-    backgroundImage: `url(${image})`
+    backgroundImage: `url(${image})`,
   };
 
   return (
@@ -53,8 +51,9 @@ const Section = ({
             <Typography
               variant="h4"
               color={shaded ? "inherit" : "primary"}
-              gutterBottom 
-              align="center">
+              gutterBottom
+              align="center"
+            >
               {title}
             </Typography>
             <Typography
@@ -65,7 +64,7 @@ const Section = ({
             >
               {subtitle}
             </Typography>
-            <Divider dark={shaded ? false : true} />
+            <Divider dark={!shaded} />
           </div>
         )}
         {children}
