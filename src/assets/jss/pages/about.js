@@ -7,7 +7,8 @@ import {
   imageRounded,
   flex,
   verticalCenter,
-  horizontalCenter
+  horizontalCenter,
+  fullWidth,
 } from "../cbb-material-ui";
 
 const useStyles = makeStyles({
@@ -16,14 +17,18 @@ const useStyles = makeStyles({
   profilePic,
   textWhite,
   imageRounded,
+  fullWidth,
+  section: {
+    backgroundColor: "#fff",
+  },
   verticalCenter: {
     ...flex,
-    ...verticalCenter
+    ...verticalCenter,
   },
   horizontalCenter: {
     ...flex,
-    ...horizontalCenter
-  }
+    ...horizontalCenter,
+  },
 });
 
 export default useStyles;

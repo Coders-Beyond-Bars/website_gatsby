@@ -1,64 +1,55 @@
-import React from "react";
-import { Link as RouterLink } from "gatsby";
+import React, { Component } from "react";
+import classNames from "classnames";
+import { Link } from "gatsby";
 
 import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Link, Hidden } from "@material-ui/core";
+import { AppBar, Toolbar, Hidden } from "@material-ui/core";
 
-import Logo from "assets/images/logos/cbb-transparent-wide.svg";
+import Logo from "components/Logo";
 
+import styles from "assets/jss/components/navbarStyles";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
-const styles = theme => ({
-  appBar: {
-    zIndex: theme.zIndex.drawer + 1
-  },
-  grow: {
-    flexGrow: 1
-  },
-  flexRow: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center"
-  },
-  leftContainer: {
-    display: "flex",
-    alignItems: "center"
-  },
-  logoLink: {
-    display: "flex",
-    alignSelf: "center"
-  },
-  logo: {
-    width: 140,
-    alignSelf: "center",
-    margin: 0
-  }
-});
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
 
-class Navbar extends React.Component {
+    this.state = { top: 0 };
+    this.detectScroll = this.detectScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.detectScroll);
+  }
+
+  detectScroll() {
+    this.setState({
+      top: window.pageYOffset,
+    });
+  }
+
   render() {
+    const { top } = this.state;
     const { classes } = this.props;
+
+    const appBarClass = classNames(classes.appBar, {
+      [classes.transparent]: top < 60,
+    });
+
+    const logoColor = top < 60 ? "primary" : "inherit";
 
     return (
       <AppBar
         position="fixed"
-        className={classes.appBar}
+        className={appBarClass}
         color="primary"
         id="navbar"
       >
         <Toolbar>
-          <div className={classes.grow}>
-            <div className={classes.leftContainer}>
-              <Link to="/" component={RouterLink} className={classes.logoLink}>
-                <img
-                  src={Logo}
-                  alt="Coders Beyond Bars"
-                  className={classes.logo}
-                />
-              </Link>
-            </div>
-          </div>
+          <Link to="/" className={classNames(classes.logo, classes.link)}>
+            <Logo logoColor={logoColor} subColor="inherit" size={2} />
+          </Link>
           <Hidden smDown>
             <DesktopMenu />
           </Hidden>

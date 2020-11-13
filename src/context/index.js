@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Context = React.createContext({
-  section: 'header',
+  section: "header",
   setSection: () => {},
-})
+});
 
-export default Context
+export default Context;

@@ -7,9 +7,9 @@ const useStyles = makeStyles({
     height: "100vh",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
-  link
+  link,
 });
 
 export default useStyles;

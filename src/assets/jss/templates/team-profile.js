@@ -1,20 +1,20 @@
+import { makeStyles } from "@material-ui/styles";
 import {
   profilePic,
   textItalic,
   flex,
-  verticalCenter
+  verticalCenter,
 } from "../cbb-material-ui";
-import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   profilePic,
   title: {
-    ...textItalic
+    ...textItalic,
   },
   verticalCenter: {
     ...flex,
-    ...verticalCenter
-  }
+    ...verticalCenter,
+  },
 });
 
 export default useStyles;

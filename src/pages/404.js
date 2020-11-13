@@ -10,7 +10,7 @@ import useStyles from "assets/jss/pages/notfoundPage";
 const NotFoundPage = () => {
   const classes = useStyles();
   return (
-    <Layout>
+    <Layout title="404">
       <div className={classes.container}>
         <Typography variant="body1">
           Uh oh! The page you're looking for does not exist. Click{" "}

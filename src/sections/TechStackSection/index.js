@@ -4,7 +4,7 @@ import { Typography, Grid, Container } from "@material-ui/core";
 import Section from "components/Section";
 import useStyles from "assets/jss/pages/program";
 
-const TechStackSection = props => {
+const TechStackSection = (props) => {
   const classes = useStyles();
 
   return (
