@@ -57,7 +57,7 @@ class HeaderSection extends Component {
                   align="center"
                   gutterBottom
                 >
-                  Empowering returning citizens to become producers of digital technology
+                  Empowering returning citizens to become contributors to digital technology revolution
                 </Typography>
               </div>
             </Fade>

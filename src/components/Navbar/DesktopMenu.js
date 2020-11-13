@@ -33,6 +33,7 @@ class DesktopMenu extends Component {
                 if (item.button) {
                   return (
                     <CBBButton
+                      key={item.url}
                       color="inherit"
                       component={Link}
                       to={item.url}
@@ -45,6 +46,7 @@ class DesktopMenu extends Component {
                 }
                 return (
                   <Button
+                    key={item.url}
                     color="inherit"
                     className={classes.menuLink}
                     component={Link}

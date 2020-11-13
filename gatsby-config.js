@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -10,37 +10,38 @@ module.exports = {
     city: "Cambridge",
     state: "MA",
     zipCode: "02138",
-    description: "Empowering returning citizens to become producers of digital technology",
+    description:
+      "Empowering returning citizens to become contributors to digital technology revolution",
     navLinks: [
       {
         text: "Home",
-        url: "/"
+        url: "/",
       },
       {
         text: "About Us",
-        url: "/about/"
+        url: "/about/",
       },
       {
         text: "Get Started",
-        url: "/getInvolved/"
+        url: "/getInvolved/",
       },
       {
         text: "For Companies",
-        url: "/companies/"
+        url: "/companies/",
       },
       {
         text: "Contact Us",
         url: "/contact/",
-      }
-    ]
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/assets/typography/index.js`
-      }
+        pathToConfigModule: `src/assets/typography/index.js`,
+      },
     },
     "gatsby-plugin-react-helmet",
     {
@@ -51,26 +52,26 @@ module.exports = {
         assets: path.join(__dirname, "src/assets"),
         components: path.join(__dirname, "src/components"),
         sections: path.join(__dirname, "src/sections"),
-        context: path.join(__dirname, "src/context")
-      }
+        context: path.join(__dirname, "src/context"),
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: "pages",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/assets/images`,
-        name: "images"
-      }
+        name: "images",
+      },
     },
     "gatsby-plugin-sass",
     "gatsby-transformer-remark",
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
-  ]
+  ],
 };

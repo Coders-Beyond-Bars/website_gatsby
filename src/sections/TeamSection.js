@@ -33,7 +33,10 @@ const TeamSection = () => {
             (Founder)
           </Typography>
           <Typography variant="body1" align="center" color="secondary">
-            <Link to="https://www.linkedin.com/in/richardskim111/">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/richardskim111/"
+            >
               <LinkedInIcon fontSize="large" color="secondary" />
             </Link>
           </Typography>
@@ -60,7 +63,10 @@ const TeamSection = () => {
             Koby Rotstein
           </Typography>
           <Typography variant="body1" align="center" color="secondary">
-            <Link to="https://www.linkedin.com/in/koby-a-rotstein-19a4131/">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/koby-a-rotstein-19a4131/"
+            >
               <LinkedInIcon fontSize="large" color="secondary" />
             </Link>
           </Typography>
@@ -76,7 +82,7 @@ const TeamSection = () => {
             Marrk Harris
           </Typography>
           <Typography variant="body1" align="center" color="secondary">
-            <Link to="https://www.hindsightvisualmedia.com/">
+            <Link target="_blank" to="https://www.hindsightvisualmedia.com/">
               <LanguageIcon fontSize="large" color="secondary" />
             </Link>
           </Typography>

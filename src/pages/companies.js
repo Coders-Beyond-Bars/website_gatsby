@@ -170,6 +170,11 @@ const Companies = () => {
       </Section>
       <Section>
         <Grid container spacing={4}>
+          <Hidden mdUp>
+            <Grid item xs={12} sm={12} md={6}>
+              <img src={stockImage4} alt="Working returning citizen" />
+            </Grid>
+          </Hidden>
           <Grid item xs={12} sm={12} md={6} className={classes.verticalCenter}>
             <Typography variant="h4" gutterBottom color="primary">
               Secure funding for training
@@ -190,9 +195,11 @@ const Companies = () => {
               hired apprentice.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
-            <img src={stockImage4} alt="Working returning citizen" />
-          </Grid>
+          <Hidden smDown>
+            <Grid item xs={12} sm={12} md={6}>
+              <img src={stockImage4} alt="Working returning citizen" />
+            </Grid>
+          </Hidden>
         </Grid>
       </Section>
       <Section shaded>

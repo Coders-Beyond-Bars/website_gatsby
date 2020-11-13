@@ -102,7 +102,7 @@ class Index extends Component {
                     gutterBottom
                     color="inherit"
                   >
-                    Too many Americans are impacted by cimrinal-justice system
+                    Too many Americans are impacted by criminal-justice system
                   </Typography>
                   <Typography
                     variant="h6"
@@ -193,7 +193,7 @@ class Index extends Component {
                   >
                     Studies show that having a gainful employment 
                     with a stable income is the best solution 
-                    to preventing returning citizens from going back to prison.
+                    to preventing returning citizens from going back to correctional systems.
                   </Typography>
                   <Typography
                     variant="h6"
@@ -232,7 +232,7 @@ class Index extends Component {
                     Reboot your career and life
                   </Typography>
                   <Typography variant="h6" gutterBottom >
-                    You've made mistakes in the past. But you don't let those mistakes define
+                    You've made mistakes in the past, but those mistakes define
                     who you are and your worth as a member of your community.  
                     We understand your frustration of navigating a job market that doesn't give you a fair look. 
                     We worked with many other returning citizens who faced similar circumstances. 
@@ -269,8 +269,9 @@ class Index extends Component {
                   </Typography>
                   <Typography variant="h6" gutterBottom color="secondary">
                     Returning citizens constitute one of the largest untapped potential labor force in the country. 
-                    Often shunned by traditional employers, many returning citizens hold deep desire for a second-chance to become contributing members of our society again.
-                    They are ready work and commit to an employer willing to give them a chance.
+                    Often shunned by traditional employers, many returning citizens hold strong yearning for a second-chance 
+                    to become contributing members of our society again. They are ready work and commit to an 
+                    employer willing to give them a chance.
                   </Typography>
                   <Typography variant="h6" gutterBottom color="secondary">
                     Discover how you can make deep impact in the lives of returning citizens while 

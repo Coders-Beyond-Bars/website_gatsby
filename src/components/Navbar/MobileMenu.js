@@ -75,7 +75,7 @@ class MobileMenu extends Component {
                   >
                     <List className={classes.list}>
                       {menu.map(item => (
-                        <ListItem button component={Link} to={item.url}>
+                        <ListItem button component={Link} to={item.url} key={item.url}>
                           <ListItemText
                             primary={item.text}
                             key={item.text}
