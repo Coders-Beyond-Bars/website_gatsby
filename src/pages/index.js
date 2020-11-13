@@ -26,6 +26,7 @@ const SECTIONS = [
   "challenges"
 ]
 
+
 class Index extends Component {
   constructor(props) {
     super(props)
@@ -80,7 +81,7 @@ class Index extends Component {
   }
 
   render() {
-    const { classes } = this.props
+    const { classes } = this.props;
     return (
       <>
         <Context.Provider value={this.state}>
