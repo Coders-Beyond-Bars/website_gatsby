@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         text: "Get Started",
-        url: "/getInvolved/",
+        url: "/getStarted/",
       },
       {
         text: "For Companies",

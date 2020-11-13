@@ -9,7 +9,7 @@ import CBBButton from "components/CBBButton";
 
 import ProgramSection from "sections/ProgramSection";
 
-import useStyles from "assets/jss/pages/getInvolved";
+import useStyles from "assets/jss/pages/getStarted";
 
 import bg from "assets/images/background/bg22.jpg";
 import stockImage1 from "assets/images/stock/stock7-800x800.jpg";
@@ -18,11 +18,11 @@ import stockImage3 from "assets/images/stock/stock12-800x800.jpg";
 
 import parallaxImg from "assets/images/parallax/parallax7.jpg";
 
-const GetInvolved = () => {
+const GetStarted = () => {
   const classes = useStyles();
 
   return (
-    <Layout title="Get Involved">
+    <Layout title="Get Started">
       <Header
         image={bg}
         title="Ready to reboot your career and life?"
@@ -148,4 +148,4 @@ const GetInvolved = () => {
   );
 };
 
-export default GetInvolved;
+export default GetStarted;
