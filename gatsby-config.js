@@ -6,7 +6,7 @@ module.exports = {
     author: "Richard Kim",
     email: "info@reboot2tech.org",
     company: "Reboot to Tech, Inc.",
-    streetAddress: "186 Alewife Brook Pkwy",
+    streetAddress: "186 Alewife Brook Pkwy #1094",
     city: "Cambridge",
     state: "MA",
     zipCode: "02138",
