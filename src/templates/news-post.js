@@ -12,15 +12,12 @@ import Content, { HTMLContent } from "components/Content";
 
 import makeStyles from "assets/jss/templates/blog-post";
 
-import "assets/sass/main.sass";
-
 const NewsPostTemplate = ({
   content,
   contentComponent,
   description,
   tags,
   title,
-  author,
   date,
   featuredImage,
 }) => {
@@ -28,7 +25,7 @@ const NewsPostTemplate = ({
   const classes = makeStyles();
 
   return (
-    <div id="blog-post">
+    <div id="news-post">
       <Section halfScreen vcenter shaded image={featuredImage}>
         <Container maxWidth="lg">
           <Grid container spacing={0}>
@@ -52,10 +49,10 @@ const NewsPostTemplate = ({
           </Grid>
         </Container>
       </Section>
-      <Section id="blog-content">
+      <Section id="news-content">
         <PostContent content={content} />
       </Section>
-      <Section>
+      <Section id="topics">
         <Typography variant="h5" gutterBottom>
           Topics
         </Typography>
@@ -95,7 +92,7 @@ const NewsPost = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={`Blog: ${post.frontmatter.title} | ${title}`}
+        title={`News: ${post.frontmatter.title} | ${title}`}
         description={post.frontmatter.description}
       />
       <NewsPostTemplate
