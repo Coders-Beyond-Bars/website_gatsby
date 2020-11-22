@@ -72,6 +72,11 @@ const horizontalCenter = {
   alignItems: "center",
 };
 
+const tag = {
+  marginRight: 5,
+  cursor: "pointer",
+};
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -134,4 +139,5 @@ export {
   logo,
   subtitle,
   fullWidth,
+  tag,
 };

@@ -1,3 +1,5 @@
+import { tag } from "../cbb-material-ui";
+
 const blogPostCardStyle = (theme) => ({
   card: {
     height: 450,
@@ -16,14 +18,12 @@ const blogPostCardStyle = (theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
-  chip: {
-    marginRight: 5,
-  },
   title: {
     color: "inherit",
     display: "block",
     textDecoration: "none",
   },
+  tag,
 });
 
 export default blogPostCardStyle;

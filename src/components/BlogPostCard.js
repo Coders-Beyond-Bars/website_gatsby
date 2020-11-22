@@ -46,7 +46,7 @@ class BlogPostCard extends Component {
               key={key}
               size="small"
               label={tag}
-              className={classes.chip}
+              className={classes.tag}
               component={Link}
               to={`/blog/tags/${_.kebabCase(tag)}`}
             />

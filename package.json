@@ -51,6 +51,7 @@
     "clean": "gatsby clean"
   },
   "devDependencies": {
+    "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "^6.15.0",

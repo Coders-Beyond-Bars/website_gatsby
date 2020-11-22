@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { tag } from "../cbb-material-ui";
 
 const blogposttemplateStyle = makeStyles({
   root: {
@@ -10,9 +11,7 @@ const blogposttemplateStyle = makeStyles({
   tags: {
     margin: "15px 0",
   },
-  tag: {
-    marginRight: 8,
-  },
+  tag,
 });
 
 export default blogposttemplateStyle;

@@ -38,7 +38,6 @@ class Navbar extends Component {
     });
 
     const logoColor = top < 60 ? "primary" : "inherit";
-
     return (
       <AppBar
         position="fixed"
