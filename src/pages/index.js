@@ -140,7 +140,7 @@ class Index extends Component {
                     gutterBottom
                     color="inherit"
                   >
-                    Returning Citizens are deemd 'untouchable' by employers
+                    Returning Citizens are deemed 'untouchable' by employers
                   </Typography>
                   <Typography
                     variant="h6"
@@ -150,7 +150,7 @@ class Index extends Component {
                     Up to 60% of returning citizens remain jobless a year after their release due to their criminal 
                     records and lack of employable skills. Locked out of gainful employment opportunities, many returning citizens
                     fall back to substance abuse or engage in criminal activities. 
-                    According to a research reported by the Department of Justice, 67.8% of returning citizens 
+                    According to research reported by the Department of Justice, 67.8% of returning citizens 
                     were arrested again within 3 years of their release and 76.6% within 5 years.  
                   </Typography>
                   <Typography
@@ -160,8 +160,8 @@ class Index extends Component {
                   >
                     Urban Institute reported in its 2008 research report that individuals who made 
                     more than $10 an hour were half as likely to return to prison as those making less than $7 an hour. 
-                    Their finding shows us that having a stable source of income and a career path with potential for financial upward mobility
-                    should be crucial pillars of successful re-entry process for returning citizens.
+                    Their finding shows us that having a stable source of income and a career path with the potential for financial upward mobility
+                    should be crucial pillars of a successful re-entry process for returning citizens.
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sm={12} md={5}>
@@ -173,7 +173,7 @@ class Index extends Component {
               id="solutions"
               title="Who We Are"
               subtitle="Our vision of the future is a place where returning citizens
-                        can become a productive, contributing members of our society again."
+                        can become productive, contributing members of our society again."
             >
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={5}>
@@ -192,7 +192,7 @@ class Index extends Component {
                     gutterBottom
                     color="secondary"
                   >
-                    Studies show that having a gainful employment 
+                    Studies show that having gainful employment 
                     with a stable income is the best solution 
                     to preventing returning citizens from going back to correctional systems.
                   </Typography>
@@ -204,7 +204,7 @@ class Index extends Component {
                     Reboot to Tech empowers and equips returning citizens 
                     with skills in high-tech industries and on-site work experience 
                     to help them attain successful careers and regain
-                    the diginity of becoming contributing members of society.
+                    the dignity of becoming contributing members of society.
                   </Typography>
                 <div className={classes.buttonContainer}>
                   <CBBButton 
@@ -235,7 +235,7 @@ class Index extends Component {
                   <Typography variant="h6" gutterBottom >
                     You've made mistakes in the past, but those mistakes define
                     who you are and your worth as a member of your community.  
-                    We understand your frustration of navigating a job market that doesn't give you a fair look. 
+                    We understand your frustration with navigating a job market that doesn't give you a fair look. 
                     We worked with many other returning citizens who faced similar circumstances. 
                   </Typography>
                   <Typography variant="h6" gutterBottom>
@@ -266,16 +266,16 @@ class Index extends Component {
                 </Hidden>
                 <Grid item xs={12} sm={12} md={7} className={classes.verticalCenter}>
                   <Typography variant="h4" gutterBottom color="secondary">
-                    Let us help you find you your next star employee
+                    Let us help you find your next star employee
                   </Typography>
                   <Typography variant="h6" gutterBottom color="secondary">
                     Returning citizens constitute one of the largest untapped potential labor force in the country. 
-                    Often shunned by traditional employers, many returning citizens hold strong yearning for a second-chance 
-                    to become contributing members of our society again. They are ready work and commit to an 
+                    Often shunned by traditional employers, many returning citizens hold a strong yearning for a second-chance 
+                    to become contributing members of our society again. They are ready to work and commit to an 
                     employer willing to give them a chance.
                   </Typography>
                   <Typography variant="h6" gutterBottom color="secondary">
-                    Discover how you can make deep impact in the lives of returning citizens while 
+                    Discover how you can make a deep impact on the lives of returning citizens while 
                     retaining talented and committed employees ready to add value to your firm.
                   </Typography>
                 <br />  

@@ -17,7 +17,7 @@ const TeamSection = () => {
   const classes = useStyles();
 
   return (
-    <Section title="Meat Our Team">
+    <Section title="Meet Our Team">
       <Grid container spacing={1}>
         <Grid item md={3} sm={6} xs={12}>
           <img src={richard} alt="Richard Kim" className={classes.profilePic} />

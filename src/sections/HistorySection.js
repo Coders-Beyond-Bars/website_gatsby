@@ -54,7 +54,7 @@ const HistorySection = () => {
         partnerships with companies in advanced manufacturing and other sectors
         wherever there is a demand for a technologically-capable employee.
         Regardless of our name change, we are committed to serving returning
-        citizens in their pursuit of education and successful career.
+        citizens in their pursuit of education and a successful career.
       </Typography>
       <br />
       <Grid container spacing={3}>
