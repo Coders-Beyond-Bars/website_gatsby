@@ -102,7 +102,7 @@ const ProgramSection = (props) => {
               </Typography>
               <Typography variant="h6" gutterBottom color="secondary">
                 You may have been out of school for many years and need to brush
-                up on basic skills again. Whether its basic digital literacy
+                up on basic skills again. Whether it's basic digital literacy
                 skills (e.g. ability to use Microsoft Office tools) or "soft
                 skills" such as your ability to work in a team, we'll work with
                 you to fill in those skills-gaps. We will also work with you to

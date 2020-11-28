@@ -97,7 +97,7 @@ const Companies = () => {
                   19%
                 </Typography>
                 <Typography variant="h6" gutterBottom color="secondary">
-                  of returning citizens below age of 29 in Massachusetts
+                  of returning citizens below the age of 29 in Massachusetts
                 </Typography>
               </Grid>
               <Grid item xs={6}>
@@ -123,8 +123,7 @@ const Companies = () => {
                   2,800
                 </Typography>
                 <Typography variant="h6" gutterBottom color="secondary">
-                  returning citizens are released from each year in
-                  Massachusetts
+                  returning citizens are released each year in Massachusetts
                 </Typography>
               </Grid>
             </Grid>
@@ -217,7 +216,7 @@ const Companies = () => {
               To address your concern, we work with the Massachusetts Executive
               Office of Labor and Workforce Development to help you secure
               Fidelity Bonds that will provide insurance coverage up to $25,000
-              (with $0 deductable) for the first six months of employment at no
+              (with $0 deductible) for the first six months of employment at no
               cost to the employee or the employer.
             </Typography>
           </Grid>

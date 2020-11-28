@@ -50,7 +50,7 @@ const GetStarted = () => {
               Learn high-tech skills
             </Typography>
             <Typography variant="h6" gutterBottom>
-              Today's job market demand ever more sophisticated employees
+              Today's job market demands ever more sophisticated employees
               equipped with knowledge and skills in information technology and
               advanced machinery. Career opportunities for those with these
               relevant qualifications are rapidly expanding across the country.
@@ -58,7 +58,7 @@ const GetStarted = () => {
             <Typography variant="h6" gutterBottom>
               You may have missed your opportunity to pick up skills in those
               job markets. Perhaps, you feel the process of joining these
-              tehcnical industries is too daunting and difficult. It doesn't
+              technical industries is too daunting and difficult. It doesn't
               have to be, and we are here to connect you with the right training
               programs and apprenticeships to help you acquire the latest skills
               in rapidly growing industries.
@@ -88,12 +88,12 @@ const GetStarted = () => {
             </Typography>
             <Typography variant="h6" gutterBottom color="secondary">
               You have many financial obligations including rent, child support,
-              legal fees, etc. Going back to school to earn an an degree may not
-              be a realistic option for you right now.
+              legal fees, etc. Going back to school to earn a degree may not be
+              a realistic option for you right now.
             </Typography>
             <Typography variant="h6" gutterBottom color="secondary">
               Instead of paying tuition to learn, through our apprenticeship
-              program with corporate partners, you earn an income with living
+              program with corporate partners, you earn an income with a living
               wage to meet your financial needs while you acquire your skills
               and gain professional experience.
             </Typography>
@@ -135,7 +135,7 @@ const GetStarted = () => {
       <ProgramSection />
       <Section
         title="Change starts here"
-        subtitle="Ready to jump start your career?"
+        subtitle="Ready to jump-start your career?"
         shaded
         image={parallaxImg}
         hcenter

@@ -15,7 +15,7 @@ const Contact = () => (
       image={bg}
       title="Contact Us"
       subtitle="Whether you are looking to volunteer with us as a mentor, to
-      learn more about our organization, or to just share us your
+      learn more about our organization, or to just share your
       thoughts, we want to hear from you!"
       shaded
       halfScreen
